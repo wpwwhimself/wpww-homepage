@@ -1,5 +1,6 @@
 {
   "name": "wpww-homepage",
+  "homepage": "http://wpww.pl/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
