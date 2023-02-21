@@ -1,11 +1,15 @@
 import React from 'react';
-import { TestBox } from './components/TestBox'
+import { Header, Footer, Body } from './components/BigBuildingBlocks';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <TestBox />
+      <Header />
+      <div id="main-wrapper">
+        <Body />
+      </div>
+      <Footer />
     </div>
   );
 }
