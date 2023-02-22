@@ -1,0 +1,14 @@
+.click-tile{
+    background-color: var(--bg1);
+    padding: 1em;
+    border: 3px solid var(--acc);
+}
+.click-tile:hover{
+    background-color: var(--acc);
+    color: var(--fg);
+}
+.click-tile i{ font-size: 5em; }
+.click-tile.small i{ font-size: 1.5em; }
+.click-tile h3{
+    margin: 0;
+}

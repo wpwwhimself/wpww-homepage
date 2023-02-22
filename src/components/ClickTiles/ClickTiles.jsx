@@ -1,6 +1,7 @@
 import { useContext } from "react";
-import { LangContext } from "../App";
-import FAIcon from "./FAIcon";
+import { LangContext } from "../../App";
+import FAIcon from "../FAIcon";
+import "./style.css"
 
 export function ClickTile({icon, label = null, clickfun, animateIcon = null, small = false}){
     let classes_raw;

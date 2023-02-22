@@ -50,7 +50,6 @@ h2{
 }
 .framed{
   border-radius: 1em;
-  /* background-color: var(--bg1); */
   border: 3px solid var(--bg2);
   margin: 1em 0;
   padding: 1em;
@@ -58,21 +57,7 @@ h2{
 .framed:hover{
   border-color: var(--fg);
 }
-.section-header{
-  align-items: flex-start;
-  margin-bottom: 1em;
-  background-color: var(--bg1);
-  padding: 0.5em 1em;
-}
-.section-header h1, .section-header h2, .section-header h3{
-  margin: 0;
-}
-.section-header>div{
-  display: flex;
-  flex-direction: row;
-  text-align: right;
-  align-items: flex-end;
-}
+
 p{
   margin-top: 0;
 }
@@ -141,6 +126,10 @@ div, form{
 .grayed-out::before, .grayed-out::after, .yellowed-out::before, .yellowed-out::after{
   content: " — ";
 }
+.currently{
+  color: var(--acc);
+  font-weight: bold;
+}
 
 /* CLICKABLE */
 a{
@@ -155,78 +144,8 @@ a:hover, .clickable:hover{
   cursor: pointer;
 }
 
-.click-tile{
-  background-color: var(--bg1);
-  padding: 1em;
-  border: 3px solid var(--acc);
-}
-.click-tile:hover{
-  box-shadow: 0 0 1em var(--acc);
-}
-.click-tile i{ font-size: 5em; }
-.click-tile.small i{ font-size: 1.5em; }
-.click-tile h3{
-  margin: 0;
-}
-
-/***********************************/
-
-header{
-  background: var(--bg2);
-  padding: 2em 4em;
-}
-header h1{
-  font-size: 4em;
-}
-header img{
-  height: 10em;
-}
-
-footer{
-  background: #111;
-  color: white;
-  padding: 1em 5em;
-  position: absolute;
-  bottom: 0;
-  width: calc(100vw - 2*5em);
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  font-size: 85%;
-  text-align: right;
-}
-footer .logo{
-  height: 5em;
-}
-footer h2, footer p{
-  margin: 0;
-}
-#lang{
-  margin: 0 auto;
-}
-#footer-links{
-  display: flex;
-  flex-direction: column;
-  margin-right: auto;
-  text-align: left;
-  flex-wrap: wrap; column-gap: 1em;
-  max-height: 5em;
-}
-
-nav{
-  display: flex;
-  flex-direction: row;
-  justify-content: center; align-items: center;
-  gap: 0.5em;
-}
-nav li{
-  list-style-type: none;
-}
-
 #main-wrapper{
   width: 90vw;
   margin: 0 auto;
   padding: 2em;
 }
-
-/**************************************/

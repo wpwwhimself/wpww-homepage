@@ -1,0 +1,5 @@
+.timeline .boxes>div{
+    background-color: var(--bg2);
+    padding: 0.5em;
+}
+  

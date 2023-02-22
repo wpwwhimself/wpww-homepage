@@ -1,8 +1,9 @@
 import { useState, createContext, useContext } from "react";
-import { LangContext } from "../App";
-import FAIcon from "./FAIcon";
-import { Logo } from "./Logo";
-import { Intro, Programista, TBAPage } from "./Sections";
+import { LangContext } from "../../App";
+import FAIcon from "../FAIcon";
+import { Logo } from "../Logo";
+import { Intro, Programista, TBAPage } from "../Sections";
+import "./style.css"
 
 export const PageContext = createContext();
 
@@ -46,21 +47,23 @@ export function Footer(){
 
   return(
     <footer>
-      <Logo />
-      <div id="end-bar">
-        <h2>Wojciech Przybyła</h2>
-        <p>{__("footer_by_me")}</p>
-        <p><a href="https://creativecommons.org/licenses/by-sa/3.0/pl/">© CC BY-SA 3.0</a> 2018 – 2022</p>
-      </div>
-      <div id="lang" className="flex-right">
-        <FAIcon icon="globe" />
-        {["PL", "EN", "DE", "JP"].map((lang_opt) => 
-          <span key={lang_opt}
-            className="clickable"
-            onClick={() => setLang(lang_opt)}
-            >
-            {lang_opt}
-          </span>)}
+      <div className="flex-right center">
+        <Logo />
+        <div id="end-bar" className="flex-down">
+          <h2>Wojciech Przybyła</h2>
+          <p>{__("footer_by_me")}</p>
+          <p><a href="https://creativecommons.org/licenses/by-sa/3.0/pl/">© CC BY-SA 3.0</a> 2018 – 2022</p>
+          <div id="lang" className="flex-right">
+            <FAIcon icon="globe" />
+            {["PL", "EN", "DE", "JP"].map((lang_opt) => 
+              <span key={lang_opt}
+                className="clickable"
+                onClick={() => setLang(lang_opt)}
+                >
+                {lang_opt}
+              </span>)}
+          </div>
+        </div>
       </div>
       <div id="footer-links">{footer_links}</div>
     </footer>
