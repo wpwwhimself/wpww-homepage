@@ -1,7 +1,7 @@
 import { useState, createContext, useContext } from "react";
 import { LangContext } from "../App";
 import { Logo } from "./Logo";
-import { Intro, Programista } from "./Sections";
+import { Intro, Programista, TBAPage } from "./Sections";
 
 export const PageContext = createContext();
 
@@ -72,8 +72,9 @@ export function Body(){
 
   let Page;
   switch(page){
+    case "Intro": Page = <Intro />; break;
     case "Programista": Page = <Programista />; break;
-    default: Page = <Intro />; break;
+    default: Page = <TBAPage />; break;
   }
 
   return(

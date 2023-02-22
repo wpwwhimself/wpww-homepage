@@ -3,6 +3,21 @@ import { ClickTile, ReturnClickTile, SeeAlso } from "./ClickTiles";
 import { PageContext, PageIcons, Section } from "./BigBuildingBlocks";
 import { LangContext } from "../App";
 
+export function TBAPage(){
+    /**
+     * Blank page as a placeholder
+     */
+    const {setPage} = useContext(PageContext);
+    const {__} = useContext(LangContext);
+
+    return(
+        <Section>
+            <h3>🚧{__("tba_header")}🚧</h3>
+            <ReturnClickTile clickfun={() => setPage("Intro")} />
+        </Section>
+    )
+}
+
 export function Intro(){
     /**
      * First section of this page
