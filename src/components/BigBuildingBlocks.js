@@ -1,6 +1,15 @@
-import { useState } from "react";
+import { useState, createContext, useContext } from "react";
 import { Logo } from "./Logo";
 import { Intro, Programista } from "./Sections";
+
+export const PageContext = createContext();
+
+export const PageIcons = {
+  Intro: "house-chimney",
+  Programista: "keyboard",
+  Muzyk: "music",
+  Inne: "ellipsis",
+};
 
 export function Header(){
   return (
@@ -49,18 +58,33 @@ export function Footer(){
 }
   
 export function Body(){
-  const [page, setPage] = useState("intro");
+  const [page, setPage] = useState("Intro");
 
 
   let Page;
   switch(page){
-    case "programista": Page = <Programista setPage={setPage} />; break;
-    default: Page = <Intro setPage={setPage} />; break;
+    case "Programista": Page = <Programista />; break;
+    default: Page = <Intro />; break;
   }
 
   return(
     <div className="main-wrapper">
-      {Page}
+      <PageContext.Provider value={{page, setPage}}>
+        {Page}
+      </PageContext.Provider>
     </div>
   );
+}
+
+export function Section(props){
+  const {page} = useContext(PageContext);
+
+  return(
+    <section>
+      <h1>
+        <i className={`fa-solid fa-${PageIcons[page]}`}></i> {page}
+      </h1>
+      {props.children}
+    </section>
+  )
 }

@@ -97,14 +97,19 @@ div, form{
 .flex-down{
   display: flex;
   flex-direction: column;
+  gap: 0.5em;
 }
 .flex-right{
   display: flex;
   flex-direction: row;
+  gap: 0.5em;
 }
 .center{
   justify-content: center;
   align-items: center;
+}
+.stretch>div{
+  flex: 1;
 }
 
 .hover-lift:hover{
@@ -115,8 +120,9 @@ div, form{
   color: inherit;
   box-shadow: 0 0 1em inset var(--acc);
 }
-.auth-link{
-  border: solid 2px var(--acc);
+
+.hidden{
+  opacity: 0;
 }
 
 /* UNI COLORS */
@@ -143,6 +149,10 @@ a{
 }
 a:hover{
   color: var(--acc);
+}
+.clickable{
+  user-select: none;
+  cursor: pointer;
 }
 
 /***********************************/
@@ -210,12 +220,17 @@ nav li{
 .click-tile{
   background-color: var(--bg1);
   padding: 1em;
+  box-shadow: 0 0 1em inset var(--acc);
 }
 .click-tile:hover{
-  box-shadow: 0 0 1em inset var(--acc);
+  background-color: var(--acc);
+  color: var(--bg);
 }
 .click-tile i{
   font-size: 5em;
+}
+.click-tile.small i{
+  font-size: 1.5em;
 }
 .click-tile h3{
   margin: 0;

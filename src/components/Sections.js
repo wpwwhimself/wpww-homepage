@@ -1,22 +1,23 @@
-import { ClickTile } from "./ClickTile";
+import { useContext } from "react";
+import { ClickTile, ReturnClickTile } from "./ClickTiles";
+import { PageContext, PageIcons, Section } from "./BigBuildingBlocks";
 
-export function Intro({setPage}){
+export function Intro(){
     /**
-     * Cześć, jestem Wojtek, lubię czereśnie
-     * 
-     * kafelki do wyboru
-     * * programista
-     * * muzyk
+     * First section of this page
      */
+    const {setPage} = useContext(PageContext);
+
     return(
-        <section>
-            <p>Cześć, jestem Wojtek</p>
-            <div className="grid-2">
-                <ClickTile icon="keyboard" label="Programista"
-                    onClick={() => setPage("programista")} />
-                <ClickTile icon="music" label="Muzyk" />
+        <Section>
+            <p>Mam na imię Wojtek i... powinienem napisać tu coś więcej. {/*TODO NAPISAĆ COŚ WIĘCEJ*/}</p>
+            <div className="flex-right stretch">
+                {["Programista", "Muzyk", "Inne"].map((label) => 
+                    <ClickTile icon={PageIcons[label]} label={label}
+                        clickfun={() => setPage(label)} />
+                )}
             </div>
-        </section>
+        </Section>
     );
 }
 
@@ -34,10 +35,14 @@ export function Programista(){
      * * Brzoskwinia🚧
      * * Gruszka
      */
+    const {setPage} = useContext(PageContext);
+
     return(
-        <section>
-            <p>Jestem programistą, ho ho</p>
-        </section>
+        <Section>
+            <h2>Doświadczenie zawodowe</h2>
+            <p>Oś czasu</p>
+            <ReturnClickTile clickfun={() => setPage("Intro")} />
+        </Section>
     );
 }
 
