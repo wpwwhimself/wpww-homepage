@@ -1,0 +1,17 @@
+{
+    "return_click_tile": "Wróć",
+    "see_also": "Zobacz też:",
+    "footer_by_me": "Strona zbudowana w całości przeze mnie",
+    "pages": {
+        "Intro": "Intro",
+        "Programista": "Programista",
+        "Muzyk": "Muzyk",
+        "Inne": "Inne"
+    },
+    "intro_about_me": "Mam na imię Wojtek i... powinienem napisać tu coś więcej.",
+    "programista_headings": {
+        "exp": "Doświadczenie zawodowe",
+        "langs": "Znajomość języków",
+        "projects": "Moje projekty"
+    }
+}

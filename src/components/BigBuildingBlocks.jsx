@@ -1,4 +1,5 @@
 import { useState, createContext, useContext } from "react";
+import { LangContext } from "../App";
 import { Logo } from "./Logo";
 import { Intro, Programista } from "./Sections";
 
@@ -40,17 +41,25 @@ export function Footer(){
     <a href={link} key={icon}><i className={icon}></i> {label}</a>
   );
 
+  const {__, setLang} = useContext(LangContext);
+
   return(
     <footer>
       <Logo />
       <div id="end-bar">
         <h2>Wojciech Przybyła</h2>
-        <p>Strona zbudowana w całości przeze mnie</p>
+        <p>{__("footer_by_me")}</p>
         <p><a href="https://creativecommons.org/licenses/by-sa/3.0/pl/">© CC BY-SA 3.0</a> 2018 – 2022</p>
       </div>
-      <div id="lang">
+      <div id="lang" className="flex-right">
         <i className="fa-solid fa-globe"></i>
-        🚧
+        {["PL", "EN", "DE", "JP"].map((lang_opt) => 
+          <span key={lang_opt}
+            className="clickable"
+            onClick={() => setLang(lang_opt)}
+            >
+            {lang_opt}
+          </span>)}
       </div>
       <div id="footer-links">{footer_links}</div>
     </footer>
@@ -78,13 +87,16 @@ export function Body(){
 
 export function Section(props){
   const {page} = useContext(PageContext);
+  const {__} = useContext(LangContext);
 
   return(
-    <section>
-      <h1>
-        <i className={`fa-solid fa-${PageIcons[page]}`}></i> {page}
-      </h1>
+    <div>
+      <div className="section-header flex-right center">
+        <h1>
+          <i className={`fa-solid fa-${PageIcons[page]}`}></i> {__("pages."+page)}
+        </h1>
+      </div>
       {props.children}
-    </section>
+    </div>
   )
 }

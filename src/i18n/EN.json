@@ -1,0 +1,14 @@
+{
+    "return_click_tile": "Back",
+    "footer_by_me": "Website constructed entirely by myself",
+    "pages": {
+        "Intro": "Intro",
+        "Programista": "Programmer",
+        "Muzyk": "Musician",
+        "Inne": "Misc"
+    },
+    "intro_about_me": "My name is Wojtek and I... really should write something more here.",
+    "programista_headings": {
+        
+    }
+}

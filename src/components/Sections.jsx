@@ -1,19 +1,21 @@
 import { useContext } from "react";
-import { ClickTile, ReturnClickTile } from "./ClickTiles";
+import { ClickTile, ReturnClickTile, SeeAlso } from "./ClickTiles";
 import { PageContext, PageIcons, Section } from "./BigBuildingBlocks";
+import { LangContext } from "../App";
 
 export function Intro(){
     /**
      * First section of this page
      */
     const {setPage} = useContext(PageContext);
+    const {__} = useContext(LangContext);
 
     return(
         <Section>
-            <p>Mam na imię Wojtek i... powinienem napisać tu coś więcej. {/*TODO NAPISAĆ COŚ WIĘCEJ*/}</p>
+            <p>{__("intro_about_me")} {/*TODO NAPISAĆ COŚ WIĘCEJ*/}</p>
             <div className="flex-right stretch">
                 {["Programista", "Muzyk", "Inne"].map((label) => 
-                    <ClickTile icon={PageIcons[label]} label={label}
+                    <ClickTile key={label} icon={PageIcons[label]} label={__("pages."+label)}
                         clickfun={() => setPage(label)} />
                 )}
             </div>
@@ -36,11 +38,15 @@ export function Programista(){
      * * Gruszka
      */
     const {setPage} = useContext(PageContext);
+    const {__} = useContext(LangContext);
 
     return(
         <Section>
-            <h2>Doświadczenie zawodowe</h2>
+            <h2>{__("programista_headings.exp")}</h2>
             <p>Oś czasu</p>
+            <SeeAlso>
+                <ClickTile icon="brands github" small={true} />
+            </SeeAlso>
             <ReturnClickTile clickfun={() => setPage("Intro")} />
         </Section>
     );
