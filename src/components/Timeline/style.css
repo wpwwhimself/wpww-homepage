@@ -7,6 +7,9 @@
     background-color: var(--bg2);
     padding: 1em;
 }
+.timeline h2{
+    text-align: left;
+}
 .timeline h3{
     font-family: Raleway;
     font-weight: bold;

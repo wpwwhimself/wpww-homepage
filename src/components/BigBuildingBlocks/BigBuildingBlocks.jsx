@@ -2,7 +2,8 @@ import { useState, createContext, useContext } from "react";
 import { LangContext } from "../../App";
 import FAIcon from "../FAIcon";
 import { Logo } from "../Logo";
-import { Intro, Programista, TBAPage } from "../Sections";
+import { Intro, TBAPage } from "../Sections";
+import { Programista } from "../Programista/Programista";
 import "./style.css"
 
 export const PageContext = createContext();
@@ -52,7 +53,11 @@ export function Footer(){
         <div id="end-bar" className="flex-down">
           <h2>Wojciech Przybyła</h2>
           <p>{__("footer_by_me")}</p>
-          <p><a href="https://creativecommons.org/licenses/by-sa/3.0/pl/">© CC BY-SA 3.0</a> 2018 – 2022</p>
+          <p><a href="https://creativecommons.org/licenses/by-sa/3.0/pl/">
+            <i className="fa-brands fa-creative-commons"></i>
+            <i className="fa-brands fa-creative-commons-by"></i>
+            <i className="fa-brands fa-creative-commons-sa"></i>
+          </a> 2018 – 2022</p>
           <div id="lang" className="flex-right">
             <FAIcon icon="globe" />
             {["PL", "EN", "DE", "JP"].map((lang_opt) => 
