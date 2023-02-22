@@ -2,6 +2,8 @@
     "tba_header": "Sekcja w budowie",
     "return_click_tile": "Wróć",
     "see_also": "Zobacz też:",
+    "currently": "obecnie",
+    "i_can": "Potrafię:",
     "footer_by_me": "Strona zbudowana w całości przeze mnie",
     "pages": {
         "Intro": "Intro",
@@ -14,5 +16,48 @@
         "exp": "Doświadczenie zawodowe",
         "langs": "Znajomość języków",
         "projects": "Moje projekty"
+    },
+    "edu_it": {
+        "name": "Technik informatyk",
+        "place": "Technikum przy ZSZ w Wolsztynie",
+        "summary": [
+            "złożyć komputer",
+            "podpiąć go do internetu",
+            "pisać strony internetowe"
+        ]
+    },
+    "edu_math": {
+        "name": "Matematyk",
+        "place": "Uniwersytet im. Adama Mickiweicza w Poznaniu",
+        "summary": [
+            "analizować i przetwarzać dane liczbowe",
+            "przeprowadzać obliczenia finansowe",
+            "posługiwać się logiką matematyczną"
+        ]
+    },
+    "edu_econ": {
+        "name": "Informatyk-ekonometrysta",
+        "place": "Uniwersytet Ekonomiczny w Poznaniu",
+        "summary": [
+            "budować i estymować szeregi czasowe",
+            "???"
+        ]
+    },
+    "jex_foram": {
+        "name": "Sprzedawca e-commerce",
+        "place": "FORAM Roman Krzyżanowski",
+        "summary": [
+            "zarządzać produktami na portalach sprzedażowych (Allegro, Ebay, Amazon)",
+            "utrzymywać relacje z klientami B2B",
+            "tworzyć grafiki ofertowe i obrabiać zdjęcia"
+        ]
+    },
+    "jex_questy": {
+        "name": "Software developer",
+        "place": "Questy",
+        "summary": [
+            "utrzymywać strony internetowe",
+            "wdrażać dopasowane funkcjonalności aplikacji internetowych"
+        ]
     }
 }

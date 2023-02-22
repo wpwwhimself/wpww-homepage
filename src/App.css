@@ -96,6 +96,17 @@ div, form{
 .stretch>div{
   flex: 1;
 }
+.tight, .tight p, .tight h1, .tight h2, .tight h3, .tight ul, .tight ol{
+  gap: 0.2em;
+  margin: 0;
+}
+
+.centered-margins{
+  --padding-size: 5em;
+  margin-left: auto; margin-right: auto;
+  width: fit-content;
+  padding-left: var(--padding-size); padding-right: var(--padding-size);
+}
 
 .hover-lift:hover{
   color: inherit;

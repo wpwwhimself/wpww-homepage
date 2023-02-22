@@ -5,7 +5,7 @@
 }
 .click-tile:hover{
     background-color: var(--acc);
-    color: var(--fg);
+    color: var(--fg) !important;
 }
 .click-tile i{ font-size: 5em; }
 .click-tile.small i{ font-size: 1.5em; }

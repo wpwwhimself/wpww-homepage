@@ -60,46 +60,46 @@ export function Programista(){
     const tmln_contents = {
         education: [
             {
-                name: "edu_it_name",
-                place: "edu_it_place",
-                placeLink: "https://zszwolsztyn.pl/",
-                span: ["09.2013", "05.2017"],
-                summaryMode: "i_can",
-                summary: "edu_it_summary"
-            },
-            {
-                name: "edu_math_name",
-                place: "edu_math_place",
-                placeLink: "https://wmi.amu.edu.pl/",
-                span: ["10.2019", "07.2022"],
-                summaryMode: "i_can",
-                summary: "edu_math_summary"
-            },
-            {
-                name: "edu_econ_name",
-                place: "edu_econ_place",
+                name: "edu_econ.name",
+                place: "edu_econ.place",
                 placeLink: "https://ue.poznan.pl/",
                 span: ["10.2022", null],
                 summaryMode: "i_can",
-                summary: "edu_econ_summary"
+                summary: "edu_econ.summary"
+            },
+            {
+                name: "edu_math.name",
+                place: "edu_math.place",
+                placeLink: "https://wmi.amu.edu.pl/",
+                span: ["10.2019", "07.2022"],
+                summaryMode: "i_can",
+                summary: "edu_math.summary"
+            },
+            {
+                name: "edu_it.name",
+                place: "edu_it.place",
+                placeLink: "https://zszwolsztyn.pl/",
+                span: ["09.2013", "05.2017"],
+                summaryMode: "i_can",
+                summary: "edu_it.summary"
             },
         ],
         jobExperience: [
             {
-                name: "jex_foram_name",
-                place: "jex_foram_place",
-                placeLink: "https://artforma.pl/",
-                span: ["08.2017", "09.2019"],
-                summaryMode: "i_can",
-                summary: "jex_foram_summary"
-            },
-            {
-                name: "jex_questy_name",
-                place: "jex_questy_place",
+                name: "jex_questy.name",
+                place: "jex_questy.place",
                 placeLink: "https://questy.pl/",
                 span: ["08.2022", null],
                 summaryMode: "i_can",
-                summary: "jex_questy_summary"
+                summary: "jex_questy.summary"
+            },
+            {
+                name: "jex_foram.name",
+                place: "jex_foram.place",
+                placeLink: "https://artforma.pl/",
+                span: ["08.2017", "09.2019"],
+                summaryMode: "i_can",
+                summary: "jex_foram.summary"
             },
         ]
     };

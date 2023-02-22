@@ -1,5 +1,60 @@
+.timeline{
+    display: grid;
+    grid-template-columns: 1fr 3em 1fr;
+    gap: 0.5em;
+}
 .timeline .boxes>div{
     background-color: var(--bg2);
-    padding: 0.5em;
+    padding: 1em;
 }
-  
+.timeline h3{
+    font-family: Raleway;
+    font-weight: bold;
+}
+.timeline .boxes p:first-child{
+    font-style: italic;
+}
+.timeline .ghost{
+    opacity: 0.7;
+}
+
+/**************/
+
+.timeline .line{
+    position: relative;
+}
+#tmln-line-itself{
+    background: var(--fg);
+    opacity: 0.5;
+    height: 100%;
+    width: 5px;
+    margin: 0 auto;
+}
+#tmln-line-years,
+#tmln-line-bars{
+    position: absolute; top: 0; left: 0;
+    height: 100%; width: 100%;
+}
+#tmln-line-years{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; align-items: center;
+    height: calc(100% + 1em); top: -0.5em;
+}
+#tmln-line-years span::before, #tmln-line-years span::after{
+    content: "-";
+}
+#tmln-line-bars{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+}
+#tmln-line-bars span{
+    /* background: var(--bg2); */
+    /* opacity: 0.5; */
+    border-radius: 0.5em;
+}
+#tmln-line-bars span.ev{
+    background: var(--acc);
+}
