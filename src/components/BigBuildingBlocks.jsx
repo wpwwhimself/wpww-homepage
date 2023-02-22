@@ -1,5 +1,6 @@
 import { useState, createContext, useContext } from "react";
 import { LangContext } from "../App";
+import FAIcon from "./FAIcon";
 import { Logo } from "./Logo";
 import { Intro, Programista, TBAPage } from "./Sections";
 
@@ -52,7 +53,7 @@ export function Footer(){
         <p><a href="https://creativecommons.org/licenses/by-sa/3.0/pl/">© CC BY-SA 3.0</a> 2018 – 2022</p>
       </div>
       <div id="lang" className="flex-right">
-        <i className="fa-solid fa-globe"></i>
+        <FAIcon icon="globe" />
         {["PL", "EN", "DE", "JP"].map((lang_opt) => 
           <span key={lang_opt}
             className="clickable"

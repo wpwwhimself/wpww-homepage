@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { ClickTile, ReturnClickTile, SeeAlso } from "./ClickTiles";
 import { PageContext, PageIcons, Section } from "./BigBuildingBlocks";
 import { LangContext } from "../App";
+import FAIcon from "./FAIcon";
 
 export function TBAPage(){
     /**
@@ -57,7 +58,9 @@ export function Programista(){
 
     return(
         <Section>
-            <h2>{__("programista_headings.exp")}</h2>
+            <h2>
+                <FAIcon icon="timeline" /> {__("programista_headings.exp")}
+            </h2>
             <p>Oś czasu</p>
             <SeeAlso>
                 <ClickTile icon="brands github" small={true} />

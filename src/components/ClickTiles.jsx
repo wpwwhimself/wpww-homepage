@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { LangContext } from "../App";
+import FAIcon from "./FAIcon";
 
 export function ClickTile({icon, label = null, clickfun, animateIcon = null, small = false}){
     let classes_raw;
@@ -28,7 +29,7 @@ export function ReturnClickTile({clickfun}){
     return(
         <div className="click-tile small flex-right center clickable"
             onClick={clickfun}>
-            <i className="fa-solid fa-angles-left"></i>
+            <FAIcon icon="angles-left" />
             <h3>{__("return_click_tile")}</h3>
         </div>
     );

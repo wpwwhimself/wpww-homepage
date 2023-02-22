@@ -158,11 +158,10 @@ a:hover, .clickable:hover{
 .click-tile{
   background-color: var(--bg1);
   padding: 1em;
-  box-shadow: 0 0 1em inset var(--acc);
+  border: 3px solid var(--acc);
 }
 .click-tile:hover{
-  background-color: var(--acc);
-  color: var(--bg);
+  box-shadow: 0 0 1em var(--acc);
 }
 .click-tile i{ font-size: 5em; }
 .click-tile.small i{ font-size: 1.5em; }
