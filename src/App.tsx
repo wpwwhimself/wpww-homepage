@@ -19,17 +19,20 @@ function App() {
     case "JP": i18n = JP; break;
     default: i18n = PL;
   }
+  /**
+   * Translation engine. Nesting possible with ".", use "!" to override
+   * @param index 
+   * @returns string
+   */
   function __(index: string){
-    const error = "🔥TRANSLATION MISSING🔥";
-    return (
-      (index.match(/\./)) ?
-      (
-        (i18n[index.split(".")[0]] === undefined) ?
-        error :
-        i18n[index.split(".")[0]][index.split(".")[1]]
-      ) :
-      i18n[index]
-    ) ?? error;
+    if(index.substring(0,1) === "!") return index.substring(1);
+
+    let i18n_obj = i18n;
+    for(let level of index.split(".")){
+      i18n_obj = i18n_obj[level];
+      if(!i18n_obj) return "🔥TRANSLATION MISSING🔥";
+      if(typeof i18n_obj === "string" || Array.isArray(i18n_obj)) return i18n_obj;
+    }
   }
 
   return (

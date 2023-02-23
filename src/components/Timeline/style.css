@@ -3,25 +3,6 @@
     grid-template-columns: 1fr 3em 1fr;
     gap: 0.5em;
 }
-.timeline .boxes>div{
-    background-color: var(--bg2);
-    padding: 1em;
-}
-.timeline h2{
-    text-align: left;
-}
-.timeline h3{
-    font-family: Raleway;
-    font-weight: bold;
-}
-.timeline .boxes p:first-child{
-    font-style: italic;
-}
-.timeline .ghost{
-    opacity: 0.7;
-}
-
-/**************/
 
 .timeline .line{
     position: relative;

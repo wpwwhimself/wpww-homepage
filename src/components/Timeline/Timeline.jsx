@@ -1,6 +1,8 @@
 import { useContext } from "react"
 import { LangContext } from "../../App"
 import "./style.css"
+import { TextBox } from "../TextBox/TextBox";
+import { DateSpan } from "../DateSpan";
 
 export default function Timeline({boxesUp, boxesDown}){
     const year_now = new Date().getFullYear();
@@ -34,14 +36,19 @@ export default function Timeline({boxesUp, boxesDown}){
                 let span = calcSpan(ev.span);
 
                 if(calcHalfYear(ev.span[1]) === year && ((boxesUp.includes(ev)) ? 0 : 2) === row){
-                    beans.push(<span className="ev" style={{ gridRow: `auto / span ${span}` }}></span>);
+                    beans.push(
+                        <span
+                            className="ev"
+                            style={{ gridRow: `auto / span ${span}` }}
+                            />
+                    );
                     year = year - (span - 1) * 0.5;
                 }else{
                     error++;
                 }
-
+                // uzupełnienie dziur
                 if(error === boxesUp.concat(boxesDown).length){
-                    beans.push(<span></span>); //TODO PO CO TO
+                    beans.push(<span></span>);
                 }
             }
         }
@@ -51,7 +58,7 @@ export default function Timeline({boxesUp, boxesDown}){
         <div className="timeline">
             <div className="boxes flex-down stretch">
             {boxesUp.map((val) => 
-                <TmlnBox key={val.name} data={val} />)}
+                <TmlnBox key={val.code} data={val} />)}
             </div>
             <div className="line">
                 <div id="tmln-line-itself" />
@@ -59,12 +66,13 @@ export default function Timeline({boxesUp, boxesDown}){
                     {beans}
                 </div>
                 <div id="tmln-line-years">
-                {years.map((year) => <span key={year}>{year}</span>)}
+                {years.map((year, ind) => <span key={ind}>{year}</span>)}
                 </div>
             </div>
             <div className="boxes flex-down stretch">
             {boxesDown.map((val) => 
-                <TmlnBox key={val.name} data={val} />)}
+                <TmlnBox key={val.code} data={val} />
+            )}
             </div>
         </div>
     )
@@ -73,21 +81,21 @@ export default function Timeline({boxesUp, boxesDown}){
 function TmlnBox({data}){
     const {__} = useContext(LangContext);
 
-    const summaryIsAList = Array.isArray(__(data.summary));
+    const summaryIsAList = Array.isArray(__(`${data.code}.summary`));
 
     return(
-        <div className="flex-down tight">
+        <TextBox pinLeft={true}>
             <p className="ghost">
-                {data.span[0]} – {data.span[1] ?? <span className="currently">{__("currently")}</span>}
+                <DateSpan dates={data.span} />
             </p>
-            <h2>{__(data.name)}</h2>
+            <h2>{__(`${data.code}.name`)}</h2>
             <a href={data.placeLink}>
-                <h3>{__(data.place)}</h3>
+                <h3>{__(`${data.code}.place`)}</h3>
             </a>
             {data.summaryMode === "i_can" && <p>{__("i_can")}</p>}
             <ul>
-                {summaryIsAList && __(data.summary).map((text, ind) => <li key={ind}>{text}</li>)}
+                {summaryIsAList && __(`${data.code}.summary`).map((text, ind) => <li key={ind}>{text}</li>)}
             </ul>
-        </div>
+        </TextBox>
     )
 }

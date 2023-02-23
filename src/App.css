@@ -16,6 +16,9 @@
       --fg: #eee;
       --bas: hsl(39, 24%, 73%);
   }
+  .custom-icon{
+    filter: saturate(0) brightness(10);
+  }
 }
 @media (prefers-color-scheme: light){
   :root{
@@ -24,6 +27,9 @@
       --bg2: #ddd;
       --fg: black;
       --bas: hsl(0, 0%, 88%);
+  }
+  .custom-icon{
+    filter: saturate(0) brightness(10) invert(1);
   }
 }
 
@@ -52,7 +58,7 @@ h2{
 .framed{
   border-radius: 1em;
   border: 3px solid var(--bg2);
-  margin: 1em 0;
+  /* margin: 1em 0; */
   padding: 1em;
 }
 .framed:hover{
@@ -76,7 +82,7 @@ div, form{
   height: 5em;
   margin: 0.5em;
 }
-.grid-2, .grid-3{ display: grid; column-gap: 1em; }
+.grid-2, .grid-3{ display: grid; gap: 1em; }
 .grid-2{ grid-template-columns: 1fr 1fr; }
 .grid-3{ grid-template-columns: 1fr 1fr 1fr; }
 
@@ -101,6 +107,9 @@ div, form{
   gap: 0.2em;
   margin: 0;
 }
+.wrap{
+  flex-wrap: wrap;
+}
 
 .centered-margins{
   --padding-size: 5em;
@@ -120,6 +129,9 @@ div, form{
 
 .hidden{
   opacity: 0;
+}
+.large{
+  font-size: 3rem;
 }
 
 /* UNI COLORS */
@@ -160,4 +172,8 @@ a:hover, .clickable:hover{
   width: 90vw;
   margin: 0 auto;
   padding: 2em;
+}
+
+.custom-icon{
+  height: 1em;
 }

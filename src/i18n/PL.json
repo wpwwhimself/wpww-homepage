@@ -1,6 +1,7 @@
 {
     "tba_header": "Sekcja w budowie",
     "return_click_tile": "Wróć",
+    "link": "Link",
     "see_also": "Zobacz też:",
     "currently": "obecnie",
     "i_can": "Potrafię:",
@@ -12,52 +13,139 @@
         "Inne": "Inne"
     },
     "intro_about_me": "Mam na imię Wojtek i... powinienem napisać tu coś więcej.",
-    "programista_headings": {
-        "exp": "Doświadczenie zawodowe",
-        "langs": "Technologie, które znam",
-        "projects": "Moje projekty"
+    "prg": {
+        "headings": {
+            "exp": "Dotychczasowe doświadczenie",
+            "langs": "Technologie, które znam",
+            "projects": "Moje projekty"
+        },
+        "edu":{
+            "it": {
+                "name": "Technik informatyk",
+                "place": "Technikum przy ZSZ w Wolsztynie",
+                "summary": [
+                    "złożyć komputer",
+                    "podpiąć go do internetu",
+                    "pisać strony internetowe"
+                ]
+            },
+            "math": {
+                "name": "Matematyk",
+                "place": "Uniwersytet im. Adama Mickiweicza w Poznaniu",
+                "summary": [
+                    "analizować i przetwarzać dane liczbowe",
+                    "przeprowadzać obliczenia finansowe",
+                    "posługiwać się logiką matematyczną"
+                ]
+            },
+            "econ": {
+                "name": "Informatyk-ekonometrysta",
+                "place": "Uniwersytet Ekonomiczny w Poznaniu",
+                "summary": [
+                    "budować i estymować szeregi czasowe",
+                    "???"
+                ]
+            }
+        },
+        "jex": {
+
+            "foram": {
+                "name": "Sprzedawca e-commerce",
+                "place": "FORAM Roman Krzyżanowski",
+                "summary": [
+                    "zarządzać produktami na portalach sprzedażowych (Allegro, Ebay, Amazon)",
+                    "utrzymywać relacje z klientami B2B",
+                    "tworzyć grafiki ofertowe i obrabiać zdjęcia"
+                ]
+            },
+            "questy": {
+                "name": "Software developer",
+                "place": "Questy",
+                "summary": [
+                    "utrzymywać strony internetowe",
+                    "wdrażać dopasowane funkcjonalności aplikacji internetowych"
+                ]
+            }
+        },
+        "proj": {
+            "homepage": {
+                "name": "Ta strona",
+                "desc": "Moja strona domowa, funkcjonująca w pewnym sensie jako wizytówka/CV"
+            },
+            "msznm": {
+                "name": "Usługi muzyczne",
+                "desc": "CRM reklamujący i nadzorujący mój mini-biznes tworzenia podkładów muzycznych i nut"
+            },
+            "projorg": {
+                "name": "Śpiewnik organisty",
+                "desc": "Aplikacja tworząca listę pieśni wraz z nutami dla każdego możliwego programu mszy"
+            },
+            "sc": {
+                "name": "Asystent kucharza",
+                "desc": "DSS zarządzający wyposażeniem kuchni; sugeruje, kiedy czego brakuje i co można ugotować"
+            },
+            "brz": {
+                "name": "Własne radio",
+                "desc": "Prosty odtwarzacz muzyczny poświęcony mojej własnej twórczości"
+            },
+            "ppy": {
+                "name": "Projekt Papaja",
+                "desc": "🚧 Nowy projekt, oparty na Angularze. Tylko najpierw muszę wymyślić, czego będzie dotyczyć"
+            }
+        }
     },
-    "edu_it": {
-        "name": "Technik informatyk",
-        "place": "Technikum przy ZSZ w Wolsztynie",
-        "summary": [
-            "złożyć komputer",
-            "podpiąć go do internetu",
-            "pisać strony internetowe"
-        ]
-    },
-    "edu_math": {
-        "name": "Matematyk",
-        "place": "Uniwersytet im. Adama Mickiweicza w Poznaniu",
-        "summary": [
-            "analizować i przetwarzać dane liczbowe",
-            "przeprowadzać obliczenia finansowe",
-            "posługiwać się logiką matematyczną"
-        ]
-    },
-    "edu_econ": {
-        "name": "Informatyk-ekonometrysta",
-        "place": "Uniwersytet Ekonomiczny w Poznaniu",
-        "summary": [
-            "budować i estymować szeregi czasowe",
-            "???"
-        ]
-    },
-    "jex_foram": {
-        "name": "Sprzedawca e-commerce",
-        "place": "FORAM Roman Krzyżanowski",
-        "summary": [
-            "zarządzać produktami na portalach sprzedażowych (Allegro, Ebay, Amazon)",
-            "utrzymywać relacje z klientami B2B",
-            "tworzyć grafiki ofertowe i obrabiać zdjęcia"
-        ]
-    },
-    "jex_questy": {
-        "name": "Software developer",
-        "place": "Questy",
-        "summary": [
-            "utrzymywać strony internetowe",
-            "wdrażać dopasowane funkcjonalności aplikacji internetowych"
+    "mus": {
+        "headings": {
+            "edu": "Edukacja muzyczna",
+            "bands": "Z kim gram",
+            "instr": "Na czym gram"
+        },
+        "edu": {
+            "place": "Państwowa Szkoła Muzyczna I st. im. Ireny Pfeiffer w Wolsztynie"
+        },
+        "bands": {
+            "dixie": {
+                "name": "Dixie Kings",
+                "genre": "swing, jazz nowoorleański",
+                "instruments": "banjo, gitara"
+            },
+            "wih": {
+                "name": "Wihajster",
+                "genre": "muzyka taneczna z okresu międzywojnia",
+                "instruments": "tuba"
+            },
+            "pwod": {
+                "name": "Powiatowa Wolsztyńska Orkiestra Dęta",
+                "genre": "od muzyki klasycznej do rozrywkowej",
+                "instruments": "gitara basowa, tuba, trąbka"
+            },
+            "az": {
+                "name": "Audio Z",
+                "genre": "oprawa muzyczna ślubów, wesel i imprez okoliczności",
+                "instruments": "trąbka, saksofon, klarnet basowy"
+            },
+            "rr": {
+                "name": "Roses Roots",
+                "genre": "reggae",
+                "instruments": "saksofon, gitara, gitara basowa"
+            },
+            "swietl": {
+                "name": "M. J. Świetlińscy",
+                "genre": "oprawa muzyczna ślubów i występy kameralne",
+                "instruments": "organy, fortepian"
+            },
+            "org": {
+                "name": "Organista",
+                "genre": "oprawa mszy",
+                "instruments": "organy"
+            }
+        },
+        "instr": [
+            "gitara klasyczna", "gitara elektryczna", "gitara basowa",
+            "ukulele", "mandolina",
+            "fortepian", "organy piszczałkowe", "organy elektryczne",
+            "trąbka", "saksofon tenorowy", "flet poprzeczny", "klarnet basowy", "obój", "tuba", "flet piccolo", "flugelhorn",
+            "instrumenty perkusyjne", "harmonijka", "akordeon"
         ]
     }
 }

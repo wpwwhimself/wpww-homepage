@@ -2,9 +2,11 @@ import { useState, createContext, useContext } from "react";
 import { LangContext } from "../../App";
 import FAIcon from "../FAIcon";
 import { Logo } from "../Logo";
+import "./style.css"
 import { Intro, TBAPage } from "../Sections";
 import { Programista } from "../Programista/Programista";
-import "./style.css"
+import { Muzyk } from "../Muzyk/Muzyk";
+import { ArrowClickTile } from "../ClickTiles/ClickTiles";
 
 export const PageContext = createContext();
 
@@ -53,12 +55,12 @@ export function Footer(){
         <div id="end-bar" className="flex-down">
           <h2>Wojciech Przybyła</h2>
           <p>{__("footer_by_me")}</p>
-          <p><a href="https://creativecommons.org/licenses/by-sa/3.0/pl/">
-            <i className="fa-brands fa-creative-commons"></i>
-            <i className="fa-brands fa-creative-commons-by"></i>
-            <i className="fa-brands fa-creative-commons-sa"></i>
-          </a> 2018 – 2022</p>
-          <div id="lang" className="flex-right">
+          <div className="flex-right">
+            <a href="https://creativecommons.org/licenses/by-sa/3.0/pl/">
+              <i className="fa-brands fa-creative-commons"></i>
+              <i className="fa-brands fa-creative-commons-by"></i>
+              <i className="fa-brands fa-creative-commons-sa"></i>
+            </a> 2018 – 2022
             <FAIcon icon="globe" />
             {["PL", "EN", "DE", "JP"].map((lang_opt) => 
               <span key={lang_opt}
@@ -83,30 +85,32 @@ export function Body(){
   switch(page){
     case "Intro": Page = <Intro />; break;
     case "Programista": Page = <Programista />; break;
+    case "Muzyk": Page = <Muzyk />; break;
     default: Page = <TBAPage />; break;
   }
 
   return(
-    <div className="main-wrapper">
-      <PageContext.Provider value={{page, setPage}}>
-        {Page}
-      </PageContext.Provider>
-    </div>
+    <PageContext.Provider value={{page, setPage}}>
+      {Page}
+    </PageContext.Provider>
   );
 }
 
-export function Section(props){
+export function Section({clickTileFun = null, children}){
   const {page} = useContext(PageContext);
   const {__} = useContext(LangContext);
 
   return(
-    <div>
+    <div className="flex-down">
       <div className="section-header flex-right center">
         <h1>
           <i className={`fa-solid fa-${PageIcons[page]}`}></i> {__("pages."+page)}
         </h1>
       </div>
-      {props.children}
+      <div>
+        {children}
+      </div>
+      {clickTileFun && <ArrowClickTile clickfun={clickTileFun} />}
     </div>
   )
 }

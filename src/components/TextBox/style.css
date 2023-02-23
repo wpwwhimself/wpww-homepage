@@ -1,0 +1,29 @@
+.text-box{
+    background-color: var(--bg1);
+    padding: 1em;
+}
+.text-box:hover{
+    background-color: var(--bg2);
+}
+.text-box p{
+    text-align: center;
+}
+.text-box.pin-left h2{
+    text-align: left;
+}
+.text-box.pin-left p{
+    text-align: justify;
+}
+.text-box h3{
+    font-family: Raleway;
+    font-weight: bold;
+}
+.text-box p:first-child{
+    font-style: italic;
+}
+.text-box .ghost{
+    opacity: 0.7;
+}
+.text-box.flex-down:not(.pin-left){
+    justify-content: space-between;
+}

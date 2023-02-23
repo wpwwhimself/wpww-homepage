@@ -53,7 +53,6 @@ footer h2, footer p{
 
 .section-header{
     align-items: flex-start;
-    margin-bottom: 1em;
     background-color: var(--bg1);
     padding: 0.5em 1em;
 }
