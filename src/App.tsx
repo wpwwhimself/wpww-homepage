@@ -30,7 +30,7 @@ function App() {
     let i18n_obj = i18n;
     for(let level of index.split(".")){
       i18n_obj = i18n_obj[level];
-      if(!i18n_obj) return "🔥TRANSLATION MISSING🔥";
+      if(!i18n_obj) return <span title={index}>🔥TRANSLATION MISSING🔥</span>;
       if(typeof i18n_obj === "string" || Array.isArray(i18n_obj)) return i18n_obj;
     }
   }
