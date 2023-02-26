@@ -1,10 +1,10 @@
 import { useContext } from "react";
-import { PageContext } from "../BigBuildingBlocks/BigBuildingBlocks";
+import { PageContext } from "../BigBuildingBlocks";
 import { Section } from "../Sections";
 import FAIcon from "../FAIcon";
 import { LangContext } from "../../App";
-import { ClickTile, ArrowClickTile, SeeAlso } from "../ClickTiles/ClickTiles";
-import { TextBox } from "../TextBox/TextBox";
+import { ClickTile, ArrowClickTile, SeeAlso } from "../ClickTiles";
+import { TextBox } from "../TextBox";
 import { DateSpan } from "../DateSpan";
 
 export function Muzyk(){

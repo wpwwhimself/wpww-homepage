@@ -1,5 +1,5 @@
 import { createContext, useState } from 'react';
-import { Header, Footer, Body } from './components/BigBuildingBlocks/BigBuildingBlocks';
+import { Header, Footer, Body } from './components/BigBuildingBlocks';
 import './App.css';
 
 import PL from "./i18n/PL.json";

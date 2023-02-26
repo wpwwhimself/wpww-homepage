@@ -1,7 +1,7 @@
 import { useContext } from "react"
 import { LangContext } from "../../App"
 import "./style.css"
-import { TextBox } from "../TextBox/TextBox";
+import { TextBox } from "../TextBox";
 import { DateSpan } from "../DateSpan";
 
 export default function Timeline({boxesUp, boxesDown, labelUp, labelDown}){

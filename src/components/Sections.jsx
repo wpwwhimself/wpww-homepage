@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { ClickTile, ArrowClickTile } from "./ClickTiles/ClickTiles";
-import { PageContext, PageIcons } from "./BigBuildingBlocks/BigBuildingBlocks";
+import { ClickTile, ArrowClickTile } from "./ClickTiles";
+import { PageContext, PageIcons } from "./BigBuildingBlocks";
 import { LangContext } from "../App";
 
 export function Section({clickTileFun = null, children}){

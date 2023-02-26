@@ -1,12 +1,12 @@
 import { useContext } from "react";
-import { PageContext } from "../BigBuildingBlocks/BigBuildingBlocks";
+import { PageContext } from "../BigBuildingBlocks";
 import { Section } from "../Sections";
 import { LangContext } from "../../App";
 import FAIcon from "../FAIcon";
-import Timeline from "../Timeline/Timeline";
-import { ClickTile, ArrowClickTile, SeeAlso } from "../ClickTiles/ClickTiles";
+import Timeline from "../Timeline";
+import { ClickTile, ArrowClickTile, SeeAlso } from "../ClickTiles";
 import "./style.css";
-import { TextBox } from "../TextBox/TextBox";
+import { TextBox } from "../TextBox";
 
 export function Programista() {
     const {setPage} = useContext(PageContext);

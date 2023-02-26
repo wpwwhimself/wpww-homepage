@@ -4,9 +4,9 @@ import FAIcon from "../FAIcon";
 import { Logo } from "../Logo";
 import "./style.css"
 import { Intro, TBAPage } from "../Sections";
-import { Programista } from "../Programista/Programista";
-import { Muzyk } from "../Muzyk/Muzyk";
-import { Inne } from "../Inne/Inne";
+import { Programista } from "../Programista";
+import { Muzyk } from "../Muzyk";
+import { Inne } from "../Inne";
 
 export const PageContext = createContext();
 
