@@ -1,5 +1,10 @@
 {
+    "tba_header": "Section under construction",
     "return_click_tile": "Back",
+    "link": "Link",
+    "see_also": "See also:",
+    "currently": "currently",
+    "i_can": "I can:",
     "footer_by_me": "Website constructed entirely by myself",
     "pages": {
         "Intro": "Intro",
@@ -8,7 +13,144 @@
         "Inne": "Misc"
     },
     "intro_about_me": "My name is Wojtek and I... really should write something more here.",
-    "programista_headings": {
-        
+    "prg": {
+        "headings": {
+            "exp": "Experience so far",
+            "langs": "Technologies I know",
+            "projects": "My projects"
+        },
+        "edu":{
+            "it": {
+                "name": "IT technician",
+                "place": "Technical school, Wolsztyn",
+                "summary": [
+                    "build a PC",
+                    "plug it to the web",
+                    "write websites"
+                ]
+            },
+            "math": {
+                "name": "Mathematician",
+                "place": "Adam Mickiewicz University, Poznań",
+                "summary": [
+                    "analyse and process numeric data",
+                    "perform financial calculations",
+                    "utilise mathematical logic"
+                ]
+            },
+            "econ": {
+                "name": "IT-econometrist",
+                "place": "University of Economics and Business, Poznań",
+                "summary": [
+                    "construct and estimate time serie",
+                    "???"
+                ]
+            }
+        },
+        "jex": {
+            "foram": {
+                "name": "E-commerce salesman",
+                "place": "FORAM Roman Krzyżanowski",
+                "summary": [
+                    "manage products on online marketplaces (Allegro, Ebay, Amazon)",
+                    "maintain business relations with B2B clients",
+                    "produce and modify product pictures"
+                ]
+            },
+            "questy": {
+                "name": "Software developer",
+                "place": "Questy",
+                "summary": [
+                    "maintain websites",
+                    "implement customised functionalities of web applications"
+                ]
+            }
+        },
+        "proj": {
+            "homepage": {
+                "name": "This very website",
+                "desc": "My homepage, functioning as a business card/CV of sort"
+            },
+            "msznm": {
+                "name": "Music services",
+                "desc": "CRM-class web app advertising and managing my mini-business of making backing tracks and sheet music"
+            },
+            "projorg": {
+                "name": "Organist's songbook",
+                "desc": "An app for making a list of song with sheet music for every possible mass's format"
+            },
+            "sc": {
+                "name": "Cook's assistant",
+                "desc": "DSS-class system managing the contents of my kitchen; suggesting, when ingredients are low and what can be cooked"
+            },
+            "brz": {
+                "name": "My own radio",
+                "desc": "A simple music player dedicated to my own songs"
+            },
+            "ppy": {
+                "name": "Project Papaya",
+                "desc": "🚧 A new project based on Angular. But first I have to figure out, what it's going to be about"
+            }
+        }
+    },
+    "mus": {
+        "headings": {
+            "edu": "Music education",
+            "bands": "People I play with",
+            "instr": "Things I play"
+        },
+        "edu": {
+            "place": "Irena Pfeiffer's Elementary Music School, Wolsztyn"
+        },
+        "bands": {
+            "dixie": {
+                "name": "Dixie Kings",
+                "genre": "swing, New Orleans jazz",
+                "instruments": "banjo, guitar"
+            },
+            "wih": {
+                "name": "Wihajster",
+                "genre": "20s-30s Polish dancing music",
+                "instruments": "tuba"
+            },
+            "pwod": {
+                "name": "Wolsztyn Brass Band",
+                "genre": "from classical to popular music",
+                "instruments": "bass guitar, tuba, trumpet"
+            },
+            "az": {
+                "name": "Audio Z",
+                "genre": "music for wedding ceremonies/parties and other events",
+                "instruments": "trumpet, saxophone, bass clarinet"
+            },
+            "rr": {
+                "name": "Roses Roots",
+                "genre": "reggae",
+                "instruments": "saxophone, guitar, bass guitar"
+            },
+            "swietl": {
+                "name": "M. & J. Świetlińscy",
+                "genre": "music for wedding ceremonies and banquet gigs",
+                "instruments": "organ, piano"
+            },
+            "org": {
+                "name": "Organist",
+                "genre": "service music",
+                "instruments": "organ"
+            }
+        },
+        "instr": [
+            "classical guitar", "electric guitar", "bass guitar",
+            "ukulele", "mandolin",
+            "piano", "pipe organ", "electric organ",
+            "trumpet", "tenor saxophone", "transverse flute", "bass clarinet", "oboe", "tuba", "piccolo", "flugelhorn",
+            "percussion instruments", "harmonica", "accordion"
+        ]
+    },
+    "alt": {
+        "headings": {
+            "whatelse": "What else I like to do",
+            "favmedia": "Favourite media"
+        }
     }
 }

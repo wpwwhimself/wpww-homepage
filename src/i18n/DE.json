@@ -1,3 +1,15 @@
 {
-    "return_click_tile": "Zurück"
+    "tba_header": "Die Seite im Aufbau",
+    "return_click_tile": "Zurück",
+    "link": "link",
+    "see_also": "Siehe auch:",
+    "currently": "derzeit",
+    "i_can": "Ich kann:",
+    "footer_by_me": "Website komplett von mir selbst erstellt",
+    "pages": {
+        "Intro": "Intro",
+        "Programista": "Programmierer",
+        "Muzyk": "Muziker",
+        "Inne": "Verschiedene"
+    }
 }

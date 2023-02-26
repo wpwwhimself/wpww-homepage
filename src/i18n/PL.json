@@ -31,7 +31,7 @@
             },
             "math": {
                 "name": "Matematyk",
-                "place": "Uniwersytet im. Adama Mickiweicza w Poznaniu",
+                "place": "Uniwersytet im. Adama Mickiewicza w Poznaniu",
                 "summary": [
                     "analizować i przetwarzać dane liczbowe",
                     "przeprowadzać obliczenia finansowe",
@@ -48,7 +48,6 @@
             }
         },
         "jex": {
-
             "foram": {
                 "name": "Sprzedawca e-commerce",
                 "place": "FORAM Roman Krzyżanowski",
@@ -82,7 +81,7 @@
             },
             "sc": {
                 "name": "Asystent kucharza",
-                "desc": "DSS zarządzający wyposażeniem kuchni; sugeruje, kiedy czego brakuje i co można ugotować"
+                "desc": "DSS zarządzający wyposażeniem mojej kuchni; sugeruje, kiedy czego brakuje i co można ugotować"
             },
             "brz": {
                 "name": "Własne radio",
@@ -150,7 +149,8 @@
     },
     "alt": {
         "headings": {
-            "hobby": "Hobby"
+            "whatelse": "Co jeszcze lubię robić",
+            "favmedia": "Ulubione media"
         }
     }
 }
