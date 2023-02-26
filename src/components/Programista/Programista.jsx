@@ -48,8 +48,14 @@ export function Programista() {
 
     const technologies = [
         "js", "react", "php", "laravel",
-        "r-project", "git-alt", "docker", "ubuntu", "symfony", "microsoft",
+        "r-project", "git-alt", "docker", "ubuntu", "symfony",
         "wordpress", "bootstrap", "python"
+    ];
+
+    const other_techs = [
+        "C++",
+        "Microsoft Excel", "Microsoft Word",
+        "Adobe Photoshop", "Adobe Illustrator", 
     ];
 
     const projects = [
@@ -98,8 +104,13 @@ export function Programista() {
         <Timeline boxesUp={tmln_contents.education} boxesDown={tmln_contents.jobExperience} />
         
         <h2><FAIcon icon="cog" /> {__("prg.headings.langs")}</h2>
-        <div className="flex-right center zoom-icons" style={{fontSize: "2em"}}>
+        <div className="flex-right center zoom-icons" style={{fontSize: "2em", marginBottom: "0.5em"}}>
             {technologies.map((icon, ind) => <FAIcon icon={`brands ${icon}`} key={ind} title={icon} />)}
+        </div>
+        <div className="flex-right wrap center">
+        {other_techs.map((app, ind) => 
+            <span className="framed" key={ind}>{app}</span>
+        )}
         </div>
         
         <h2><FAIcon icon="scroll" /> {__("prg.headings.projects")}</h2>

@@ -147,5 +147,10 @@
             "trąbka", "saksofon tenorowy", "flet poprzeczny", "klarnet basowy", "obój", "tuba", "flet piccolo", "flugelhorn",
             "instrumenty perkusyjne", "harmonijka", "akordeon"
         ]
+    },
+    "alt": {
+        "headings": {
+            "hobby": "Hobby"
+        }
     }
 }
