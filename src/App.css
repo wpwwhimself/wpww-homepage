@@ -46,6 +46,9 @@ body{
   min-height: calc(100vh - 7em);
   background-color: var(--bg); color: var(--fg);
 }
+.mobile-only{
+  display: none;
+}
 h1, h2, h3, h4, h5{
   font-family: "Krona One";
   font-weight: normal;
@@ -143,11 +146,7 @@ div, form{
   color: gray;
   grid-column: 1 / span 2;
 }
-.yellowed-out{
-  font-style: italic;
-  color: rgb(190, 190, 77);
-}
-.grayed-out::before, .grayed-out::after, .yellowed-out::before, .yellowed-out::after{
+.grayed-out::before, .grayed-out::after{
   content: " — ";
 }
 .currently{
@@ -176,4 +175,46 @@ a:hover, .clickable:hover{
 
 .custom-icon{
   height: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  .mobile-hide{
+    display: none;
+  }
+  .mobile-only{
+    display: initial;
+  }
+  body{
+    padding-bottom: 0;
+  }
+
+  .but-mobile-down{
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  header h1{
+    margin: 0;
+    font-size: 2em;
+  }
+
+  footer{
+    flex-direction: column;
+    position: initial;
+    gap: 0.5em;
+  }
+  #end-bar{
+    align-items: center;
+  }
+  #footer-links{
+    width: 100%;
+  }
+
+  #main-wrapper{
+    width: auto;
+  }
+
+  .grid-2, .grid-3{
+    gap: 0.5em;
+  }
 }

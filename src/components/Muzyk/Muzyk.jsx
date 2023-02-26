@@ -44,9 +44,12 @@ export function Muzyk(){
 
     const instruments = "mus.instr";
 
+    //TODO sub-sekcja "moja własna działalność"
+    //TODO sub-sekcja "moja twórczość"
+
     return <Section clickTileFun={() => setPage("Intro")}>
         <h2><FAIcon icon="people-group" /> {__("mus.headings.bands")}</h2>
-        <div className="grid-3">
+        <div className="grid-3 but-mobile-down">
         {bands.map((band, ind) =>
             <TextBox key={ind} ghost={band.span[1]}>
                 <p className="ghost">

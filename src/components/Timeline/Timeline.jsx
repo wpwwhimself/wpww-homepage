@@ -4,7 +4,7 @@ import "./style.css"
 import { TextBox } from "../TextBox/TextBox";
 import { DateSpan } from "../DateSpan";
 
-export default function Timeline({boxesUp, boxesDown}){
+export default function Timeline({boxesUp, boxesDown, labelUp, labelDown}){
     const year_now = new Date().getFullYear();
 
     // find min year, while building all years
@@ -55,8 +55,9 @@ export default function Timeline({boxesUp, boxesDown}){
     }
 
     return(
-        <div className="timeline">
+        <div className="timeline but-mobile-down">
             <div className="boxes flex-down stretch">
+                <h3 className="grayed-out">{labelUp}</h3>
             {boxesUp.map((val) => 
                 <TmlnBox key={val.code} data={val} />)}
             </div>
@@ -70,6 +71,7 @@ export default function Timeline({boxesUp, boxesDown}){
                 </div>
             </div>
             <div className="boxes flex-down stretch">
+                <h3 className="grayed-out">{labelDown}</h3>
             {boxesDown.map((val) => 
                 <TmlnBox key={val.code} data={val} />
             )}

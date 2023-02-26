@@ -17,7 +17,11 @@
         "headings": {
             "exp": "Bisherige Erfahrung",
             "langs": "Technologie, die ich kenne",
-            "projects": "Meine Projekte"
+            "projects": "Meine Projekte",
+            "timeline": {
+                "up": "Edukation",
+                "down": "Arbeit"
+            }
         },
         "edu": {
             "it": {

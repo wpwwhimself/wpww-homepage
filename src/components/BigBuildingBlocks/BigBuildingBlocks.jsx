@@ -7,7 +7,6 @@ import { Intro, TBAPage } from "../Sections";
 import { Programista } from "../Programista/Programista";
 import { Muzyk } from "../Muzyk/Muzyk";
 import { Inne } from "../Inne/Inne";
-import { ArrowClickTile } from "../ClickTiles/ClickTiles";
 
 export const PageContext = createContext();
 
@@ -21,10 +20,15 @@ export const PageIcons = {
 export function Header(){
   return (
     <header className="flex-down center">
+      <img
+        className="circle mobile-only" 
+        src="/pics/profile_pic.jpg"
+        alt="profile"
+        />
       <div className="flex-right center">
         <h1>Wojciech</h1>
         <img
-          className="circle" 
+          className="circle mobile-hide" 
           src="/pics/profile_pic.jpg"
           alt="profile"
         />
@@ -51,7 +55,7 @@ export function Footer(){
 
   return(
     <footer>
-      <div className="flex-right center">
+      <div className="flex-right but-mobile-down center">
         <Logo />
         <div id="end-bar" className="flex-down">
           <h2>Wojciech Przybyła</h2>

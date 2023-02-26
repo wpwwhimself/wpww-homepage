@@ -47,7 +47,7 @@ export function Intro(){
     return(
         <Section>
             <p>{__("intro_about_me")} {/*TODO NAPISAĆ COŚ WIĘCEJ*/}</p>
-            <div className="flex-right stretch">
+            <div className="flex-right but-mobile-down stretch">
                 {["Programista", "Muzyk", "Inne"].map((label) => 
                     <ClickTile key={label} icon={PageIcons[label]} label={__("pages."+label)}
                         clickfun={() => setPage(label)} />

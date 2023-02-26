@@ -101,10 +101,13 @@ export function Programista() {
     
     return <Section clickTileFun={() => setPage("Intro")}>
         <h2><FAIcon icon="timeline" /> {__("prg.headings.exp")}</h2>
-        <Timeline boxesUp={tmln_contents.education} boxesDown={tmln_contents.jobExperience} />
+        <Timeline
+            boxesUp={tmln_contents.education} boxesDown={tmln_contents.jobExperience}
+            labelUp={__("prg.headings.timeline.up")} labelDown={__("prg.headings.timeline.down")}
+            />
         
         <h2><FAIcon icon="cog" /> {__("prg.headings.langs")}</h2>
-        <div className="flex-right center zoom-icons" style={{fontSize: "2em", marginBottom: "0.5em"}}>
+        <div className="flex-right wrap center zoom-icons" style={{fontSize: "2em", marginBottom: "0.5em"}}>
             {technologies.map((icon, ind) => <FAIcon icon={`brands ${icon}`} key={ind} title={icon} />)}
         </div>
         <div className="flex-right wrap center">
@@ -114,7 +117,7 @@ export function Programista() {
         </div>
         
         <h2><FAIcon icon="scroll" /> {__("prg.headings.projects")}</h2>
-        <div className="grid-3">
+        <div className="grid-3 but-mobile-down">
             {projects.map((project) => 
             <TextBox key={project.code}>
                 <div className="flex-right center large">

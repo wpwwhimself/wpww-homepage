@@ -4,6 +4,11 @@
     gap: 0.5em;
 }
 
+.timeline .boxes>h3:first-child{
+    text-align: center;
+    margin: 0;
+}
+
 .timeline .line{
     position: relative;
 }
@@ -41,4 +46,10 @@
 }
 #tmln-line-bars span.ev{
     background: var(--acc);
+}
+
+@media screen and (max-width: 600px){
+    .timeline .line{
+        display: none;
+    }
 }
