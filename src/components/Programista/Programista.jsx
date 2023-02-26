@@ -1,5 +1,6 @@
 import { useContext } from "react";
-import { PageContext, Section } from "../BigBuildingBlocks/BigBuildingBlocks";
+import { PageContext } from "../BigBuildingBlocks/BigBuildingBlocks";
+import { Section } from "../Sections";
 import { LangContext } from "../../App";
 import FAIcon from "../FAIcon";
 import Timeline from "../Timeline/Timeline";

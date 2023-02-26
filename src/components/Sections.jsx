@@ -1,7 +1,27 @@
 import { useContext } from "react";
-import { ClickTile } from "./ClickTiles/ClickTiles";
-import { PageContext, PageIcons, Section } from "./BigBuildingBlocks/BigBuildingBlocks";
+import { ClickTile, ArrowClickTile } from "./ClickTiles/ClickTiles";
+import { PageContext, PageIcons } from "./BigBuildingBlocks/BigBuildingBlocks";
 import { LangContext } from "../App";
+
+export function Section({clickTileFun = null, children}){
+    const {page} = useContext(PageContext);
+    const {__} = useContext(LangContext);
+  
+    return(
+    <div className="flex-down">
+        <div className="section-header flex-right center">
+            <h1>
+            <i className={`fa-solid fa-${PageIcons[page]}`}></i> {__("pages."+page)}
+            </h1>
+        </div>
+        {clickTileFun && <ArrowClickTile clickfun={clickTileFun} />}
+        <div>
+            {children}
+        </div>
+        {clickTileFun && <ArrowClickTile clickfun={clickTileFun} />}
+    </div>
+)
+}
 
 export function TBAPage(){
     /**

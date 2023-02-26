@@ -6,6 +6,7 @@ import "./style.css"
 import { Intro, TBAPage } from "../Sections";
 import { Programista } from "../Programista/Programista";
 import { Muzyk } from "../Muzyk/Muzyk";
+import { Inne } from "../Inne/Inne";
 import { ArrowClickTile } from "../ClickTiles/ClickTiles";
 
 export const PageContext = createContext();
@@ -86,6 +87,7 @@ export function Body(){
     case "Intro": Page = <Intro />; break;
     case "Programista": Page = <Programista />; break;
     case "Muzyk": Page = <Muzyk />; break;
+    case "Inne": Page = <Inne />; break;
     default: Page = <TBAPage />; break;
   }
 
@@ -96,21 +98,3 @@ export function Body(){
   );
 }
 
-export function Section({clickTileFun = null, children}){
-  const {page} = useContext(PageContext);
-  const {__} = useContext(LangContext);
-
-  return(
-    <div className="flex-down">
-      <div className="section-header flex-right center">
-        <h1>
-          <i className={`fa-solid fa-${PageIcons[page]}`}></i> {__("pages."+page)}
-        </h1>
-      </div>
-      <div>
-        {children}
-      </div>
-      {clickTileFun && <ArrowClickTile clickfun={clickTileFun} />}
-    </div>
-  )
-}

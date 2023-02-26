@@ -1,6 +1,6 @@
 .click-tile{
     background-color: var(--bg1);
-    padding: 1em;
+    padding: 0.5em 1em;
     border: 3px solid var(--acc);
 }
 .click-tile:hover{

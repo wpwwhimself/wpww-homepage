@@ -1,5 +1,6 @@
 import { useContext } from "react";
-import { PageContext, Section } from "../BigBuildingBlocks/BigBuildingBlocks";
+import { PageContext } from "../BigBuildingBlocks/BigBuildingBlocks";
+import { Section } from "../Sections";
 import FAIcon from "../FAIcon";
 import { LangContext } from "../../App";
 import { ClickTile, ArrowClickTile, SeeAlso } from "../ClickTiles/ClickTiles";
