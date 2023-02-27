@@ -12,8 +12,12 @@
 .click-tile h3{
     margin: 0;
 }
+
 .see-also:last-child{
     margin-top: 1em;
+}
+.see-also h3{
+    margin: 0;
 }
 
 .click-tile .custom-icon{
