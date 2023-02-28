@@ -8,7 +8,9 @@ export function Section({clickTileFun = null, children}){
     const {__} = useContext(LangContext);
 
     useEffect(() => {
-        document.title = `${__("pages."+page)} | Wojciech Przybyła`
+        document.title = (page === "Intro") ? 
+            "Wojciech Przybyła" :
+            `${__("pages."+page)} | Wojciech Przybyła`;
     })
   
     return(
