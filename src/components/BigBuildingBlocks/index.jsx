@@ -53,6 +53,8 @@ export function Footer(){
 
   const {__, setLang} = useContext(LangContext);
 
+  const today = new Date;
+
   return(
     <footer>
       <div className="flex-right but-mobile-down center">
@@ -65,7 +67,7 @@ export function Footer(){
               <i className="fa-brands fa-creative-commons"></i>
               <i className="fa-brands fa-creative-commons-by"></i>
               <i className="fa-brands fa-creative-commons-sa"></i>
-            </a> 2018 – 2022
+            </a> 2018 – {today.getFullYear()}
             <FAIcon icon="globe" />
             {["PL", "EN", "DE", "JP"].map((lang_opt) => 
               <span key={lang_opt}
