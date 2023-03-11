@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ClickTile, ArrowClickTile } from "./ClickTiles";
 import { PageContext, PageIcons } from "./BigBuildingBlocks";
 import { LangContext } from "../App";
@@ -6,6 +6,12 @@ import { LangContext } from "../App";
 export function Section({clickTileFun = null, children}){
     const {page} = useContext(PageContext);
     const {__} = useContext(LangContext);
+
+    useEffect(() => {
+        document.title = (page === "Intro") ? 
+            "Wojciech Przybyła" :
+            `${__("pages."+page)} | Wojciech Przybyła`;
+    })
   
     return(
     <div className="flex-down">
