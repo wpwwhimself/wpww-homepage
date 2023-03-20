@@ -3,7 +3,7 @@ import { PageContext } from "../BigBuildingBlocks";
 import { Section } from "../Sections";
 import FAIcon from "../FAIcon";
 import { LangContext } from "../../App";
-import { ClickTile, ArrowClickTile, SeeAlso } from "../ClickTiles";
+import { ArrowClickTile } from "../ClickTiles";
 import { TextBox } from "../TextBox";
 import { DateSpan } from "../DateSpan";
 
@@ -44,8 +44,20 @@ export function Muzyk(){
 
     const instruments = "mus.instr";
 
-    //TODO sub-sekcja "moja własna działalność"
-    //TODO sub-sekcja "moja twórczość"
+    const mine = [
+        {
+            code: "hydrophilia",
+            label: "Hydrophilia",
+            icon: "!hydrophilia",
+            link: "https://hydrophilia.wpww.pl/",
+        },
+        {
+            code: "msznm",
+            label: "Muzyka Szyta Na Miarę",
+            icon: "!msznm",
+            link: "https://muzykaszytanamiare.pl/",
+        },
+    ];
 
     return <Section clickTileFun={() => setPage("Intro")}>
         <h2><FAIcon icon="people-group" /> {__("mus.headings.bands")}</h2>
@@ -70,17 +82,22 @@ export function Muzyk(){
         )}
         </div>
 
+        <h2><FAIcon icon="scroll" /> {__("mus.headings.mine")}</h2>
+        <div className="grid-2 but-mobile-down">
+        {mine.map((el, ind) => 
+            <TextBox key={ind}>
+                <div className="flex-right center large">
+                    <FAIcon icon={el.icon} />
+                </div>
+                <h2>{__(`mus.mine.${el.code}.heading`)}</h2>
+                <p>{__(`mus.mine.${el.code}.about`)}</p>
+                {el.link &&
+                <ArrowClickTile label={`mus.mine.${el.code}.label`} fwd={true} clickfun={() => window.location.assign(el.link)} />}
+            </TextBox>
+        )}
+        </div>
+
         <h2><FAIcon icon="graduation-cap" /> {__("mus.headings.edu")}</h2>
         <h3 style={{ textAlign: "center" }}>{__("mus.edu.place")} <small className="ghost"><DateSpan dates={["09.2011", "07.2015"]} /></small></h3>
-
-        <SeeAlso>
-        {[
-            ["!msznm", "https://muzykaszytanamiare.pl/"],
-            ["!hydrophilia", "http://hydrophilia.wpww.pl/"]
-        ].map(([icon, link]) => <ClickTile
-            icon={icon} small={true} key={icon}
-            clickfun={() => window.location.assign(link)} />
-        )}
-        </SeeAlso>
     </Section>;
 }
