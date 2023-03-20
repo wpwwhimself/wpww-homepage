@@ -53,7 +53,7 @@ export function Footer(){
 
   const {__, setLang} = useContext(LangContext);
 
-  const today = new Date;
+  const today = new Date();
 
   return(
     <footer>
