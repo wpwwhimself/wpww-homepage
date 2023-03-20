@@ -38,7 +38,7 @@ export function Muzyk(){
         }, {
             code: "mus.bands.rr",
             link: "https://www.facebook.com/wrrband",
-            span: ["12.2013", "01.2023"],
+            span: ["12.2013", "01.2018"],
         },
     ];
 
