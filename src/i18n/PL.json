@@ -169,6 +169,16 @@
         "headings": {
             "whatelse": "Co jeszcze lubię robić",
             "favmedia": "Ulubione media"
+        },
+        "whatelse": {
+            "languages": {
+                "label": "Języki",
+                "desc": "Lubię uczyć się języków, zwłaszcza odbiegających od tego, co już umiem. Tłumaczenia na tej stronie są robione w całości przeze mnie."
+            },
+            "drawing": {
+                "label": "Rysunek",
+                "desc": "Lubię rysować, zwłaszcza w monochromie. Udało mi się nawet zaprojektować autorską talię do tarota."
+            }
         }
     }
 }

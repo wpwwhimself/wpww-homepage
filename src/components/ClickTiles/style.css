@@ -13,6 +13,9 @@
     margin: 0;
 }
 
+.see-also{
+    margin: 0.5em 0;
+}
 .see-also:last-child{
     margin-top: 1em;
 }
