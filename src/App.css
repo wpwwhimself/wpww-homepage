@@ -177,6 +177,13 @@ a:hover, .clickable:hover{
   height: 1em;
 }
 
+.four-oh-four{
+  font-size: min(40vh, 30vw);
+  margin: 0;
+  text-align: center;
+  opacity: 0.2;
+}
+
 @media screen and (max-width: 600px) {
   .mobile-hide{
     display: none;

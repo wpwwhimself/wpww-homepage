@@ -40,7 +40,7 @@ export function TBAPage(){
 
     return(
         <Section clickTileFun="/">
-            <h3>🚧{__("tba_header")}🚧</h3>
+            <h3 className="four-oh-four">404</h3>
         </Section>
     )
 }
