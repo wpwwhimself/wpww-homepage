@@ -1,7 +1,7 @@
 export default function FAIcon({icon}){
     if(icon.substring(0,1) === "!"){
         icon = icon.substring(1);
-        return <img src={`/pics/custom_icons/${icon}.svg`} alt={icon} className="custom-icon" />;
+        return <img src={`/pics/custom_icons/${icon}.svg`} alt={icon} className="custom-icon" title={icon} />;
     }else{
         let classes_raw;
         if(icon.match(/ /)){

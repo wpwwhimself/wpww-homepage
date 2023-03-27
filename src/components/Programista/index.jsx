@@ -45,17 +45,26 @@ export function Programista() {
         ]
     };
 
-    const technologies = [
-        "js", "react", "php", "laravel",
-        "r-project", "git-alt", "docker", "ubuntu", "symfony",
-        "wordpress", "bootstrap", "python"
-    ];
-
-    const other_techs = [
-        "C++",
-        "Microsoft Excel", "Microsoft Word",
-        "Adobe Photoshop", "Adobe Illustrator", 
-    ];
+    const technologies = {
+        js: 0.8,
+        react: 0.6,
+        vuejs: 0.5,
+        php: 0.85,
+        laravel: 0.8,
+        r_project: 0.8,
+        git: 0.75,
+        docker: 0.2,
+        ubuntu: 0.3,
+        symfony: 0.2,
+        wordpress: 0.3,
+        bootstrap: 0.3,
+        python: 0.15,
+        "!c_plus_plus": 0.25,
+        "!ms_excel": 0.9,
+        "!ms_word": 0.95,
+        "!adobe_photoshop": 0.9,
+        "!adobe_illustrator": 0.8,
+    };
 
     const projects = [
         {
@@ -106,13 +115,11 @@ export function Programista() {
             />
         
         <h2><FAIcon icon="cog" /> {__("prg.headings.langs")}</h2>
-        <div className="flex-right wrap center zoom-icons" style={{fontSize: "2em", marginBottom: "0.5em"}}>
-            {technologies.map((icon, ind) => <FAIcon icon={`brands ${icon}`} key={ind} title={icon} />)}
-        </div>
-        <div className="flex-right wrap center">
-        {other_techs.map((app, ind) => 
-            <span className="framed" key={ind}>{app}</span>
-        )}
+        <div className="flex-right tech-grid center zoom-icons" style={{fontSize: "2em", marginBottom: "0.5em"}}>
+            {Object.entries(technologies).map(([icon, level], ind) => <>
+                <div className="tech-grid-bar" style={{ height: level*70 }} title={level*100}></div>
+                <FAIcon icon={icon.substring(0,1) == "!" ? icon : `brands ${icon.replace(/\_/g, "-")}`} key={ind} title={icon} />
+            </>)}
         </div>
         
         <h2><FAIcon icon="scroll" /> {__("prg.headings.projects")}</h2>
