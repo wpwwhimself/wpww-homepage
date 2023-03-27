@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { LangContext } from "../../App"
+import { LangContext } from "../../pages/Layout";
 import "./style.css"
 import { TextBox } from "../TextBox";
 import { DateSpan } from "../DateSpan";
@@ -73,8 +73,7 @@ export default function Timeline({boxesUp, boxesDown, labelUp, labelDown}){
             <div className="boxes flex-down stretch">
                 <h3 className="grayed-out">{labelDown}</h3>
             {boxesDown.map((val) => 
-                <TmlnBox key={val.code} data={val} />
-            )}
+                <TmlnBox key={val.code} data={val} />)}
             </div>
         </div>
     )

@@ -3,7 +3,7 @@ import { PageContext } from "../BigBuildingBlocks";
 import { Section } from "../Sections";
 import "./style.css";
 import FAIcon from "../FAIcon";
-import { LangContext } from "../../App";
+import { LangContext } from "../../pages/Layout";
 import { TextBox } from "../TextBox";
 import { SeeAlso, ClickTile } from "../ClickTiles";
 
@@ -20,10 +20,9 @@ const things_i_do = [
 ];
 
 export function Inne(){
-    const {setPage} = useContext(PageContext);
     const {__} = useContext(LangContext);
 
-    return <Section clickTileFun={() => setPage("Intro")}>
+    return <Section clickTileFun="/">
         <h2><FAIcon icon="bicycle" /> {__("alt.headings.whatelse")}</h2>
         <div className="grid-3">
         {things_i_do.map(bit => 
@@ -42,7 +41,7 @@ export function Inne(){
             // ["!tarot", "https://www.github.com/wpwwhimself/"], //TODO ikona i link do tarota
         ].map(([icon, link]) => <ClickTile
             icon={icon} small={true} key={icon}
-            clickfun={() => window.location.assign(link)} />
+            clickfun={link} />
         )}
         </SeeAlso>
         

@@ -103,7 +103,7 @@ div, form{
   justify-content: center;
   align-items: center;
 }
-.stretch>div{
+.stretch>div, .stretch>a{
   flex: 1;
 }
 .tight, .tight p, .tight h1, .tight h2, .tight h3, .tight ul, .tight ol{

@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { LangContext } from "../App"
+import { LangContext } from "../pages/Layout";
 
 export function DateSpan({dates}){
     const {__} = useContext(LangContext)

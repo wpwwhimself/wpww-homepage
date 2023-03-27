@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { PageContext } from "../BigBuildingBlocks";
 import { Section } from "../Sections";
-import { LangContext } from "../../App";
+import { LangContext } from "../../pages/Layout";
 import FAIcon from "../FAIcon";
 import Timeline from "../Timeline";
 import { ClickTile, ArrowClickTile, SeeAlso } from "../ClickTiles";
@@ -9,7 +9,6 @@ import "./style.css";
 import { TextBox } from "../TextBox";
 
 export function Programista() {
-    const {setPage} = useContext(PageContext);
     const {__} = useContext(LangContext);
 
     const tmln_contents = {
@@ -99,7 +98,7 @@ export function Programista() {
         }
     ];
     
-    return <Section clickTileFun={() => setPage("Intro")}>
+    return <Section clickTileFun="/">
         <h2><FAIcon icon="timeline" /> {__("prg.headings.exp")}</h2>
         <Timeline
             boxesUp={tmln_contents.education} boxesDown={tmln_contents.jobExperience}
@@ -129,7 +128,7 @@ export function Programista() {
                     {project.tech.map((icon) => <FAIcon icon={`brands ${icon}`} key={icon} title={icon} />)}
                 </p>
                 {project.link &&
-                <ArrowClickTile label={project.label} fwd={true} clickfun={() => window.location.assign(project.link)} />}
+                <ArrowClickTile label={project.label} fwd={true} clickfun={project.link} />}
             </TextBox>
             )}
         </div>
@@ -140,7 +139,7 @@ export function Programista() {
             ["brands linkedin", "https://www.linkedin.com/in/wpwwhimself/"]
         ].map(([icon, link]) => <ClickTile
             icon={icon} small={true} key={icon}
-            clickfun={() => window.location.assign(link)} />
+            clickfun={link} />
         )}
         </SeeAlso>
     </Section>;

@@ -1,12 +1,8 @@
 import { useState, createContext, useContext } from "react";
-import { LangContext } from "../../App";
+import { LangContext } from "../../pages/Layout";
 import FAIcon from "../FAIcon";
 import { Logo } from "../Logo";
 import "./style.css"
-import { Intro, TBAPage } from "../Sections";
-import { Programista } from "../Programista";
-import { Muzyk } from "../Muzyk";
-import { Inne } from "../Inne";
 
 export const PageContext = createContext();
 
@@ -15,6 +11,12 @@ export const PageIcons = {
   Programista: "keyboard",
   Muzyk: "music",
   Inne: "ellipsis",
+};
+export const PageLinks = {
+  Intro: "/",
+  Programista: "/programmer",
+  Muzyk: "/musician",
+  Inne: "/others",
 };
 
 export function Header(){
@@ -84,23 +86,3 @@ export function Footer(){
   );
 }
   
-export function Body(){
-  const [page, setPage] = useState("Intro");
-
-
-  let Page;
-  switch(page){
-    case "Intro": Page = <Intro />; break;
-    case "Programista": Page = <Programista />; break;
-    case "Muzyk": Page = <Muzyk />; break;
-    case "Inne": Page = <Inne />; break;
-    default: Page = <TBAPage />; break;
-  }
-
-  return(
-    <PageContext.Provider value={{page, setPage}}>
-      {Page}
-    </PageContext.Provider>
-  );
-}
-

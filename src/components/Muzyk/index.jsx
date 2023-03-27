@@ -2,13 +2,12 @@ import { useContext } from "react";
 import { PageContext } from "../BigBuildingBlocks";
 import { Section } from "../Sections";
 import FAIcon from "../FAIcon";
-import { LangContext } from "../../App";
+import { LangContext } from "../../pages/Layout";
 import { ArrowClickTile } from "../ClickTiles";
 import { TextBox } from "../TextBox";
 import { DateSpan } from "../DateSpan";
 
 export function Muzyk(){
-    const {setPage} = useContext(PageContext);
     const {__} = useContext(LangContext);
 
     const bands = [
@@ -59,7 +58,7 @@ export function Muzyk(){
         },
     ];
 
-    return <Section clickTileFun={() => setPage("Intro")}>
+    return <Section clickTileFun="/">
         <h2><FAIcon icon="people-group" /> {__("mus.headings.bands")}</h2>
         <div className="grid-3 but-mobile-down">
         {bands.map((band, ind) =>
@@ -70,7 +69,7 @@ export function Muzyk(){
                 {/* todo zdjęcia zespołów */}
                 <h2>{__(`${band.code}.name`)}</h2>
                 <p>{__(`${band.code}.instruments`)} • {__(`${band.code}.genre`)}</p>
-                {band.link && <ArrowClickTile label="link" fwd={true} clickfun={() => window.location.assign(band.link)} />}
+                {band.link && <ArrowClickTile label="link" fwd={true} clickfun={band.link} />}
             </TextBox>
         )}
         </div>
@@ -92,7 +91,7 @@ export function Muzyk(){
                 <h2>{__(`mus.mine.${el.code}.heading`)}</h2>
                 <p>{__(`mus.mine.${el.code}.about`)}</p>
                 {el.link &&
-                <ArrowClickTile label={`mus.mine.${el.code}.label`} fwd={true} clickfun={() => window.location.assign(el.link)} />}
+                <ArrowClickTile label={`mus.mine.${el.code}.label`} fwd={true} clickfun={el.link} />}
             </TextBox>
         )}
         </div>
