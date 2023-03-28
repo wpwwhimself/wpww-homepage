@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import { PageContext } from "../BigBuildingBlocks";
 import { Section } from "../Sections";
 import { LangContext } from "../../pages/Layout";
 import FAIcon from "../FAIcon";
@@ -118,7 +117,7 @@ export function Programista() {
         <div className="flex-right tech-grid center zoom-icons" style={{fontSize: "2em", marginBottom: "0.5em"}}>
             {Object.entries(technologies).map(([icon, level], ind) => <>
                 <div className="tech-grid-bar" style={{ height: level*70 }} title={level*100}></div>
-                <FAIcon icon={icon.substring(0,1) == "!" ? icon : `brands ${icon.replace(/\_/g, "-")}`} key={ind} title={icon} />
+                <FAIcon icon={icon.substring(0,1) === "!" ? icon : `brands ${icon.replace(/_/g, "-")}`} key={ind} title={icon} />
             </>)}
         </div>
         

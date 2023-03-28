@@ -1,4 +1,4 @@
-import { useState, createContext, useContext } from "react";
+import { createContext, useContext } from "react";
 import { LangContext } from "../../pages/Layout";
 import FAIcon from "../FAIcon";
 import { Logo } from "../Logo";

@@ -1,6 +1,6 @@
 import { useContext, useEffect } from "react";
 import { ClickTile, ArrowClickTile } from "./ClickTiles";
-import { PageContext, PageIcons, PageLinks } from "./BigBuildingBlocks";
+import { PageIcons, PageLinks } from "./BigBuildingBlocks";
 import { LangContext } from "../pages/Layout";
 import { useLocation } from "react-router-dom";
 
@@ -36,8 +36,6 @@ export function TBAPage(){
     /**
      * Blank page as a placeholder
      */
-    const {__} = useContext(LangContext);
-
     return(
         <Section clickTileFun="/">
             <h3 className="four-oh-four">404</h3>
