@@ -115,10 +115,10 @@ export function Programista() {
         
         <h2><FAIcon icon="cog" /> {__("prg.headings.langs")}</h2>
         <div className="flex-right tech-grid center zoom-icons" style={{fontSize: "2em", marginBottom: "0.5em"}}>
-            {Object.entries(technologies).map(([icon, level], ind) => <>
+            {Object.entries(technologies).map(([icon, level], ind) => <div className="container flex-down">
                 <div className="tech-grid-bar" style={{ height: level*70 }} title={level*100}></div>
                 <FAIcon icon={icon.substring(0,1) === "!" ? icon : `brands ${icon.replace(/_/g, "-")}`} key={ind} title={icon} />
-            </>)}
+            </div>)}
         </div>
         
         <h2><FAIcon icon="scroll" /> {__("prg.headings.projects")}</h2>

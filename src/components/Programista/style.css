@@ -3,11 +3,11 @@
 }
 
 .tech-grid{
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-auto-flow: column;
     align-items: end;
-    justify-items: center;
+}
+.tech-grid .container{
+    align-items: center;
+    justify-content: flex-end;
 }
 .tech-grid-bar{
     width: 1em;
@@ -21,8 +21,6 @@
 
 @media screen and (max-width: 600px) {
     .tech-grid{
-        grid-auto-flow: row;
-        grid-template: none / repeat(6, auto);
         flex-wrap: wrap;
     }
 }
