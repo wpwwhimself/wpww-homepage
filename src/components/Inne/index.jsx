@@ -23,7 +23,7 @@ export function Inne(){
 
     return <Section clickTileFun="/">
         <h2><FAIcon icon="bicycle" /> {__("alt.headings.whatelse")}</h2>
-        <div className="grid-3">
+        <div className="grid-3 but-mobile-down">
         {things_i_do.map(bit => 
             <TextBox>
                 <div className="flex-right center large">

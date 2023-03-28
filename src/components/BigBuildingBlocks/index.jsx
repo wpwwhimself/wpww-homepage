@@ -27,7 +27,7 @@ export function Header(){
         src="/pics/profile_pic.jpg"
         alt="profile"
         />
-      <div className="flex-right center">
+      <div className="flex-right center but-mobile-down">
         <h1>Wojciech</h1>
         <img
           className="circle mobile-hide" 

@@ -26,3 +26,9 @@
 .click-tile .custom-icon{
     height: 1.5em;
 }
+
+@media screen and (max-width: 600px) {
+    .see-also{
+        padding: 1em;
+    }
+}

@@ -65,3 +65,29 @@ footer h2, footer p{
     text-align: right;
     align-items: flex-end;
 }
+
+/***********************/
+
+@media screen and (max-width: 600px) {
+    header h1{
+        margin: 0;
+        font-size: 2em;
+    }
+    header img{
+        height: 7em;
+    }
+
+    footer{
+        flex-direction: column;
+        position: initial;
+        gap: 0.5em;
+        padding: 1em; width: calc(100vw - 2*1em);
+        text-align: center;
+    }
+    #end-bar{
+        align-items: center;
+    }
+    #footer-links{
+        max-height: none;
+    }
+}

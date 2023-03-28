@@ -18,3 +18,11 @@
 .tech-grid-bar:hover{
     opacity: 1;
 }
+
+@media screen and (max-width: 600px) {
+    .tech-grid{
+        grid-auto-flow: row;
+        grid-template: none / repeat(6, auto);
+        flex-wrap: wrap;
+    }
+}

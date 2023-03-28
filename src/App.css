@@ -196,25 +196,8 @@ a:hover, .clickable:hover{
   }
 
   .but-mobile-down{
-    display: flex;
+    display: flex !important;
     flex-direction: column !important;
-  }
-
-  header h1{
-    margin: 0;
-    font-size: 2em;
-  }
-
-  footer{
-    flex-direction: column;
-    position: initial;
-    gap: 0.5em;
-  }
-  #end-bar{
-    align-items: center;
-  }
-  #footer-links{
-    width: 100%;
   }
 
   #main-wrapper{
