@@ -177,7 +177,8 @@
             },
             "drawing": {
                 "label": "Rysunek",
-                "desc": "Lubię rysować, zwłaszcza w monochromie. Udało mi się nawet zaprojektować autorską talię do tarota."
+                "desc": "Lubię rysować, zwłaszcza w monochromie. Udało mi się nawet zaprojektować autorską talię do tarota.",
+                "tarot": "Moja talia do tarota"
             }
         }
     }

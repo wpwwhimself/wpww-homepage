@@ -4,7 +4,7 @@ import "./style.css";
 import FAIcon from "../FAIcon";
 import { LangContext } from "../../pages/Layout";
 import { TextBox } from "../TextBox";
-import { SeeAlso, ClickTile } from "../ClickTiles";
+import { ArrowClickTile } from "../ClickTiles";
 
 const things_i_do = [
     {
@@ -14,8 +14,24 @@ const things_i_do = [
     {
         code: "drawing",
         icon: "pen-ruler",
+        link: "http://wpww.pl/tarot/",
+        label: "alt.whatelse.drawing.tarot",
     },
     //TODO więcej pomysłów, co robię
+];
+
+const media = [
+    "Warhammer 40K",
+    "Drakensang",
+    "Rammstein",
+    "Darkkmane",
+    "Don't Starve",
+    "Elite Dangerous",
+    "Starcraft",
+    "Captain Disillusion",
+    "CGP Grey",
+    "The Office",
+    "..."
 ];
 
 export function Inne(){
@@ -31,20 +47,17 @@ export function Inne(){
                 </div>
                 <h2>{__(`alt.whatelse.${bit.code}.label`)}</h2>
                 <p>{__(`alt.whatelse.${bit.code}.desc`)}</p>
+                {bit.link &&
+                <ArrowClickTile label={bit.label} fwd={true} clickfun={bit.link} />}
             </TextBox>
         )}
         </div>
         
-        <SeeAlso>
-        {[
-            // ["!tarot", "https://www.github.com/wpwwhimself/"], //TODO ikona i link do tarota
-        ].map(([icon, link]) => <ClickTile
-            icon={icon} small={true} key={icon}
-            clickfun={link} />
-        )}
-        </SeeAlso>
-        
         <h2><FAIcon icon="tv" /> {__("alt.headings.favmedia")}</h2>
-        <p>🚧 TBA 🚧</p>
+        <div className="flex-right wrap center">
+            {media.map(bit => 
+                <span className="framed">{bit}</span>
+            )}
+        </div>
     </Section>;
 }
