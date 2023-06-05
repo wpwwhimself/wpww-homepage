@@ -92,6 +92,10 @@
                 "name": "My own radio",
                 "desc": "A simple music player dedicated to my own songs"
             },
+            "krk": {
+                "name": "Tutor's secretary",
+                "desc": "An app that manages sessions, earnings, and students for a tutor"
+            },
             "ppy": {
                 "name": "Project Papaya",
                 "desc": "🚧 A new project based on Angular. But first I have to figure out, what it's going to be about"

@@ -92,6 +92,10 @@
                 "name": "Własne radio",
                 "desc": "Prosty odtwarzacz muzyczny poświęcony mojej własnej twórczości"
             },
+            "krk": {
+                "name": "Sekretarz korepetytora",
+                "desc": "Aplikacja nadzorująca sesje, zarobki i uczniów korepetytora"
+            },
             "ppy": {
                 "name": "Projekt Papaja",
                 "desc": "🚧 Nowy projekt, oparty na Angularze. Tylko najpierw muszę wymyślić, czego będzie dotyczyć"

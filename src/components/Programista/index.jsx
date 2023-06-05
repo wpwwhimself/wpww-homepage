@@ -76,14 +76,14 @@ export function Programista() {
             code: "prg.proj.msznm",
             label: "!muzykaszytanamiare.pl",
             link: "https://muzykaszytanamiare.pl/",
-            tech: ["laravel", "php", "js", "r-project"],
+            tech: ["laravel", "php", "js"],
             icon: "!msznm",
         }, {
             code: "prg.proj.projorg",
-            label: "!Projekt Organista",
-            link: "https://github.com/wpwwhimself/projektOrganista",
-            tech: ["php", "js", "react", "html5"],
-            icon: "music",
+            label: "!sz3.wpww.pl",
+            link: "http://sz3.wpww.pl/",
+            tech: ["php", "js", "react", "html5", "laravel"],
+            icon: "!sz3",
         }, {
             code: "prg.proj.sc",
             label: "!Sous-Chef",
@@ -96,6 +96,12 @@ export function Programista() {
             link: "http://hydrophilia.wpww.pl/",
             tech: ["vuejs", "js"],
             icon: "!hydrophilia",
+        }, {
+            code: "prg.proj.krk",
+            label: "!Korkulator",
+            link: "https://github.com/wpwwhimself/korkulator",
+            tech: ["vuejs", "js"],
+            icon: "question",
         }, {
             //TODO wymyślić coś nowego
             code: "prg.proj.ppy",
