@@ -4,13 +4,15 @@
 
 .tech-grid{
     align-items: end;
+    flex-wrap: wrap;
+    --width: 1.5em;
 }
 .tech-grid .container{
     align-items: center;
     justify-content: flex-end;
 }
 .tech-grid-bar{
-    width: 1em;
+    width: var(--width);
     background-color: var(--fg);
     border-radius: 5px;
     opacity: 0.5;
@@ -19,8 +21,9 @@
     opacity: 1;
 }
 
-@media screen and (max-width: 600px) {
-    .tech-grid{
-        flex-wrap: wrap;
-    }
+.tech-grid img{
+    height: var(--width);
 }
+.tech-grid i{
+    font-size: var(--width);
+}  

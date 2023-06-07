@@ -18,7 +18,7 @@ export function Section({clickTileFun = null, children}){
   
     return(
         <div className="flex-down">
-            <div className="section-header flex-right center">
+            <div className="section-header flex-right center print-hide">
                 <h1>
                 <i className={`fa-solid fa-${PageIcons[PageNames[loc.pathname]]}`}></i> {__("pages."+PageNames[loc.pathname])}
                 </h1>

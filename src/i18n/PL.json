@@ -5,7 +5,9 @@
     "link": "Link",
     "see_also": "Zobacz też:",
     "currently": "obecnie",
-    "i_can": "Potrafię:",
+    "i_can": "Potrafię m.in.:",
+    "stack": "Technologie:",
+    "clients": "Klienci:",
     "footer_by_me": "Strona zbudowana w całości przeze mnie",
     "pages": {
         "Intro": "Intro",
@@ -15,6 +17,7 @@
     },
     "intro_about_me": "Mam na imię Wojtek i... powinienem napisać tu coś więcej.",
     "prg": {
+        "intro": "Jestem software developerem pracującym w doświadczonej firmie informatycznej. Mam za sobą duże doświadczenie w programowaniu w wielu różnych językach i technologiach, które poznałem w toku edukacji oraz kariery zawodowej. Programowaniem zajmuję się nie tylko w pracy, ale także przy tworzeniu własnych projektów.",
         "headings": {
             "exp": "Dotychczasowe doświadczenie",
             "langs": "Technologie, które znam",
@@ -26,29 +29,29 @@
         },
         "edu":{
             "it": {
-                "name": "Technik informatyk",
-                "place": "Technikum przy ZSZ w Wolsztynie",
+                "name": "Technikum informatyczne",
+                "place": "Zespół Szkół Zawodowych w Wolsztynie",
                 "summary": [
-                    "złożyć komputer",
-                    "podpiąć go do internetu",
-                    "pisać strony internetowe"
+                    "pisać strony internetowe",
+                    "montować i serwisować komputery",
+                    "zarządzać i konfigurować urządzenia sieciowe"
                 ]
             },
             "math": {
-                "name": "Matematyk",
+                "name": "Matematyka",
+                "spec": "statystyka i analiza danych + dodatkowo przedmioty z matematyki finansowej",
                 "place": "Uniwersytet im. Adama Mickiewicza w Poznaniu",
                 "summary": [
-                    "analizować i przetwarzać dane liczbowe",
-                    "przeprowadzać obliczenia finansowe",
-                    "posługiwać się logiką matematyczną"
+                    "analizować i przetwarzać dane statystyczne",
+                    "przeprowadzać zaawansowane obliczenia finansowe",
+                    "testować hipotezy statystyczne (praca lic.)"
                 ]
             },
             "econ": {
-                "name": "Informatyk-ekonometrysta",
+                "name": "Informatyka i Ekonometria",
                 "place": "Uniwersytet Ekonomiczny w Poznaniu",
                 "summary": [
-                    "budować i estymować szeregi czasowe",
-                    "???"
+                    "budować i estymować szeregi czasowe"
                 ]
             }
         },
@@ -57,18 +60,19 @@
                 "name": "Sprzedawca e-commerce",
                 "place": "FORAM Roman Krzyżanowski",
                 "summary": [
-                    "zarządzać produktami na portalach sprzedażowych (Allegro, Ebay, Amazon)",
+                    "zarządzać szablonami produktów na portalach sprzedażowych (Allegro, Ebay, Amazon)",
                     "utrzymywać relacje z klientami B2B",
                     "tworzyć grafiki ofertowe i obrabiać zdjęcia"
                 ]
             },
             "questy": {
                 "name": "Software developer",
-                "place": "Questy",
+                "place": "Questy Business Software",
                 "summary": [
-                    "utrzymywać strony internetowe",
-                    "wdrażać dopasowane funkcjonalności aplikacji internetowych"
-                ]
+                    "tworzyć dopasowane funkcjonalności aplikacji internetowych",
+                    "pracować w środowisku agile"
+                ],
+                "clients": "Kompania Piwowarska, GLS, Filplast, Interhandler, Kospel, Dedra i in."
             }
         },
         "proj": {

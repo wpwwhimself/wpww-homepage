@@ -6,6 +6,8 @@
     "see_also": "See also:",
     "currently": "currently",
     "i_can": "I can:",
+    "stack": "Technologies:",
+    "clients": "Clients:",
     "footer_by_me": "Website constructed entirely by myself",
     "pages": {
         "Intro": "Intro",
@@ -15,6 +17,7 @@
     },
     "intro_about_me": "My name is Wojtek and I... really should write something more here.",
     "prg": {
+        "intro": "I am a software developer working in a large IT company. I have a robust programming experience in various languages and technologies learnt during my educational and professional career. I code not only at work but also while perfecting my own projects.",
         "headings": {
             "exp": "Experience so far",
             "langs": "Technologies I know",
@@ -26,29 +29,29 @@
         },
         "edu":{
             "it": {
-                "name": "IT technician",
-                "place": "Technical school, Wolsztyn",
+                "name": "IT Technical School",
+                "place": "Vocational Schools Wolsztyn",
                 "summary": [
-                    "build a PC",
-                    "plug it to the web",
-                    "write websites"
+                    "write websites",
+                    "build and maintain PCs",
+                    "manage and configure networking equipment"
                 ]
             },
             "math": {
-                "name": "Mathematician",
+                "name": "Mathematics",
+                "spec": "statistics and data analysis + additional subjects from financial mathematics",
                 "place": "Adam Mickiewicz University, Poznań",
                 "summary": [
-                    "analyse and process numeric data",
-                    "perform financial calculations",
-                    "utilise mathematical logic"
+                    "analyse and process statistical data",
+                    "perform complex financial calculations",
+                    "test statistical hypotheses (Bachelor Degree)"
                 ]
             },
             "econ": {
                 "name": "IT-econometrist",
                 "place": "University of Economics and Business, Poznań",
                 "summary": [
-                    "construct and estimate time serie",
-                    "???"
+                    "construct and estimate time serie"
                 ]
             }
         },
@@ -57,18 +60,19 @@
                 "name": "E-commerce salesman",
                 "place": "FORAM Roman Krzyżanowski",
                 "summary": [
-                    "manage products on online marketplaces (Allegro, Ebay, Amazon)",
+                    "manage product templates on online marketplaces (Allegro, Ebay, Amazon)",
                     "maintain business relations with B2B clients",
                     "produce and modify product pictures"
                 ]
             },
             "questy": {
                 "name": "Software developer",
-                "place": "Questy",
+                "place": "Questy Business Software",
                 "summary": [
-                    "maintain websites",
-                    "implement customised functionalities of web applications"
-                ]
+                    "implement customised functionalities of web applications",
+                    "work in the agile environment"
+                ],
+                "clients": "Kompania Piwowarska, GLS, Filplast, Interhandler, Kospel, Dedra et al."
             }
         },
         "proj": {
@@ -160,6 +164,17 @@
         "headings": {
             "whatelse": "What else I like to do",
             "favmedia": "Favourite media"
+        },
+        "whatelse": {
+            "languages": {
+                "label": "Languages",
+                "desc": "I like learning languages, especially those falling outside of my understanding. Translations found here are made entirely by myself."
+            },
+            "drawing": {
+                "label": "Drawing",
+                "desc": "I like drawing, especially in black and white. I even designed my own tarot deck.",
+                "tarot": "My tarot deck"
+            }
         }
     }
 }

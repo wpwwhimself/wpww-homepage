@@ -76,7 +76,7 @@ export function SeeAlso(props){
     const {__} = useContext(LangContext);
 
     return(
-        <div className="flex-right but-mobile-down center see-also framed centered-margins">
+        <div className="flex-right but-mobile-down center see-also framed centered-margins print-hide">
             <h3>{__("see_also")}</h3>
             {props.children}
         </div>

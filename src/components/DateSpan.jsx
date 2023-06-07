@@ -1,7 +1,7 @@
 import { useContext } from "react"
 import { LangContext } from "../pages/Layout";
 
-export function DateSpan({dates}){
+export function DateSpan({dates, noInterval}){
     const {__} = useContext(LangContext)
 
     function dateToYears(dateString){
@@ -20,6 +20,6 @@ export function DateSpan({dates}){
     ) / 10;
 
     return <span>
-        {dates[0]} – {dates[1] ?? <span className="currently">{__("currently")}</span>} <small>({how_long} {__("years")})</small>
+        {dates[0]} – {dates[1] ?? <span className="currently">{__("currently")}</span>} {!noInterval && <small>({how_long} {__("years")})</small>}
     </span>
 }

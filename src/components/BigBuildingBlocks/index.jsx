@@ -20,21 +20,26 @@ export const PageLinks = {
 };
 
 export function Header(){
+  const {__} = useContext(LangContext);
+
   return (
-    <header className="flex-down center">
+    <header className="flex-down center but-print-flex-right">
       <img
-        className="circle mobile-only" 
+        className="circle mobile-only print-only" 
         src="/pics/profile_pic.jpg"
         alt="profile"
         />
-      <div className="flex-right center but-mobile-down">
-        <h1>Wojciech</h1>
-        <img
-          className="circle mobile-hide" 
-          src="/pics/profile_pic.jpg"
-          alt="profile"
-        />
-        <h1>Przybyła</h1>
+      <div className="flex-down">
+        <div className="flex-right center but-mobile-down">
+          <h1>Wojciech</h1>
+          <img
+            className="circle mobile-hide print-hide" 
+            src="/pics/profile_pic.jpg"
+            alt="profile"
+          />
+          <h1>Przybyła</h1>
+        </div>
+        <h2 className="print-only"><i className="fa-solid fa-keyboard"></i> {__("pages.Programista")}</h2>
       </div>
     </header>
   );
@@ -63,17 +68,17 @@ export function Footer(){
         <Logo />
         <div id="end-bar" className="flex-down">
           <h2>Wojciech Przybyła</h2>
-          <p>{__("footer_by_me")}</p>
+          <p className="print-hide">{__("footer_by_me")}</p>
           <div className="flex-right">
             <a href="https://creativecommons.org/licenses/by-sa/3.0/pl/">
               <i className="fa-brands fa-creative-commons"></i>
               <i className="fa-brands fa-creative-commons-by"></i>
               <i className="fa-brands fa-creative-commons-sa"></i>
             </a> 2018 – {today.getFullYear()}
-            <FAIcon icon="globe" />
+            <FAIcon icon="globe print-hide" />
             {["PL", "EN", "DE", "JP"].map((lang_opt) => 
               <span key={lang_opt}
-                className="clickable"
+                className="clickable print-hide"
                 onClick={() => setLang(lang_opt)}
                 >
                 {lang_opt}

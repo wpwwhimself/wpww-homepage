@@ -12,7 +12,7 @@
     text-align: left;
 }
 .text-box.pin-left p{
-    text-align: justify;
+    text-align: left;
 }
 .text-box h3{
     font-family: Raleway;
@@ -26,4 +26,18 @@
 }
 .text-box.flex-down:not(.pin-left){
     justify-content: space-between;
+}
+
+@media print{
+    .text-box{
+        padding: 0.5em 1em;
+    }
+    .text-box.horizontal{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 3em 18% 40% 10% 0 1fr;
+    }
+    .text-box.text-box.horizontal h2, .text-box.text-box.horizontal p{
+        text-align: left;
+    }
 }

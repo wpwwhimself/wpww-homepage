@@ -70,7 +70,7 @@ export default function Timeline({boxesUp, boxesDown, labelUp, labelDown}){
                 {years.map((year, ind) => <span key={ind}>{year}</span>)}
                 </div>
             </div>
-            <div className="boxes flex-down stretch">
+            <div className="boxes flex-down">
                 <h3 className="grayed-out">{labelDown}</h3>
             {boxesDown.map((val) => 
                 <TmlnBox key={val.code} data={val} />)}
@@ -87,16 +87,19 @@ function TmlnBox({data}){
     return(
         <TextBox pinLeft={true}>
             <p className="ghost">
-                <DateSpan dates={data.span} />
+                <DateSpan dates={data.span} noInterval={true} />
             </p>
             <h2>{__(`${data.code}.name`)}</h2>
+            {data.hasSpec && <p className="accent">{__(`${data.code}.spec`)}</p>}
             <a href={data.placeLink}>
                 <h3>{__(`${data.code}.place`)}</h3>
             </a>
-            {data.summaryMode === "i_can" && <p>{__("i_can")}</p>}
+            <p>{__("i_can")}</p>
             <ul>
                 {summaryIsAList && __(`${data.code}.summary`).map((text, ind) => <li key={ind}>{text}</li>)}
             </ul>
+            {data.clients && <p>{__("clients")} {__(`${data.code}.clients`)}</p>}
+            {data.stack && <p>{__("stack")} <b>{data.stack}</b></p>}
         </TextBox>
     )
 }

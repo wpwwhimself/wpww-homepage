@@ -16,17 +16,18 @@ export function Programista() {
                 code: "prg.edu.econ",
                 placeLink: "https://ue.poznan.pl/",
                 span: ["10.2022", null],
-                summaryMode: "i_can",
+                stack: "R, Python, Git, MongoDB, VBA, SPSS"
             }, {
                 code: "prg.edu.math",
                 placeLink: "https://wmi.amu.edu.pl/",
-                span: ["10.2019", "07.2022"],
-                summaryMode: "i_can",
+                span: ["10.2019", "10.2022"],
+                hasSpec: true,
+                stack: "R, C++, Gretl, OxMetrics",
             }, {
                 code: "prg.edu.it",
                 placeLink: "https://zszwolsztyn.pl/",
-                span: ["09.2013", "05.2017"],
-                summaryMode: "i_can",
+                span: ["09.2013", "09.2017"],
+                stack: "HTML, JS, PHP, SQL",
             }
         ],
         jobExperience: [
@@ -34,12 +35,13 @@ export function Programista() {
                 code: "prg.jex.questy",
                 placeLink: "https://questy.pl/",
                 span: ["08.2022", null],
-                summaryMode: "i_can",
+                stack: "PHP, Symfony, JS, Bootstrap, PostgreSQL, Git, Ubuntu, Docker",
+                clients: true,
             }, {
                 code: "prg.jex.foram",
                 placeLink: "https://artforma.pl/",
                 span: ["08.2017", "09.2019"],
-                summaryMode: "i_can",
+                stack: "HTML, WordPress, Adobe Photoshop"
             }
         ]
     };
@@ -50,6 +52,9 @@ export function Programista() {
         vuejs: 0.5,
         php: 0.85,
         laravel: 0.8,
+        "!sql": 0.9,
+        "!postgresql": 0.8,
+        "!mongodb": 0.4,
         r_project: 0.8,
         git: 0.75,
         docker: 0.2,
@@ -80,7 +85,7 @@ export function Programista() {
             icon: "!msznm",
         }, {
             code: "prg.proj.projorg",
-            label: "!sz3.wpww.pl",
+            label: "!Szpiewnik Szybkiego Szukania",
             link: "http://sz3.wpww.pl/",
             tech: ["php", "js", "react", "html5", "laravel"],
             icon: "!sz3",
@@ -96,23 +101,25 @@ export function Programista() {
             link: "http://hydrophilia.wpww.pl/",
             tech: ["vuejs", "js"],
             icon: "!hydrophilia",
-        }, {
-            code: "prg.proj.krk",
-            label: "!Korkulator",
-            link: "https://github.com/wpwwhimself/korkulator",
-            tech: ["vuejs", "js"],
-            icon: "question",
-        }, {
-            //TODO wymyślić coś nowego
-            code: "prg.proj.ppy",
-            // label: "!",
-            // link: "",
-            tech: ["angular", "js"],
-            icon: "question",
+        // }, {
+        //     code: "prg.proj.krk",
+        //     label: "!Korkulator",
+        //     link: "https://github.com/wpwwhimself/korkulator",
+        //     tech: ["vuejs", "js"],
+        //     icon: "question",
+        // }, {
+        //     //TODO wymyślić coś nowego
+        //     code: "prg.proj.ppy",
+        //     // label: "!",
+        //     // link: "",
+        //     tech: ["angular", "js"],
+        //     icon: "question",
         }
     ];
     
     return <Section clickTileFun="/">
+        <p className="justify">{__("prg.intro")}</p>
+
         <h2><FAIcon icon="timeline" /> {__("prg.headings.exp")}</h2>
         <Timeline
             boxesUp={tmln_contents.education} boxesDown={tmln_contents.jobExperience}
@@ -128,19 +135,22 @@ export function Programista() {
         </div>
         
         <h2><FAIcon icon="scroll" /> {__("prg.headings.projects")}</h2>
-        <div className="grid-3 but-mobile-down">
+        <div className="grid-3 but-mobile-down but-print-flex-down">
             {projects.map((project) => 
-            <TextBox key={project.code}>
+            <TextBox key={project.code} horizontal={true}>
                 <div className="flex-right center large">
                     <FAIcon icon={project.icon} />
                 </div>
-                <h2>{__(`${project.code}.name`)}</h2>
+                <h2 class>{__(`${project.code}.name`)}</h2>
                 <p>{__(`${project.code}.desc`)}</p>
                 <p className="flex-right center ghost">
                     {project.tech.map((icon) => <FAIcon icon={`brands ${icon}`} key={icon} title={icon} />)}
                 </p>
                 {project.link &&
                 <ArrowClickTile label={project.label} fwd={true} clickfun={project.link} />}
+                <div className="flex-right center print-only">
+                    <a href={project.link}>{project.link}</a>
+                </div>
             </TextBox>
             )}
         </div>

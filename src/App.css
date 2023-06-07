@@ -24,7 +24,7 @@
   :root{
       --bg: white;
       --bg1: #eee;
-      --bg2: #ddd;
+      --bg2: #aaa;
       --fg: black;
       --bas: hsl(0, 0%, 88%);
   }
@@ -85,6 +85,13 @@ div, form{
   height: 5em;
   margin: 0.5em;
 }
+.accent{
+  color: var(--acc);
+}
+.justify{
+  text-align: justify;
+}
+.print-only{ display: none !important; }
 .grid-2, .grid-3{ display: grid; gap: 1em; }
 .grid-2{ grid-template-columns: 1fr 1fr; }
 .grid-3{ grid-template-columns: 1fr 1fr 1fr; }
@@ -101,6 +108,9 @@ div, form{
 }
 .center{
   justify-content: center;
+  align-items: center;
+}
+.center-vert{
   align-items: center;
 }
 .stretch>div, .stretch>a{
@@ -174,7 +184,7 @@ a:hover, .clickable:hover{
 }
 
 .custom-icon{
-  height: 1em;
+  height: 2em;
 }
 
 .four-oh-four{
@@ -206,5 +216,58 @@ a:hover, .clickable:hover{
 
   .grid-2, .grid-3{
     gap: 0.5em;
+  }
+}
+
+@media print{
+  *{
+    font-size: 11px;
+  }
+  h2.print-only, img.print-only{
+    display: block !important;
+  }
+  div.print-only{
+    display: flex !important;
+  }
+  .print-hide{
+    display: none;
+  }
+  .but-print-flex-down{
+    display: flex; flex-direction: column;
+  }
+  .but-print-flex-right{
+    display: flex; flex-direction: row;
+  }
+  .click-tile{
+    display: none;
+  }
+  h1{
+    font-size: 1.5em !important;
+  }
+  h2{
+    font-size: 1.25em !important;
+  }
+
+  header{
+    padding: 1em 4em !important;
+  }
+  header h1{
+    font-size: 2.5em !important;
+  }
+  header h2{
+    font-size: 1.5em !important;
+    color: var(--fg) !important;
+    background-color: var(--bg1);
+    border-radius: 0.5em;
+    padding: 3px;
+  }
+  header img{
+    height: 6em !important;
+  }
+  #main-wrapper{
+    padding: 0.5em 2em;
+  }
+  footer{
+    padding: 0.5em 5em !important;
   }
 }
