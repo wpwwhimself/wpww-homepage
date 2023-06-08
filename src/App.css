@@ -91,7 +91,7 @@ div, form{
 .justify{
   text-align: justify;
 }
-.print-only{ display: none !important; }
+.print-only{ display: none; }
 .grid-2, .grid-3{ display: grid; gap: 1em; }
 .grid-2{ grid-template-columns: 1fr 1fr; }
 .grid-3{ grid-template-columns: 1fr 1fr 1fr; }
@@ -109,6 +109,7 @@ div, form{
 .center{
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .center-vert{
   align-items: center;
@@ -223,11 +224,14 @@ a:hover, .clickable:hover{
   *{
     font-size: 11px;
   }
-  h2.print-only, img.print-only{
+  h2.print-only, img.print-only, a.print-only{
     display: block !important;
   }
+  span.print-only{
+    display: inline !important;
+  }
   div.print-only{
-    display: flex !important;
+    display: block;
   }
   .print-hide{
     display: none;
@@ -237,6 +241,9 @@ a:hover, .clickable:hover{
   }
   .but-print-flex-right{
     display: flex; flex-direction: row;
+  }
+  .but-print-right{
+    text-align: right;
   }
   .click-tile{
     display: none;

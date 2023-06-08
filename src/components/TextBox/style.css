@@ -35,9 +35,12 @@
     .text-box.horizontal{
         display: grid;
         align-items: center;
-        grid-template-columns: 3em 18% 40% 10% 0 1fr;
+        grid-template-columns: 3em 25% 40% 25% 0;
     }
-    .text-box.text-box.horizontal h2, .text-box.text-box.horizontal p{
+    .text-box.horizontal h2, .text-box.text-box.horizontal p{
         text-align: left;
+    }
+    .text-box.horizontal a{
+        text-align: right;
     }
 }

@@ -52,22 +52,29 @@ export function Programista() {
         vuejs: 0.5,
         php: 0.85,
         laravel: 0.8,
+        symfony: 0.3,
+        wordpress: 0.3,
         ".mysql": 0.8,
         ".postgresql": 0.8,
         ".mongodb": 0.4,
+        bootstrap: 0.3,
         r_project: 0.8,
         git: 0.75,
         docker: 0.2,
         ubuntu: 0.3,
-        symfony: 0.2,
-        wordpress: 0.3,
-        bootstrap: 0.3,
         python: 0.15,
         "!c_plus_plus": 0.25,
         "!ms_excel": 0.9,
         "!ms_word": 0.95,
         "!adobe_photoshop": 0.9,
         "!adobe_illustrator": 0.8,
+    };
+
+    const i18n_langs = {
+        PL: 1,
+        EN: 0.95,
+        DE: 0.6,
+        JP: 0.3,
     };
 
     const projects = [
@@ -126,16 +133,29 @@ export function Programista() {
             labelUp={__("prg.headings.timeline.up")} labelDown={__("prg.headings.timeline.down")}
             />
         
-        <h2><FAIcon icon="cog" /> {__("prg.headings.langs")}</h2>
-        <div className="flex-right tech-grid center zoom-icons" style={{fontSize: "2em", marginBottom: "0.5em"}}>
-            {Object.entries(technologies).map(([icon, level], ind) => <div className="container flex-down">
-                <div className="tech-grid-bar" style={{ height: level*70 }} title={level*100}></div>
-                <FAIcon icon={
-                    icon.match(/[!\.]/)
-                    ? icon
-                    : `brands ${icon.replace(/_/g, "-")}`
-                } key={ind} title={icon} />
-            </div>)}
+        <div className="flex-right" style={{ justifyContent: "space-evenly" }}>
+            <div>
+                <h2><FAIcon icon="cog" /> {__("prg.headings.langs")}</h2>
+                <div className="flex-right tech-grid center zoom-icons" style={{fontSize: "2em", marginBottom: "0.5em"}}>
+                    {Object.entries(technologies).map(([icon, level], ind) => <div className="container flex-down">
+                        <div className="tech-grid-bar" style={{ height: level*70 }} title={level*100}></div>
+                        <FAIcon icon={
+                            icon.match(/[!\.]/)
+                            ? icon
+                            : `brands ${icon.replace(/_/g, "-")}`
+                        } key={ind} title={icon} />
+                    </div>)}
+                </div>
+            </div>
+            <div className="print-only">
+                <h2><FAIcon icon="flag" /> {__("alt.whatelse.languages.label")}</h2>
+                <div className="flex-right tech-grid center zoom-icons" style={{fontSize: "2em", marginBottom: "0.5em"}}>
+                    {Object.entries(i18n_langs).map(([lang, level], ind) => <div className="container flex-down">
+                        <div className="tech-grid-bar" style={{ height: level*70 }} title={level*100}></div>
+                        <span>{lang}</span>
+                    </div>)}
+                </div>
+            </div>
         </div>
         
         <h2><FAIcon icon="scroll" /> {__("prg.headings.projects")}</h2>
@@ -147,14 +167,13 @@ export function Programista() {
                 </div>
                 <h2 class>{__(`${project.code}.name`)}</h2>
                 <p>{__(`${project.code}.desc`)}</p>
-                <p className="flex-right center ghost">
+                <span className="center but-print-right ghost">
                     {project.tech.map((icon) => <FAIcon icon={`brands ${icon}`} key={icon} title={icon} />)}
-                </p>
+                    <br className="print-only" />
+                    <a className="print-only" href={project.link}>{project.link.replace(/.*\/\/(.*)\//, "$1")}</a>
+                </span>
                 {project.link &&
                 <ArrowClickTile label={project.label} fwd={true} clickfun={project.link} />}
-                <div className="flex-right center print-only">
-                    <a href={project.link}>{project.link}</a>
-                </div>
             </TextBox>
             )}
         </div>
