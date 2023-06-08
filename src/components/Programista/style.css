@@ -14,7 +14,7 @@
 .tech-grid-bar{
     width: var(--width);
     background-color: var(--fg);
-    border-radius: 5px;
+    border-radius: 5px !important;
     opacity: 0.5;
 }
 .tech-grid-bar:hover{
