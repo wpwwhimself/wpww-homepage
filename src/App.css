@@ -37,13 +37,14 @@
 *{
   transition-duration: 0.3s;
 }
-body{
+html, body, #root, .App{
+  height: 100%;
+}
+body, .App{
   font-family: "Raleway";
-  margin: 0; padding-bottom: 7em;
+  margin: 0;
   display: flex; flex-direction: column; align-items: stretch;
   overflow-x: hidden;
-  position: relative;
-  min-height: calc(100vh - 7em);
   background-color: var(--bg); color: var(--fg);
 }
 .mobile-only{
@@ -78,7 +79,7 @@ small{
 .circle{
   border-radius: 100%;
 }
-div, form{
+div:not(.App), form{
   border-radius: 1em;
 }
 .logo{
@@ -182,6 +183,7 @@ a:hover, .clickable:hover{
   width: 90vw;
   margin: 0 auto;
   padding: 2em;
+  flex: 1 0 auto;
 }
 
 .custom-icon{
