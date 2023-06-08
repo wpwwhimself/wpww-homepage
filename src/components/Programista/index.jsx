@@ -52,9 +52,9 @@ export function Programista() {
         vuejs: 0.5,
         php: 0.85,
         laravel: 0.8,
-        "!sql": 0.9,
-        "!postgresql": 0.8,
-        "!mongodb": 0.4,
+        ".mysql": 0.8,
+        ".postgresql": 0.8,
+        ".mongodb": 0.4,
         r_project: 0.8,
         git: 0.75,
         docker: 0.2,
@@ -130,7 +130,11 @@ export function Programista() {
         <div className="flex-right tech-grid center zoom-icons" style={{fontSize: "2em", marginBottom: "0.5em"}}>
             {Object.entries(technologies).map(([icon, level], ind) => <div className="container flex-down">
                 <div className="tech-grid-bar" style={{ height: level*70 }} title={level*100}></div>
-                <FAIcon icon={icon.substring(0,1) === "!" ? icon : `brands ${icon.replace(/_/g, "-")}`} key={ind} title={icon} />
+                <FAIcon icon={
+                    icon.match(/[!\.]/)
+                    ? icon
+                    : `brands ${icon.replace(/_/g, "-")}`
+                } key={ind} title={icon} />
             </div>)}
         </div>
         

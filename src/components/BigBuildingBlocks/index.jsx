@@ -75,7 +75,9 @@ export function Footer(){
               <i className="fa-brands fa-creative-commons-by"></i>
               <i className="fa-brands fa-creative-commons-sa"></i>
             </a> 2018 – {today.getFullYear()}
-            <FAIcon icon="globe print-hide" />
+            <span className="print-hide">
+              <FAIcon icon="globe" />
+            </span>
             {["PL", "EN", "DE", "JP"].map((lang_opt) => 
               <span key={lang_opt}
                 className="clickable print-hide"
