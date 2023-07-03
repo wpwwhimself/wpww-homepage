@@ -39,7 +39,7 @@
             },
             "math": {
                 "name": "Matematyka",
-                "spec": "statystyka i analiza danych + dodatkowo przedmioty z matematyki finansowej",
+                "spec": "studia licencjackie: statystyka i analiza danych + dodatkowo przedmioty z matematyki finansowej",
                 "place": "Uniwersytet im. Adama Mickiewicza w Poznaniu",
                 "summary": [
                     "analizować i przetwarzać dane statystyczne",
@@ -49,6 +49,7 @@
             },
             "econ": {
                 "name": "Informatyka i Ekonometria",
+                "spec": "studia magisterskie",
                 "place": "Uniwersytet Ekonomiczny w Poznaniu",
                 "summary": [
                     "budować i estymować szeregi czasowe"

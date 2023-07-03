@@ -39,7 +39,7 @@
             },
             "math": {
                 "name": "Mathematics",
-                "spec": "statistics and data analysis + additional subjects from financial mathematics",
+                "spec": "Bachelor's Degree: statistics and data analysis + additional subjects from financial mathematics",
                 "place": "Adam Mickiewicz University, Poznań",
                 "summary": [
                     "analyse and process statistical data",
@@ -48,7 +48,8 @@
                 ]
             },
             "econ": {
-                "name": "IT-econometrist",
+                "name": "IT and Econometrics",
+                "spec": "Master's Degree",
                 "place": "University of Economics and Business, Poznań",
                 "summary": [
                     "construct and estimate time serie"
