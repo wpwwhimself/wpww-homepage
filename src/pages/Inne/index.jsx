@@ -1,10 +1,10 @@
 import { useContext } from "react";
-import { Section } from "../Sections";
+import { Section } from "../../components/Sections";
 import "./style.css";
-import FAIcon from "../FAIcon";
-import { LangContext } from "../../pages/Layout";
-import { TextBox } from "../TextBox";
-import { ArrowClickTile } from "../ClickTiles";
+import FAIcon from "../../components/FAIcon";
+import { LangContext } from "../Layout";
+import { TextBox } from "../../components/TextBox";
+import { ArrowClickTile } from "../../components/ClickTiles";
 
 const things_i_do = [
     {

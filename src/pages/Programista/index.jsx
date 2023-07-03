@@ -1,11 +1,11 @@
 import { useContext } from "react";
-import { Section } from "../Sections";
-import { LangContext } from "../../pages/Layout";
-import FAIcon from "../FAIcon";
-import Timeline from "../Timeline";
-import { ClickTile, ArrowClickTile, SeeAlso } from "../ClickTiles";
+import { Section } from "../../components/Sections";
+import { LangContext } from "../Layout";
+import FAIcon from "../../components/FAIcon";
+import Timeline from "../../components/Timeline";
+import { ClickTile, ArrowClickTile, SeeAlso } from "../../components/ClickTiles";
 import "./style.css";
-import { TextBox } from "../TextBox";
+import { TextBox } from "../../components/TextBox";
 
 export function Programista() {
     const {__} = useContext(LangContext);
@@ -38,11 +38,13 @@ export function Programista() {
                 span: ["08.2022", null],
                 stack: "PHP, Symfony, JS, Bootstrap, PostgreSQL, Git, Ubuntu, Docker",
                 clients: true,
+                readSomeMore: "questy",
             }, {
                 code: "prg.jex.foram",
                 placeLink: "https://artforma.pl/",
                 span: ["08.2017", "09.2019"],
-                stack: "HTML, WordPress, Adobe Photoshop"
+                stack: "HTML, WordPress, Adobe Photoshop",
+                readSomeMore: "foram",
             }
         ]
     };
@@ -188,5 +190,21 @@ export function Programista() {
             clickfun={link} />
         )}
         </SeeAlso>
+    </Section>;
+}
+
+export function Questy() {
+    const {__} = useContext(LangContext);
+    
+    return <Section clickTileFun="/programmer">
+        <p>Aaaa</p>
+    </Section>;
+}
+
+export function Foram() {
+    const {__} = useContext(LangContext);
+    
+    return <Section clickTileFun="/programmer">
+        <p>BBB</p>
     </Section>;
 }

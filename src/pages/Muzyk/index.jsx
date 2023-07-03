@@ -1,10 +1,10 @@
 import { useContext } from "react";
-import { Section } from "../Sections";
-import FAIcon from "../FAIcon";
-import { LangContext } from "../../pages/Layout";
-import { ArrowClickTile } from "../ClickTiles";
-import { TextBox } from "../TextBox";
-import { DateSpan } from "../DateSpan";
+import { Section } from "../../components/Sections";
+import FAIcon from "../../components/FAIcon";
+import { LangContext } from "../Layout";
+import { ArrowClickTile } from "../../components/ClickTiles";
+import { TextBox } from "../../components/TextBox";
+import { DateSpan } from "../../components/DateSpan";
 
 export function Muzyk(){
     const {__} = useContext(LangContext);

@@ -3,6 +3,7 @@ import { LangContext } from "../../pages/Layout";
 import "./style.css"
 import { TextBox } from "../TextBox";
 import { DateSpan } from "../DateSpan";
+import { ArrowClickTile } from "../ClickTiles";
 
 export default function Timeline({boxesUp, boxesDown, labelUp, labelDown}){
     const year_now = new Date().getFullYear();
@@ -100,6 +101,7 @@ function TmlnBox({data}){
             </ul>
             {data.clients && <p>{__("clients")} {__(`${data.code}.clients`)}</p>}
             {data.stack && <p>{__("stack")} <b>{data.stack}</b></p>}
+            {data.readSomeMore && <ArrowClickTile label="more" fwd={true} clickfun={`/programmer/${data.readSomeMore}`} />}
         </TextBox>
     )
 }
