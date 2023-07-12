@@ -171,7 +171,7 @@ export function Programista() {
                 <div className="flex-right center large">
                     <FAIcon icon={project.icon} />
                 </div>
-                <h2 class>{__(`${project.code}.name`)}</h2>
+                <h2>{__(`${project.code}.name`)}</h2>
                 <p>{__(`${project.code}.desc`)}</p>
                 <span className="center but-print-right ghost">
                     {project.tech.map((icon) => <FAIcon icon={`brands ${icon}`} key={icon} title={icon} />)}
@@ -199,7 +199,8 @@ export function Programista() {
 function ReadSomeMore({code}){
     const {__} = useContext(LangContext);
     const job = jobExperience.filter(el => el.code === `prg.jex.${code}`)[0];
-    
+    const rsm = __(`${job.code}.rsm`);
+
     return <Section clickTileFun="/programmer" title={__(`${job.code}.place`)}>
         <div className="flex-right center">
             <TextBox>
@@ -207,12 +208,15 @@ function ReadSomeMore({code}){
                 <i className="ghost"><DateSpan dates={job.span} /></i>
             </TextBox>
         </div>
-        <p>{__(`${job.code}.rsm.1`)}</p>
-        <p>{__(`${job.code}.rsm.2`)}</p>
-        <ul>
-            {__(`${job.code}.rsm.3`).map((text, ind) => <li key={ind}>{text}</li>)}
-        </ul>
-        <p>{__(`${job.code}.rsm.4`)}</p>
+        {
+            Array.isArray(rsm)
+            ? rsm.map((item, ind) => 
+                (!Array.isArray(item))
+                ? <p key={ind}>{item}</p>
+                : <ul key={ind}>{item.map((text, indd) => <li key={indd}>{text}</li>)}</ul>
+            )
+            : rsm
+        }
         <SeeAlso>
             <ClickTile icon={`!${job.readSomeMore}`} small={true} clickfun={job.placeLink} />
         </SeeAlso>

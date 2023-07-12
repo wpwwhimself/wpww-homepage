@@ -66,18 +66,18 @@
                     "utrzymywać relacje z klientami B2B",
                     "tworzyć grafiki ofertowe i obrabiać zdjęcia"
                 ],
-                "rsm": {
-                    "1": "Moją pierwszą pracą związaną z IT była niewielka, ale popularna firma, którą polecił mi mój nauczyciel w technikum. Gdy do niej dołączałem, dowiedziałem się, że Wolsztyn, miasto, z którym miałem najwięcej do czynienia, okazał się być zagłębiem produkcji luster podświetlanych LED, a ja trafiłem do jednego z dwóch liderów na tym rynku w Polsce. Podczas mojego pobytu tam firma znacznie się rozwinęła, podbijając rynki zagraniczne, różne portale sprzedażowe i poszerzając swój asortyment.",
-                    "2": "Mój udział w tym sukcesie mogę określić jako nieznaczny, realizowałem za to pomysły przełożonych i pomagałem nawiązywać kontakty handlowe. Zajmowałem się głównie:",
-                    "3": [
+                "rsm": [
+                    "Moją pierwszą pracą związaną z IT była niewielka, ale popularna firma, którą polecił mi mój nauczyciel w technikum. Gdy do niej dołączałem, dowiedziałem się, że Wolsztyn, miasto, z którym miałem najwięcej do czynienia, okazał się być zagłębiem produkcji luster podświetlanych LED, a ja trafiłem do jednego z dwóch liderów na tym rynku w Polsce. Podczas mojego pobytu tam firma znacznie się rozwinęła, podbijając rynki zagraniczne, różne portale sprzedażowe i poszerzając swój asortyment.",
+                    "Mój udział w tym sukcesie mogę określić jako nieznaczny, realizowałem za to pomysły przełożonych i pomagałem nawiązywać kontakty handlowe. Zajmowałem się głównie:",
+                    [
                         "tworzeniem grafik produktowych: wraz z doświadczonymi grafikami tworzyłem wizualizacje wzorów luster i podświetleń. Pomagałem w odtworzeniu realistycznego wyglądu grafik i przez to bardzo dokładnie poznałem funkcje Photoshopa.",
                         "tworzeniem szablonów opisów produktów: na potrzeby wystawiania ofert na Allegro, Ebay oraz Amazon tworzyłem HTML-owe opisy ofert. Dopóki Ebay na to pozwalał, szablony były wzbogacone o elementy interaktywne sterowane JS.",
                         "zarządzaniem stroną domową: obecna strona artforma.pl wygląda zdecydowanie lepiej niż jej początki, jednak w jej wczesnej fazie istnienia zajmowałem się przedstawianą na niej ofertą. Strona była zbudowana na Wordpressie, a część rozszerzeń była modyfikowana ręcznie przez PHP.",
                         "raportowaniem sprzedaży: przygotowałem dzienne zestawienia wyników sprzedażowych na Allegro i Ebay za pomocą dostępnych narzędzi webscrapingowych (lub robiąc webscraping ręcznie). Zbierałem je w przystępne w odbiorze Excele i rozsyłałem do wiadomości kierownictwa.",
                         "kontaktem z klientami międzynarodowymi B2B: odbierałem ich zamówienia, nadawałem kody zniżkowe, kontaktowałem się, jeśli coś szło nie tak. Korespondencje były prowadzone w języku angielskim, okazjonalnie były to też rozmowy telefoniczne."
                     ],
-                    "4": "Poza tym udało mi się wprowadzić kilka usprawnień, głównie w zakresie wypełniania ofert na Ebay. Za pomocą prostych przeglądarkowych makr oraz Excelowego kokpitu, w którym je budowałem udało mi się przyspieszyć wpisywanie setek cen ponad stukrotnie."
-                }
+                    "Poza tym udało mi się wprowadzić kilka usprawnień, głównie w zakresie wypełniania ofert na Ebay. Za pomocą prostych przeglądarkowych makr oraz Excelowego kokpitu, w którym je budowałem udało mi się przyspieszyć wpisywanie setek cen ponad stukrotnie."
+                ]
             },
             "questy": {
                 "name": "Software developer",
@@ -86,7 +86,19 @@
                     "tworzyć dopasowane funkcjonalności aplikacji internetowych",
                     "pracować w środowisku agile"
                 ],
-                "clients": "Kompania Piwowarska, GLS, Filplast, Interhandler, Kospel, Dedra i in."
+                "clients": "Kompania Piwowarska, GLS, Filplast, Interhandler, Kospel, Dedra i in.",
+                "rsm": [
+                    "Questy to moja pierwsza praca, w której mógłbym z pełną śmiałością powiedzieć, że pracuję jako programista. Zatrudniłem się tam tuż po studiach licencjackich – początkowo chciałem podjąć pracę związaną ze studiowaną przeze mnie matematyką (coś z analizy danych?), jednak o wiele bardziej pewnie nadal czułem się w branży IT, z którą nadal wiązała mnie moja przeszłość i edukacja. Miałem jednak wysokie aspiracje i chciałem nadrobić stracony na studiach czas.",
+                    "To też udało mi się osiągnąć na pokładzie Questy, współtworząc rozwiązania w wielu językach i technologiach, pracując na front- i backendzie oraz rozwiązując nierzadko nietypowe niedogodności klientów.",
+                    "Sama firma, choć jej nazwa nie jest zbyt głośna, wspiera wielkich graczy z różnych gałęzi przemysłu. Jej flagowy produkt, jakim jest AuraCRM, znajduje uznanie u takich klientów jak Kompania Piwowarska, Interhandler czy GLS.",
+                    "Produkty przeze mnie utrzymywane funkcjonują w wielu różnych technologiach i są pisane w wielu językach, stąd też udało mi się nabyć doświadczenie w:",
+                    [
+                        "PHP i Symfony: niestety aplikacja na chwilę pisania tych słów posiadała dość duży dług technologiczny i Symfony funkcjonowało w wersji 1.3, niemniej korzystałem z kilku funkcjonalności. Większość pracy odbywała się jednak w czystym PHP.",
+                        "JS i jQuery: lwią część customizacji aplikacji przeprowadzałem za pomocą skryptów JS. Aplikacja wspiera także widoki React, jednak nie miałem okazji własnoręcznie pisać kodu frontendu, jedynie modyfikować już wynikowy render.",
+                        "SQL: baza danych systemu pracuje na PostgreSQL, ale aplikacja posiada także rozbudowane możliwości synchronizacji z systemami zewnętrznymi, gdzie konieczna jest znajomość innych wariantów, np. MSSQL i MySQL.",
+                        "Docker: cała aplikacja składa się z komponentów stojących na różnych kontenerach i do moich zadań należało m.in. koordynowanie ich pracy i diagnozowanie błędów."
+                    ]
+                ]
             }
         },
         "proj": {
