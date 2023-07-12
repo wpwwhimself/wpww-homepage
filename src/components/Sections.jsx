@@ -3,24 +3,28 @@ import { ClickTile, ArrowClickTile } from "./ClickTiles";
 import { PageIcons, PageLinks } from "./BigBuildingBlocks";
 import { LangContext } from "../pages/Layout";
 import { useLocation } from "react-router-dom";
+import FAIcon from "./FAIcon";
 
-export function Section({clickTileFun = null, children}){
+export function Section({clickTileFun = null, children, title = null}){
     const {__} = useContext(LangContext);
     const loc = useLocation();
     const PageNames = {};
     Object.keys(PageLinks).forEach(key => PageNames[PageLinks[key]] = key);
 
+    title ??= __("pages."+PageNames[loc.pathname]);
+
     useEffect(() => {
         document.title = (PageNames[loc.pathname] === "Intro") ? 
             "Wojciech Przybyła" :
-            `${__("pages."+PageNames[loc.pathname])} | Wojciech Przybyła`;
+            `${title} | Wojciech Przybyła`;
     })
-  
+
     return(
         <div className="flex-down">
             <div className="section-header flex-right center print-hide">
-                <h1>
-                <i className={`fa-solid fa-${PageIcons[PageNames[loc.pathname]]}`}></i> {__("pages."+PageNames[loc.pathname])}
+                <h1 className="flex-right center">
+                <FAIcon icon={PageIcons[PageNames[loc.pathname]]} />
+                {title}
                 </h1>
             </div>
             {clickTileFun && <ArrowClickTile clickfun={clickTileFun} />}

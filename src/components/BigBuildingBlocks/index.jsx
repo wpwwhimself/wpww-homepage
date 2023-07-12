@@ -9,12 +9,16 @@ export const PageContext = createContext();
 export const PageIcons = {
   Intro: "house-chimney",
   Programista: "keyboard",
+  Foram: "!FORAM_g",
+  Questy: "!QUESTY_g",
   Muzyk: "music",
   Inne: "ellipsis",
 };
 export const PageLinks = {
   Intro: "/",
   Programista: "/programmer",
+  Foram: "/programmer/foram",
+  Questy: "/programmer/questy",
   Muzyk: "/musician",
   Inne: "/others",
 };

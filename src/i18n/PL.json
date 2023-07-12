@@ -65,7 +65,10 @@
                     "zarządzać szablonami produktów na portalach sprzedażowych (Allegro, Ebay, Amazon)",
                     "utrzymywać relacje z klientami B2B",
                     "tworzyć grafiki ofertowe i obrabiać zdjęcia"
-                ]
+                ],
+                "rsm": {
+                    "1": "Jestem"
+                }
             },
             "questy": {
                 "name": "Software developer",

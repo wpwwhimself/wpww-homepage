@@ -204,7 +204,7 @@ export function Questy() {
 export function Foram() {
     const {__} = useContext(LangContext);
     
-    return <Section clickTileFun="/programmer">
-        <p>BBB</p>
+    return <Section clickTileFun="/programmer" title="FORAM">
+        <p>{__("prg.jex.foram.rsm.1")}</p>
     </Section>;
 }
