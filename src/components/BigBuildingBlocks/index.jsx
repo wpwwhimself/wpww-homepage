@@ -9,8 +9,8 @@ export const PageContext = createContext();
 export const PageIcons = {
   Intro: "house-chimney",
   Programista: "keyboard",
-  Foram: "!FORAM_g",
-  Questy: "!QUESTY_g",
+  Foram: "!foram",
+  Questy: "!questy",
   Muzyk: "music",
   Inne: "ellipsis",
 };

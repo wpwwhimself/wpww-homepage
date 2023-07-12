@@ -67,7 +67,16 @@
                     "tworzyć grafiki ofertowe i obrabiać zdjęcia"
                 ],
                 "rsm": {
-                    "1": "Jestem"
+                    "1": "Moją pierwszą pracą związaną z IT była niewielka, ale popularna firma, którą polecił mi mój nauczyciel w technikum. Gdy do niej dołączałem, dowiedziałem się, że Wolsztyn, miasto, z którym miałem najwięcej do czynienia, okazał się być zagłębiem produkcji luster podświetlanych LED, a ja trafiłem do jednego z dwóch liderów na tym rynku w Polsce. Podczas mojego pobytu tam firma znacznie się rozwinęła, podbijając rynki zagraniczne, różne portale sprzedażowe i poszerzając swój asortyment.",
+                    "2": "Mój udział w tym sukcesie mogę określić jako nieznaczny, realizowałem za to pomysły przełożonych i pomagałem nawiązywać kontakty handlowe. Zajmowałem się głównie:",
+                    "3": [
+                        "tworzeniem grafik produktowych: wraz z doświadczonymi grafikami tworzyłem wizualizacje wzorów luster i podświetleń. Pomagałem w odtworzeniu realistycznego wyglądu grafik i przez to bardzo dokładnie poznałem funkcje Photoshopa.",
+                        "tworzeniem szablonów opisów produktów: na potrzeby wystawiania ofert na Allegro, Ebay oraz Amazon tworzyłem HTML-owe opisy ofert. Dopóki Ebay na to pozwalał, szablony były wzbogacone o elementy interaktywne sterowane JS.",
+                        "zarządzaniem stroną domową: obecna strona artforma.pl wygląda zdecydowanie lepiej niż jej początki, jednak w jej wczesnej fazie istnienia zajmowałem się przedstawianą na niej ofertą. Strona była zbudowana na Wordpressie, a część rozszerzeń była modyfikowana ręcznie przez PHP.",
+                        "raportowaniem sprzedaży: przygotowałem dzienne zestawienia wyników sprzedażowych na Allegro i Ebay za pomocą dostępnych narzędzi webscrapingowych (lub robiąc webscraping ręcznie). Zbierałem je w przystępne w odbiorze Excele i rozsyłałem do wiadomości kierownictwa.",
+                        "kontaktem z klientami międzynarodowymi B2B: odbierałem ich zamówienia, nadawałem kody zniżkowe, kontaktowałem się, jeśli coś szło nie tak. Korespondencje były prowadzone w języku angielskim, okazjonalnie były to też rozmowy telefoniczne."
+                    ],
+                    "4": "Poza tym udało mi się wprowadzić kilka usprawnień, głównie w zakresie wypełniania ofert na Ebay. Za pomocą prostych przeglądarkowych makr oraz Excelowego kokpitu, w którym je budowałem udało mi się przyspieszyć wpisywanie setek cen ponad stukrotnie."
                 }
             },
             "questy": {

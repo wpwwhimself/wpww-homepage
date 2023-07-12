@@ -6,6 +6,24 @@ import Timeline from "../../components/Timeline";
 import { ClickTile, ArrowClickTile, SeeAlso } from "../../components/ClickTiles";
 import "./style.css";
 import { TextBox } from "../../components/TextBox";
+import { DateSpan } from "../../components/DateSpan";
+
+const jobExperience = [
+    {
+        code: "prg.jex.questy",
+        placeLink: "https://questy.pl/",
+        span: ["08.2022", null],
+        stack: "PHP, Symfony, JS, Bootstrap, PostgreSQL, Git, Ubuntu, Docker",
+        clients: true,
+        readSomeMore: "questy",
+    }, {
+        code: "prg.jex.foram",
+        placeLink: "https://artforma.pl/",
+        span: ["08.2017", "09.2019"],
+        stack: "HTML, WordPress, Adobe Photoshop",
+        readSomeMore: "foram",
+    }
+];
 
 export function Programista() {
     const {__} = useContext(LangContext);
@@ -31,22 +49,7 @@ export function Programista() {
                 stack: "HTML, JS, PHP, SQL",
             }
         ],
-        jobExperience: [
-            {
-                code: "prg.jex.questy",
-                placeLink: "https://questy.pl/",
-                span: ["08.2022", null],
-                stack: "PHP, Symfony, JS, Bootstrap, PostgreSQL, Git, Ubuntu, Docker",
-                clients: true,
-                readSomeMore: "questy",
-            }, {
-                code: "prg.jex.foram",
-                placeLink: "https://artforma.pl/",
-                span: ["08.2017", "09.2019"],
-                stack: "HTML, WordPress, Adobe Photoshop",
-                readSomeMore: "foram",
-            }
-        ]
+        jobExperience: jobExperience,
     };
 
     const technologies = {
@@ -193,18 +196,33 @@ export function Programista() {
     </Section>;
 }
 
-export function Questy() {
+function ReadSomeMore({code}){
     const {__} = useContext(LangContext);
+    const job = jobExperience.filter(el => el.code === `prg.jex.${code}`)[0];
     
-    return <Section clickTileFun="/programmer">
-        <p>Aaaa</p>
+    return <Section clickTileFun="/programmer" title={__(`${job.code}.place`)}>
+        <div className="flex-right center">
+            <TextBox>
+                <h2>{__(`${job.code}.name`)}</h2>
+                <i className="ghost"><DateSpan dates={job.span} /></i>
+            </TextBox>
+        </div>
+        <p>{__(`${job.code}.rsm.1`)}</p>
+        <p>{__(`${job.code}.rsm.2`)}</p>
+        <ul>
+            {__(`${job.code}.rsm.3`).map((text, ind) => <li key={ind}>{text}</li>)}
+        </ul>
+        <p>{__(`${job.code}.rsm.4`)}</p>
+        <SeeAlso>
+            <ClickTile icon={`!${job.readSomeMore}`} small={true} clickfun={job.placeLink} />
+        </SeeAlso>
     </Section>;
 }
 
+export function Questy() {
+    return <ReadSomeMore code="questy" />;
+}
+
 export function Foram() {
-    const {__} = useContext(LangContext);
-    
-    return <Section clickTileFun="/programmer" title="FORAM">
-        <p>{__("prg.jex.foram.rsm.1")}</p>
-    </Section>;
+    return <ReadSomeMore code="foram" />;
 }
