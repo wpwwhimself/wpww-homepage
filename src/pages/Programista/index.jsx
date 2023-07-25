@@ -110,10 +110,10 @@ export function Programista() {
             icon: "!souschef",
         }, {
             code: "prg.proj.brz",
-            label: "!Hydrophilia",
-            link: "http://hydrophilia.wpww.pl/",
-            tech: ["vuejs", "js"],
-            icon: "!hydrophilia",
+            label: "!Brzoskwinia",
+            link: "http://songs.wpww.pl/",
+            tech: ["php", "js"],
+            icon: "!brzoskwinia",
         // }, {
         //     code: "prg.proj.krk",
         //     label: "!Korkulator",
