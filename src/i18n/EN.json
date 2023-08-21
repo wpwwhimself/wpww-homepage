@@ -100,11 +100,11 @@
             },
             "krk": {
                 "name": "Tutor's secretary",
-                "desc": "An app that manages sessions, earnings, and students for a tutor"
+                "desc": "An app that manages sessions, earnings, and students for a tutor, with Google Calendar integration"
             },
-            "ppy": {
-                "name": "Project Papaya",
-                "desc": "🚧 A new project based on Angular. But first I have to figure out, what it's going to be about"
+            "cg": {
+                "name": "Lyrics library",
+                "desc": "A website for managing songs for my wedding band"
             }
         }
     },

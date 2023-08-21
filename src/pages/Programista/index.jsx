@@ -100,7 +100,7 @@ export function Programista() {
             code: "prg.proj.projorg",
             label: "!Szpiewnik Szybkiego Szukania",
             link: "http://sz3.wpww.pl/",
-            tech: ["php", "js", "react", "html5", "laravel"],
+            tech: ["php", "js", "react", "laravel"],
             icon: "!sz3",
         }, {
             code: "prg.proj.sc",
@@ -114,12 +114,18 @@ export function Programista() {
             link: "http://songs.wpww.pl/",
             tech: ["php", "js"],
             icon: "!brzoskwinia",
-        // }, {
-        //     code: "prg.proj.krk",
-        //     label: "!Korkulator",
-        //     link: "https://github.com/wpwwhimself/korkulator",
-        //     tech: ["vuejs", "js"],
-        //     icon: "question",
+        }, {
+            code: "prg.proj.krk",
+            label: "!Tithree",
+            link: "https://github.com/wpwwhimself/tithree",
+            tech: ["vuejs", "js"],
+            icon: "!t3",
+        }, {
+            code: "prg.proj.cg",
+            label: "!Targ Czarnych Gruszek",
+            link: "https://github.com/wpwwhimself/cg",
+            tech: ["php", "js"],
+            icon: "list",
         // }, {
         //     //TODO wymyślić coś nowego
         //     code: "prg.proj.ppy",
@@ -146,7 +152,7 @@ export function Programista() {
                     {Object.entries(technologies).map(([icon, level], ind) => <div className="container flex-down">
                         <div className="tech-grid-bar" style={{ height: level*70 }} title={level*100}></div>
                         <FAIcon icon={
-                            icon.match(/[!\.]/)
+                            icon.match(/[!.]/)
                             ? icon
                             : `brands ${icon.replace(/_/g, "-")}`
                         } key={ind} title={icon} />

@@ -95,11 +95,11 @@
             },
             "krk": {
                 "name": "Nachhilfelehrers Sekretär",
-                "desc": "Eine App, die Sitzungen, Einnahmen und Schüler eines Tutors verwaltet"
+                "desc": "Eine App, die Sitzungen, Einnahmen und Schüler eines Tutors verwaltet, mit Google Calendar-Integration"
             },
-            "ppy": {
-                "name": "Projekt Papaya",
-                "desc": "🚧 Ein Neues Projekt, basierend auf Angular. Ich muss nur erst herausfinden, worum es gehen wird"
+            "cg": {
+                "name": "Liederbuch des Hochzeitsmusikers",
+                "desc": "Eine Website zum Verwalten von Liedern für meine Hochzeitsband"
             }
         }
     },
