@@ -1,4 +1,4 @@
-![WPWW](public/pics/wpww_splash.svg)
+[![My homepage](public/pics/wpww_splash.svg)](http://wpww.pl)
 
 This is the code of my homepage, which I use as a CV. As any CV does, it sums up my experiences and achievements as a technician💻 and musician🎸, with a little blend of miscellaneous facts🍿.
 
