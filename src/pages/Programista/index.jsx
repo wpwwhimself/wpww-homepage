@@ -87,31 +87,31 @@ export function Programista() {
         {
             code: "prg.proj.homepage",
             label: "!wpww.pl",
-            link: "http://wpww.pl/",
+            link: "https://github.com/wpwwhimself/wpww-homepage",
             tech: ["react", "js"],
             icon: "!logo_blue",
         }, {
             code: "prg.proj.msznm",
-            label: "!muzykaszytanamiare.pl",
-            link: "https://muzykaszytanamiare.pl/",
+            label: "!Muzyka Szyta Na Miarę",
+            link: "https://github.com/wpwwhimself/msznm",
             tech: ["laravel", "php", "js"],
             icon: "!msznm",
         }, {
             code: "prg.proj.projorg",
             label: "!Szpiewnik Szybkiego Szukania",
-            link: "http://sz3.wpww.pl/",
+            link: "https://github.com/wpwwhimself/szpiewnik-szybkiego-szukania-3",
             tech: ["php", "js", "react", "laravel"],
             icon: "!sz3",
         }, {
             code: "prg.proj.sc",
             label: "!Sous-Chef",
-            link: "http://souschef.wpww.pl/",
+            link: "https://github.com/wpwwhimself/souschef",
             tech: ["laravel", "php", "js"],
             icon: "!souschef",
         }, {
             code: "prg.proj.brz",
             label: "!Brzoskwinia",
-            link: "http://songs.wpww.pl/",
+            link: "https://github.com/wpwwhimself/brzoskwinia",
             tech: ["php", "js"],
             icon: "!brzoskwinia",
         }, {
@@ -125,7 +125,7 @@ export function Programista() {
             label: "!Targ Czarnych Gruszek",
             link: "https://github.com/wpwwhimself/cg",
             tech: ["php", "js"],
-            icon: "list",
+            icon: "!audioz",
         // }, {
         //     //TODO wymyślić coś nowego
         //     code: "prg.proj.ppy",
