@@ -99,6 +99,14 @@
                         "Docker: cała aplikacja składa się z komponentów stojących na różnych kontenerach i do moich zadań należało m.in. koordynowanie ich pracy i diagnozowanie błędów."
                     ]
                 ]
+            },
+            "promodruk": {
+                "name": "Freelance software developer",
+                "place": "PromoDruk Drukarnia Online",
+                "summary": [
+                    "pracować w niestandardowych technologiach webowych",
+                    "dopasowywać istniejące rozwiązania do życzeń klienta"
+                ]
             }
         },
         "proj": {

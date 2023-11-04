@@ -75,6 +75,14 @@
                     "work in the agile environment"
                 ],
                 "clients": "Kompania Piwowarska, GLS, Filplast, Interhandler, Kospel, Dedra et al."
+            },
+            "promodruk": {
+                "name": "Freelance software developer",
+                "place": "PromoDruk Online Printing",
+                "summary": [
+                    "work with non-standard web technologies",
+                    "customise existing solutions according to client's needs"
+                ]
             }
         },
         "proj": {

@@ -36,7 +36,6 @@
 #tmln-line-bars{
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: repeat(3, 1fr);
     gap: 1px;
 }
 #tmln-line-bars span{

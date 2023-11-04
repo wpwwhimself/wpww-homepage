@@ -10,18 +10,27 @@ import { DateSpan } from "../../components/DateSpan";
 
 const jobExperience = [
     {
+    //     code: "prg.jex.promodruk",
+    //     placeLink: "https://promodruk.pl/",
+    //     span: ["08.2023", null],
+    //     stack: "PHP, HTML, JS, ...",
+    //     shiftColumn: 1,
+    //     icon: "!promodruk",
+    // }, {
         code: "prg.jex.questy",
         placeLink: "https://questy.pl/",
         span: ["08.2022", null],
         stack: "PHP, Symfony, JS, Bootstrap, PostgreSQL, Git, Ubuntu, Docker",
         clients: true,
         readSomeMore: "questy",
+        icon: "!questy",
     }, {
         code: "prg.jex.foram",
         placeLink: "https://artforma.pl/",
         span: ["08.2017", "09.2019"],
         stack: "HTML, WordPress, Adobe Photoshop",
         readSomeMore: "foram",
+        icon: "!foram",
     }
 ];
 
@@ -211,7 +220,7 @@ export function Programista() {
     </Section>;
 }
 
-function ReadSomeMore({code}){
+export function ReadSomeMore({code}){
     const {__} = useContext(LangContext);
     const job = jobExperience.filter(el => el.code === `prg.jex.${code}`)[0];
     const rsm = __(`${job.code}.rsm`);
@@ -236,12 +245,4 @@ function ReadSomeMore({code}){
             <ClickTile icon={`!${job.readSomeMore}`} small={true} clickfun={job.placeLink} />
         </SeeAlso>
     </Section>;
-}
-
-export function Questy() {
-    return <ReadSomeMore code="questy" />;
-}
-
-export function Foram() {
-    return <ReadSomeMore code="foram" />;
 }

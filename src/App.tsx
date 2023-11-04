@@ -3,21 +3,54 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { Layout } from './pages/Layout';
 import { Muzyk } from './pages/Muzyk';
-import { Programista, Questy, Foram } from './pages/Programista';
+import { Programista, ReadSomeMore } from './pages/Programista';
 import { Inne } from './pages/Inne';
 import { Intro, TBAPage } from './components/Sections';
+
+export const routes = [
+  {
+    name: "Intro",
+    icon: "house-chimney",
+    link: "/",
+    component: <Intro />,
+  },
+  {
+    name: "Programista",
+    icon: "keyboard",
+    link: "/programmer",
+    component: <Programista />,
+  },
+  ...["Foram", "Questy", "Promodruk"].map(company => { return {
+    name: company,
+    icon: `!${company.toLocaleLowerCase()}`,
+    link: `/programmer/${company.toLocaleLowerCase()}`,
+    component: <ReadSomeMore code={company.toLocaleLowerCase()} />,
+  }}),
+  {
+    name: "Muzyk",
+    icon: "music",
+    link: "/musician",
+    component: <Muzyk />,
+  },
+  {
+    name: "Inne",
+    icon: "ellipsis",
+    link: "/others",
+    component: <Inne />,
+  },
+];
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Layout />}>
-          <Route index element={<Intro />} />
-          <Route path="programmer" element={<Programista />} />
-            <Route path="programmer/questy" element={<Questy />} />
-            <Route path="programmer/foram" element={<Foram />} />
-          <Route path="musician" element={<Muzyk />} />
-          <Route path="others" element={<Inne />} />
+          {routes.map((route, i) =>
+            <Route key={i}
+              index={route.name === "Intro"}
+              path={route.link.substring(1)}
+              element={route.component}
+              />)}
           <Route path="*" element={<TBAPage />} />
         </Route>
       </Routes>

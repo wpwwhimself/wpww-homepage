@@ -1,6 +1,7 @@
 .text-box{
     background-color: var(--bg1);
     padding: 1em;
+    position: relative;
 }
 .text-box:hover{
     background-color: var(--bg2);
@@ -26,6 +27,13 @@
 }
 .text-box.flex-down:not(.pin-left){
     justify-content: space-between;
+}
+
+.top-right{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    opacity: 0.5;
 }
 
 @media print{

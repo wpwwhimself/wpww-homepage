@@ -6,23 +6,6 @@ import "./style.css"
 
 export const PageContext = createContext();
 
-export const PageIcons = {
-  Intro: "house-chimney",
-  Programista: "keyboard",
-  Foram: "!foram",
-  Questy: "!questy",
-  Muzyk: "music",
-  Inne: "ellipsis",
-};
-export const PageLinks = {
-  Intro: "/",
-  Programista: "/programmer",
-  Foram: "/programmer/foram",
-  Questy: "/programmer/questy",
-  Muzyk: "/musician",
-  Inne: "/others",
-};
-
 export function Header(){
   const {__} = useContext(LangContext);
 

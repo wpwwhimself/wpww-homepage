@@ -1,20 +1,19 @@
 import { useContext, useEffect } from "react";
 import { ClickTile, ArrowClickTile } from "./ClickTiles";
-import { PageIcons, PageLinks } from "./BigBuildingBlocks";
 import { LangContext } from "../pages/Layout";
 import { useLocation } from "react-router-dom";
 import FAIcon from "./FAIcon";
+import { routes } from "../App";
 
 export function Section({clickTileFun = null, children, title = null}){
     const {__} = useContext(LangContext);
     const loc = useLocation();
-    const PageNames = {};
-    Object.keys(PageLinks).forEach(key => PageNames[PageLinks[key]] = key);
+    const currentRoute = routes.find(route => route.link === loc.pathname);
 
-    title ??= __("pages."+PageNames[loc.pathname]);
+    title ??= __("pages."+currentRoute.name);
 
     useEffect(() => {
-        document.title = (PageNames[loc.pathname] === "Intro") ? 
+        document.title = (currentRoute.name === "Intro") ? 
             "Wojciech Przybyła" :
             `${title} | Wojciech Przybyła`;
     })
@@ -23,7 +22,7 @@ export function Section({clickTileFun = null, children, title = null}){
         <div className="flex-down">
             <div className="section-header flex-right center print-hide">
                 <h1 className="flex-right center">
-                <FAIcon icon={PageIcons[PageNames[loc.pathname]]} />
+                <FAIcon icon={currentRoute.icon} />
                 {title}
                 </h1>
             </div>
@@ -58,8 +57,11 @@ export function Intro(){
             <p>{__("intro_about_me")} {/*TODO NAPISAĆ COŚ WIĘCEJ*/}</p>
             <div className="flex-right but-mobile-down stretch">
                 {["Programista", "Muzyk", "Inne"].map((label) => 
-                    <ClickTile key={label} icon={PageIcons[label]} label={__("pages."+label)}
-                        clickfun={PageLinks[label]} />
+                    <ClickTile key={label}
+                        icon={routes.find(route => route.name === label).icon}
+                        label={__("pages."+label)}
+                        clickfun={routes.find(route => route.name === label).link}
+                        />
                 )}
             </div>
         </Section>
