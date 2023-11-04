@@ -15,20 +15,20 @@ export function Muzyk(){
             link: "https://www.facebook.com/profile.php?id=100060053047728",
             span: ["10.2016", null],
         }, {
-            code: "mus.bands.wih",
-            link: "https://www.facebook.com/orkiestrawihajster",
-            span: ["08.2021", null],
-        }, {
-            code: "mus.bands.pwod",
-            link: "https://www.facebook.com/orkiestrawolsztyn",
-            span: ["06.2014", null],
-        }, {
             code: "mus.bands.org",
             span: ["09.2021", null],
         }, {
             code: "mus.bands.swietl",
             link: "https://www.facebook.com/profile.php?id=100024867817512",
             span: ["01.2022", null],
+        }, {
+            code: "mus.bands.wih",
+            link: "https://www.facebook.com/orkiestrawihajster",
+            span: ["08.2021", null],
+        }, {
+            code: "mus.bands.pwod",
+            link: "https://www.facebook.com/orkiestrawolsztyn",
+            span: ["06.2014", "10.2023"],
         }, {
             code: "mus.bands.az",
             link: "http://audio-z.wpww.pl/",

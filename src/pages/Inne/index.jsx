@@ -21,16 +21,21 @@ const things_i_do = [
 ];
 
 const media = [
-    "Warhammer 40K",
-    "Drakensang",
-    "Rammstein",
-    "Darkkmane",
-    "Don't Starve",
-    "Elite Dangerous",
-    "Starcraft",
+    "Adam Neely",
+    "Bricky",
     "Captain Disillusion",
     "CGP Grey",
+    "Darkkmane",
+    "Don't Starve",
+    "Drakensang",
+    "Elite Dangerous",
+    "Lockpicking Lawyer",
+    "Magicka",
+    "Rammstein",
+    "Starcraft",
+    "Tantacrul",
     "The Office",
+    "Warhammer 40K",
     "..."
 ];
 

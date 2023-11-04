@@ -104,9 +104,9 @@ export function Programista() {
             icon: "!sz3",
         }, {
             code: "prg.proj.sc",
-            label: "!Sous-Chef",
-            link: "https://github.com/wpwwhimself/souschef",
-            tech: ["laravel", "php", "js"],
+            label: "!Sous Chef",
+            link: "https://github.com/wpwwhimself/souschef-2",
+            tech: ["laravel", "php", "react"],
             icon: "!souschef",
         }, {
             code: "prg.proj.brz",
@@ -126,13 +126,22 @@ export function Programista() {
             link: "https://github.com/wpwwhimself/cg",
             tech: ["php", "js"],
             icon: "!audioz",
-        // }, {
-        //     //TODO wymyślić coś nowego
-        //     code: "prg.proj.ppy",
-        //     // label: "!",
-        //     // link: "",
-        //     tech: ["angular", "js"],
-        //     icon: "question",
+        }, {
+            //TODO wymyślić coś nowego
+            code: "prg.proj.cc",
+            // label: "!",
+            link: "",
+            tech: ["vuejs", "js"],
+            icon: "question",
+            wip: true,
+        }, {
+            //TODO wymyślić coś nowego
+            code: "prg.proj.hh",
+            // label: "!",
+            link: "",
+            tech: ["laravel", "php", "react", "js"],
+            icon: "question",
+            wip: true,
         }
     ];
     
@@ -173,11 +182,11 @@ export function Programista() {
         <h2><FAIcon icon="scroll" /> {__("prg.headings.projects")}</h2>
         <div className="grid-3 but-mobile-down but-print-flex-down">
             {projects.map((project) => 
-            <TextBox key={project.code} horizontal={true}>
+            <TextBox key={project.code} horizontal={true} ghost={project.wip}>
                 <div className="flex-right center large">
                     <FAIcon icon={project.icon} />
                 </div>
-                <h2>{__(`${project.code}.name`)}</h2>
+                <h2>{__(`${project.code}.name`)}{project.wip && "🚧"}</h2>
                 <p>{__(`${project.code}.desc`)}</p>
                 <span className="center but-print-right ghost">
                     {project.tech.map((icon) => <FAIcon icon={`brands ${icon}`} key={icon} title={icon} />)}

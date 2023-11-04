@@ -129,6 +129,14 @@
             "cg": {
                 "name": "Biblioteka tekstów",
                 "desc": "Strona gromadząca i wyświetlająca teksty piosenek na potrzeby mojego zespołu weselnego"
+            },
+            "cc": {
+                "name": "Krupier",
+                "desc": "Mini-apka służąca jako wirtualna kartka papieru dla analogowo granych gier"
+            },
+            "hh": {
+                "name": "Poszukiwacz domu",
+                "desc": "Strona pozwalająca porównywać wybrane oferty domów i mieszkań"
             }
         }
     },

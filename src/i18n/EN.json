@@ -105,6 +105,14 @@
             "cg": {
                 "name": "Lyrics library",
                 "desc": "A website for managing songs for my wedding band"
+            },
+            "cc": {
+                "name": "Card counter",
+                "desc": "A mini-app which serves as a virtual sheet of paper while playing analog games"
+            },
+            "hh": {
+                "name": "House hunter",
+                "desc": "A website for comparing multiple offers of houses and apartments"
             }
         }
     },
