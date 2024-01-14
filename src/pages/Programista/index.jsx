@@ -200,7 +200,7 @@ export function Programista() {
                 <span className="center but-print-right ghost">
                     {project.tech.map((icon) => <FAIcon icon={`brands ${icon}`} key={icon} title={icon} />)}
                     <br className="print-only" />
-                    <a className="print-only" href={project.link}>{project.link.replace(/.*\/\/(.*)\//, "$1")}</a>
+                    <a className="print-only" href={project.link}>{project.link.replace(/.*\/\/(.*)/, "$1")}</a>
                 </span>
                 {project.link &&
                 <ArrowClickTile label={project.label} fwd={true} clickfun={project.link} />}
