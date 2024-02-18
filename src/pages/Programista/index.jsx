@@ -62,27 +62,41 @@ export function Programista() {
     };
 
     const technologies = {
-        js: 0.8,
-        react: 0.6,
-        vuejs: 0.5,
-        php: 0.85,
-        laravel: 0.8,
-        symfony: 0.3,
-        wordpress: 0.3,
-        ".mysql": 0.8,
-        ".postgresql": 0.8,
-        ".mongodb": 0.4,
-        bootstrap: 0.3,
-        r_project: 0.8,
-        git: 0.75,
-        docker: 0.2,
-        ubuntu: 0.3,
-        python: 0.15,
-        "!c_plus_plus": 0.25,
-        "!ms_excel": 0.9,
-        "!ms_word": 0.95,
-        "!adobe_photoshop": 0.9,
-        "!adobe_illustrator": 0.8,
+        web: {
+            php: 0.85,
+            js: 0.8,
+            laravel: 0.8,
+            react: 0.6,
+            vuejs: 0.5,
+            symfony: 0.3,
+            bootstrap: 0.3,
+            wordpress: 0.2,
+        },
+        db: {
+            ".mysql": 0.8,
+            ".postgresql": 0.8,
+            ".mongodb": 0.4,
+        },
+        data: {
+            r_project: 0.8,
+            "!sas": 0.6,
+            python: 0.4,
+        },
+        general: {
+            git: 0.75,
+            ubuntu: 0.6,
+            docker: 0.3,
+            "!c_sharp": 0.25,
+            "!c_plus_plus": 0.25,
+        },
+        office: {
+            "!latex": 0.95,
+            "!markdown": 0.95,
+            "!ms_word": 0.95,
+            "!ms_excel": 0.9,
+            "!adobe_photoshop": 0.9,
+            "!adobe_illustrator": 0.8,
+        },
     };
 
     const i18n_langs = {
@@ -166,14 +180,16 @@ export function Programista() {
         <div className="flex-right" style={{ justifyContent: "space-evenly" }}>
             <div>
                 <h2><FAIcon icon="cog" /> {__("prg.headings.langs")}</h2>
-                <div className="flex-right tech-grid center zoom-icons" style={{fontSize: "2em", marginBottom: "0.5em"}}>
-                    {Object.entries(technologies).map(([icon, level], ind) => <div className="container flex-down">
-                        <div className="tech-grid-bar" style={{ height: level*70 }} title={level*100}></div>
-                        <FAIcon icon={
-                            icon.match(/[!.]/)
-                            ? icon
-                            : `brands ${icon.replace(/_/g, "-")}`
-                        } key={ind} title={icon} />
+                <div className="flex-right wrap center" style={{ justifyContent: "space-evenly" }}>
+                    {Object.entries(technologies).map(([group, _technologies], ind) => <div className="flex-right tech-grid center zoom-icons" style={{fontSize: "2em", marginBottom: "0.5em"}} key={ind}>
+                        {Object.entries(_technologies).map(([icon, level], ind) => <div className="container flex-down" key={ind}>
+                            <div className="tech-grid-bar" style={{ height: level*70 }} title={level*100}></div>
+                            <FAIcon icon={
+                                icon.match(/[!.]/)
+                                ? icon
+                                : `brands ${icon.replace(/_/g, "-")}`
+                            } key={ind} title={icon} />
+                        </div>)}
                     </div>)}
                 </div>
             </div>
