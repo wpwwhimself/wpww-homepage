@@ -10,13 +10,13 @@ import { DateSpan } from "../../components/DateSpan";
 
 const jobExperience = [
     {
-    //     code: "prg.jex.promodruk",
-    //     placeLink: "https://promodruk.pl/",
-    //     span: ["08.2023", null],
-    //     stack: "PHP, HTML, JS, ...",
-    //     shiftColumn: 1,
-    //     icon: "!promodruk",
-    // }, {
+        code: "prg.jex.promodruk",
+        placeLink: "https://promodruk.pl/",
+        span: ["08.2023", null],
+        stack: "PHP, HTML, JS, ...",
+        shiftColumn: 1,
+        icon: "!promodruk",
+    }, {
         code: "prg.jex.questy",
         placeLink: "https://questy.pl/",
         span: ["08.2022", null],
@@ -62,41 +62,31 @@ export function Programista() {
     };
 
     const technologies = {
-        web: {
-            php: 0.85,
-            js: 0.8,
-            laravel: 0.8,
-            react: 0.6,
-            vuejs: 0.5,
-            symfony: 0.3,
-            bootstrap: 0.3,
-            wordpress: 0.2,
-        },
-        db: {
-            ".mysql": 0.8,
-            ".postgresql": 0.8,
-            ".mongodb": 0.4,
-        },
-        data: {
-            r_project: 0.8,
-            "!sas": 0.6,
-            python: 0.4,
-        },
-        general: {
-            git: 0.75,
-            ubuntu: 0.6,
-            docker: 0.3,
-            "!c_sharp": 0.25,
-            "!c_plus_plus": 0.25,
-        },
-        office: {
-            "!latex": 0.95,
-            "!markdown": 0.95,
-            "!ms_word": 0.95,
-            "!ms_excel": 0.9,
-            "!adobe_photoshop": 0.9,
-            "!adobe_illustrator": 0.8,
-        },
+        php: 0.85,
+        js: 0.8,
+        laravel: 0.8,
+        react: 0.6,
+        vuejs: 0.5,
+        symfony: 0.3,
+        bootstrap: 0.3,
+        wordpress: 0.2,
+        ".mysql": 0.8,
+        ".postgresql": 0.8,
+        ".mongodb": 0.4,
+        r_project: 0.8,
+        "!sas": 0.6,
+        python: 0.4,
+        git: 0.75,
+        ubuntu: 0.6,
+        docker: 0.3,
+        "!c_sharp": 0.25,
+        "!c_plus_plus": 0.25,
+        "!latex": 0.95,
+        "!markdown": 0.95,
+        "!ms_word": 0.95,
+        "!ms_excel": 0.9,
+        "!adobe_photoshop": 0.9,
+        "!adobe_illustrator": 0.8,
     };
 
     const i18n_langs = {
@@ -180,16 +170,14 @@ export function Programista() {
         <div className="flex-right" style={{ justifyContent: "space-evenly" }}>
             <div>
                 <h2><FAIcon icon="cog" /> {__("prg.headings.langs")}</h2>
-                <div className="flex-right wrap center" style={{ justifyContent: "space-evenly" }}>
-                    {Object.entries(technologies).map(([group, _technologies], ind) => <div className="flex-right tech-grid center zoom-icons" style={{fontSize: "2em", marginBottom: "0.5em"}} key={ind}>
-                        {Object.entries(_technologies).map(([icon, level], ind) => <div className="container flex-down" key={ind}>
-                            <div className="tech-grid-bar" style={{ height: level*70 }} title={level*100}></div>
-                            <FAIcon icon={
-                                icon.match(/[!.]/)
-                                ? icon
-                                : `brands ${icon.replace(/_/g, "-")}`
-                            } key={ind} title={icon} />
-                        </div>)}
+                <div className="flex-right tech-grid center zoom-icons" style={{fontSize: "2em", marginBottom: "0.5em"}}>
+                    {Object.entries(technologies).map(([icon, level], ind) => <div className="flex-down center" key={ind}>
+                        <div className="tech-grid-bar" style={{ height: level*70 }} title={level*100}></div>
+                        <FAIcon icon={
+                            icon.match(/[!.]/)
+                            ? icon
+                            : `brands ${icon.replace(/_/g, "-")}`
+                        } key={ind} title={icon} />
                     </div>)}
                 </div>
             </div>
@@ -206,7 +194,7 @@ export function Programista() {
         
         <h2><FAIcon icon="scroll" /> {__("prg.headings.projects")}</h2>
         <div className="grid-3 but-mobile-down but-print-flex-down">
-            {projects.map((project) => 
+            {projects.map((project, i) => 
             <TextBox key={project.code} horizontal={true} ghost={project.wip}>
                 <div className="flex-right center large">
                     <FAIcon icon={project.icon} />

@@ -8,6 +8,7 @@ export function TextBox(props){
         props.pinLeft && "pin-left",
         props.ghost && "ghost",
         props.horizontal && "horizontal",
+        props.printhide && "print-hide",
     ].filter(Boolean);
 
     return(
