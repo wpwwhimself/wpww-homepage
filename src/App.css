@@ -37,8 +37,8 @@
 *{
   transition-duration: 0.3s;
 }
-html, body, #root, .App{
-  height: 100%;
+.App{
+  min-height: 100vh;
 }
 body, .App{
   font-family: "Raleway";
