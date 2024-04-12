@@ -29,9 +29,16 @@
     flex-direction: column;
     justify-content: space-between; align-items: center;
     height: calc(100% + 1em); top: -0.5em;
-}
-#tmln-line-years span::before, #tmln-line-years span::after{
-    content: "-";
+
+    & span {
+        font-family: "Montserrat";
+        font-size: 0.75em;
+        background-color: var(--bg);
+        width: 100%;
+        --padding-size: 0em;
+        padding-block: var(--padding-size);
+        translate: 0 calc(-1 * var(--padding-size));
+    }
 }
 #tmln-line-bars{
     display: grid;
