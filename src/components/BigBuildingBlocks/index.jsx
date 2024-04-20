@@ -75,6 +75,11 @@ export function Footer(){
           </div>
         </div>
       </div>
+      <div id="rodo" className="print-only ghost">
+        {__("rodo").map((line, i) =>
+          <p key={i}>{line}</p>
+        )}
+      </div>
       <div id="footer-links">{footer_links}</div>
     </footer>
   );

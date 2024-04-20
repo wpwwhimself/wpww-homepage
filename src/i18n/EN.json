@@ -194,5 +194,9 @@
                 "tarot": "My tarot deck"
             }
         }
-    }
+    },
+    "rodo": [
+        "I hereby consent to my personal data being processed by your company for the purpose of considering my application for the advertised vacancy.",
+        "I also consent to my personal data being processed by your company for the purpose of considering my application for future advertised vacancies."
+    ]
 }

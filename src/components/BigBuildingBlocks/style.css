@@ -23,6 +23,7 @@ footer{
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
+    gap: 1em;
     font-size: 85%;
     text-align: right;
 }
@@ -37,10 +38,16 @@ footer h2, footer p{
 }
 #end-bar{
     align-items: end;
+    white-space: nowrap;
     gap: 0;
 }
 #lang{
     width: fit-content;
+}
+#rodo {
+    text-align: left;
+    font-style: italic;
+    width: 40em;
 }
 #footer-links{
     display: flex;
@@ -48,6 +55,7 @@ footer h2, footer p{
     text-align: left;
     flex-wrap: wrap; column-gap: 1em;
     max-height: 5em;
+    width: 25em;
 }
 
 /*********************/
