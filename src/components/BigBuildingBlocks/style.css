@@ -55,7 +55,6 @@ footer h2, footer p{
     text-align: left;
     flex-wrap: wrap; column-gap: 1em;
     max-height: 5em;
-    width: 25em;
 }
 
 /*********************/
@@ -102,5 +101,12 @@ footer h2, footer p{
     }
     #footer-links{
         max-height: none;
+        text-align: center;
+    }
+}
+
+@media print {
+    #footer-links {
+        width: 25em;
     }
 }
