@@ -67,6 +67,7 @@ export function Programista() {
         laravel: 0.8,
         react: 0.6,
         vuejs: 0.5,
+        angular: 0.2,
         symfony: 0.3,
         bootstrap: 0.3,
         wordpress: 0.2,
@@ -92,7 +93,7 @@ export function Programista() {
     const i18n_langs = {
         PL: 1,
         EN: 0.95,
-        DE: 0.6,
+        DE: 0.7,
         JP: 0.3,
     };
 
@@ -140,20 +141,18 @@ export function Programista() {
             tech: ["php", "js"],
             icon: "!audioz",
         }, {
-            //TODO wymyślić coś nowego
+            code: "prg.proj.hh",
+            label: "!Househunter",
+            link: "https://github.com/wpwwhimself/househunter",
+            tech: ["laravel", "php", "angular", "js"],
+            icon: "!h2",
+            wip: true,
+        }, {
             code: "prg.proj.cc",
             // label: "!",
             link: "",
             tech: ["vuejs", "js"],
-            icon: "question",
-            wip: true,
-        }, {
-            //TODO wymyślić coś nowego
-            code: "prg.proj.hh",
-            // label: "!",
-            link: "",
-            tech: ["laravel", "php", "react", "js"],
-            icon: "question",
+            icon: "!c2",
             wip: true,
         }
     ];
