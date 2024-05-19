@@ -236,8 +236,8 @@ export function ReadSomeMore({code}){
             Array.isArray(rsm)
             ? rsm.map((item, ind) => 
                 (!Array.isArray(item))
-                ? <p key={ind} class="long-text">{item}</p>
-                : <ul key={ind}>{item.map((text, indd) => <li key={indd} class="long-text">{text}</li>)}</ul>
+                ? <p key={ind} className="justify">{item}</p>
+                : <ul key={ind}>{item.map((text, indd) => <li key={indd} className="justify">{text}</li>)}</ul>
             )
             : rsm
         }
