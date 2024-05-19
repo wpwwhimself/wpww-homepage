@@ -27,3 +27,7 @@
 .tech-grid i{
     font-size: var(--width);
 }  
+
+.long-text {
+    text-align: justify;
+}
