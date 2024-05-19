@@ -5,7 +5,7 @@
 .tech-grid{
     align-items: end;
     flex-wrap: wrap;
-    --width: 1.2em;
+    --width: 2rem;
 }
 .tech-grid .container{
     align-items: center;
@@ -27,3 +27,9 @@
 .tech-grid i{
     font-size: var(--width);
 }  
+
+@media print {
+    .tech-grid {
+        --width: 1.5rem;
+    }
+}

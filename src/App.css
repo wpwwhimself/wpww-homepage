@@ -226,14 +226,8 @@ a:hover, .clickable:hover{
   *{
     font-size: 10px;
   }
-  h2.print-only, img.print-only, a.print-only{
-    display: block !important;
-  }
-  span.print-only{
-    display: inline !important;
-  }
-  div.print-only{
-    display: block;
+  .print-only{
+    display: initial !important;
   }
   .print-hide{
     display: none !important;
@@ -244,8 +238,12 @@ a:hover, .clickable:hover{
   .but-print-flex-right{
     display: flex; flex-direction: row;
   }
-  .but-print-right{
-    text-align: right;
+  .but-print-left{
+    text-align: left;
+    justify-content: left;
+  }
+  .but-print-grid-2{
+    display: grid; grid-template-columns: repeat(2, 1fr);
   }
   .click-tile{
     display: none;

@@ -99,25 +99,25 @@ export function Programista() {
             code: "prg.proj.homepage",
             label: "!wpww.pl",
             link: "https://github.com/wpwwhimself/wpww-homepage",
-            tech: ["react", "js"],
+            tech: ["react"],
             icon: "!logo_blue",
         }, {
             code: "prg.proj.msznm",
             label: "!Muzyka Szyta Na Miarę",
             link: "https://github.com/wpwwhimself/msznm",
-            tech: ["laravel", "php", "js"],
+            tech: ["laravel", "vuejs"],
             icon: "!msznm",
         }, {
             code: "prg.proj.projorg",
             label: "!Szpiewnik Szybkiego Szukania",
             link: "https://github.com/wpwwhimself/szpiewnik-szybkiego-szukania-3",
-            tech: ["php", "js", "react", "laravel"],
+            tech: ["laravel", "react"],
             icon: "!sz3",
         }, {
             code: "prg.proj.sc",
             label: "!Sous Chef",
             link: "https://github.com/wpwwhimself/souschef-2",
-            tech: ["laravel", "php", "react"],
+            tech: ["laravel", "react"],
             icon: "!souschef",
         }, {
             code: "prg.proj.brz",
@@ -129,7 +129,7 @@ export function Programista() {
             code: "prg.proj.krk",
             label: "!Tithree",
             link: "https://github.com/wpwwhimself/tithree",
-            tech: ["vuejs", "js"],
+            tech: ["vuejs"],
             icon: "!t3",
         }, {
             code: "prg.proj.cg",
@@ -141,14 +141,14 @@ export function Programista() {
             code: "prg.proj.hh",
             label: "!Househunter",
             link: "https://github.com/wpwwhimself/househunter",
-            tech: ["laravel", "php", "angular", "js"],
+            tech: ["laravel", "angular"],
             icon: "!h2",
             wip: true,
         }, {
             code: "prg.proj.cc",
             // label: "!",
             link: "",
-            tech: ["vuejs", "js"],
+            tech: ["vuejs"],
             icon: "!c2",
             wip: true,
         }
@@ -189,19 +189,25 @@ export function Programista() {
         </div>
         
         <h2><FAIcon icon="scroll" /> {__("prg.headings.projects")}</h2>
-        <div className="grid-3 but-mobile-down but-print-flex-down">
+        <div className="grid-3 but-mobile-down but-print-grid-2">
             {projects.map((project, i) => 
             <TextBox key={project.code} horizontal={true} ghost={project.wip}>
                 <div className="flex-right center large">
                     <FAIcon icon={project.icon} />
                 </div>
                 <h2>{__(`${project.code}.name`)}{project.wip && "🚧"}</h2>
-                <p>{__(`${project.code}.desc`)}</p>
-                <span className="center but-print-right ghost">
-                    {project.tech.map((icon) => <FAIcon icon={`brands ${icon}`} key={icon} title={icon} />)}
-                    <br className="print-only" />
-                    <a className="print-only" href={project.link}>{project.link.replace(/.*\/\/(.*)/, "$1")}</a>
-                </span>
+                <div className="flex-down">
+                    <span className="center but-print-left">{__(`${project.code}.desc`)}</span>
+                    <p className="flex-right center but-print-left ghost" style={{ gap: "0.5em" }}>
+                        <span>
+                            {project.tech.map((icon) => <FAIcon icon={`brands ${icon}`} key={icon} title={icon} />)}
+                        </span>
+                        {project.link && <a className="print-only" href={project.link}>
+                            <FAIcon icon="brands github" />
+                            {project.link.replace(/.*\/\/.*\/wpwwhimself(.*)/, "$1")}
+                        </a>}
+                    </p>
+                </div>
                 {project.link &&
                 <ArrowClickTile label={project.label} fwd={true} clickfun={project.link} />}
             </TextBox>

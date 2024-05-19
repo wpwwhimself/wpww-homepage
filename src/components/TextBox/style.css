@@ -43,7 +43,8 @@
     .text-box.horizontal{
         display: grid;
         align-items: center;
-        grid-template-columns: 3em 25% 40% 25% 0;
+        grid-template-columns: 3em 1fr 2fr 0;
+        gap: 0.5em;
     }
     .text-box.horizontal h2, .text-box.text-box.horizontal p{
         text-align: left;

@@ -106,6 +106,10 @@ footer h2, footer p{
 }
 
 @media print {
+    footer {
+        position: fixed;
+        bottom: 0; left: 0; right: 0;
+    }
     #footer-links {
         width: 25em;
     }
