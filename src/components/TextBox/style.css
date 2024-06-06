@@ -3,7 +3,7 @@
     padding: 1em;
     position: relative;
 }
-.text-box:hover{
+.text-box:not(.no-highlight):hover{
     background-color: var(--bg2);
 }
 .text-box p{

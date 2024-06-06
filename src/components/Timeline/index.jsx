@@ -6,6 +6,21 @@ import { DateSpan } from "../DateSpan";
 import { ArrowClickTile } from "../ClickTiles";
 import FAIcon from "../FAIcon";
 
+function highlightBox(id = null) {
+    const allOthers = Array.from(document.querySelectorAll(`.timeline [data-id]`))
+        .filter(el => el.dataset.id !== id)
+
+    if (!id) {
+        allOthers.forEach(el => {
+            el.classList.remove("ghost")
+        })
+    } else {
+        allOthers.forEach(el => {
+            el.classList.add("ghost")
+        })
+    }
+}
+
 export default function Timeline({boxesUp, boxesDown, labelUp, labelDown}){
     const year_now = new Date().getFullYear();
     const boxesAll = boxesUp.concat(boxesDown);
@@ -64,6 +79,8 @@ export default function Timeline({boxesUp, boxesDown, labelUp, labelDown}){
                             className="ev"
                             data-id={ev.code}
                             style={{ gridRow: `auto / span ${span}` }}
+                            onMouseEnter={() => highlightBox(ev.code)}
+                            onMouseLeave={() => highlightBox(null)}
                             />
                     );
                     year = year - (span - 1) * 0.5;
@@ -116,7 +133,10 @@ function TmlnBox({data}){
     const summaryIsAList = Array.isArray(__(`${data.code}.summary`));
 
     return(
-        <TextBox pinLeft={true} dataId={data.code}>
+        <TextBox pinLeft={true} dataId={data.code} noHighlight={true}
+            onMouseEnter={() => highlightBox(data.code)}
+            onMouseLeave={() => highlightBox(null)}
+        >
             <p className="ghost">
                 <DateSpan dates={data.span} />
             </p>

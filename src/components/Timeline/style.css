@@ -29,6 +29,7 @@
     flex-direction: column;
     justify-content: space-between; align-items: center;
     height: calc(100% + 1em); top: -0.5em;
+    pointer-events: none;
 
     & span {
         font-family: "Montserrat";
