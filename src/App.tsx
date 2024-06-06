@@ -6,6 +6,7 @@ import { Muzyk } from './pages/Muzyk';
 import { Programista, ReadSomeMore } from './pages/Programista';
 import { Inne } from './pages/Inne';
 import { Intro, TBAPage } from './components/Sections';
+import { Tarot } from './pages/tarot';
 
 export const routes = [
   {
@@ -38,6 +39,12 @@ export const routes = [
     link: "/others",
     component: <Inne />,
   },
+  {
+    name: "Tarot",
+    icon: "diamond",
+    link: "/others/tarot",
+    component: <Tarot />,
+  }
 ];
 
 function App() {

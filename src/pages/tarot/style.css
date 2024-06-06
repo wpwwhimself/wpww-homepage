@@ -1,0 +1,13 @@
+#tarot-gallery {
+  --card-width: 200px;
+
+  & img {
+    max-width: var(--card-width);
+    border: 2px solid var(--bg1);
+    border-radius: 1em;
+
+    &:hover {
+      scale: 2;
+    }
+  }
+}

@@ -14,7 +14,8 @@
         "Intro": "Intro",
         "Programista": "Programmer",
         "Muzyk": "Musician",
-        "Inne": "Misc"
+        "Inne": "Misc",
+        "Tarot": "Tarot"
     },
     "intro_about_me": "My name is Wojtek and I... really should write something more here.",
     "prg": {
