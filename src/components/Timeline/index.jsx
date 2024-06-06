@@ -98,7 +98,7 @@ export default function Timeline({boxesUp, boxesDown, labelUp, labelDown}){
                     {beans}
                 </div>
                 <div id="tmln-line-years">
-                {years.map((year, ind) => <span key={ind} class="flex-right center">{year}</span>)}
+                {years.map((year, ind) => <span key={ind} className="flex-right center">{year}</span>)}
                 </div>
             </div>
             <div className="boxes flex-down">
@@ -118,7 +118,7 @@ function TmlnBox({data}){
     return(
         <TextBox pinLeft={true} dataId={data.code}>
             <p className="ghost">
-                <DateSpan dates={data.span} noInterval={true} />
+                <DateSpan dates={data.span} />
             </p>
             {data.icon && <div className="top-right">
                 <FAIcon icon={data.icon} />
