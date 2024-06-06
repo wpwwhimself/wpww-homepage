@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/tex-gyre-adventor');
 
 :root{
   --acc: #0099ff;
@@ -6,6 +7,9 @@
   --ok: 46, 184, 46;
   --warning: 247, 167, 20;
   --danger: 218, 69, 69;
+
+  --main-font: /* "TeXGyreAdventor", */ "Raleway";
+  --heading-font: "Krona One";
 }
 
 @media (prefers-color-scheme: dark){
@@ -41,7 +45,7 @@
   min-height: 100vh;
 }
 body, .App{
-  font-family: "Raleway";
+  font-family: var(--main-font);
   margin: 0;
   display: flex; flex-direction: column; align-items: stretch;
   overflow-x: hidden;
@@ -51,7 +55,7 @@ body, .App{
   display: none;
 }
 h1, h2, h3, h4, h5{
-  font-family: "Krona One";
+  font-family: var(--heading-font);
   font-weight: normal;
 }
 h2{
@@ -73,7 +77,7 @@ p{
   margin-top: 0.5em;
 }
 small{
-  font-family: Raleway;
+  font-family: var(--main-font);
   font-weight: bold;
 }
 .circle{

@@ -16,7 +16,7 @@
     text-align: left;
 }
 .text-box h3{
-    font-family: Raleway;
+    font-family: var(--main-font);
     font-weight: bold;
 }
 .text-box p:first-child{
