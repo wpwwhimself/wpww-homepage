@@ -42,7 +42,7 @@ export function Programista() {
             {
                 code: "prg.edu.econ",
                 placeLink: "https://ue.poznan.pl/",
-                span: ["10.2022", null],
+                span: ["10.2022", "07.2024"],
                 hasSpec: true,
                 stack: "R, Python, Git, MongoDB, VBA, SPSS"
             }, {

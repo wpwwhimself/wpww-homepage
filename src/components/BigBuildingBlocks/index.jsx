@@ -18,6 +18,7 @@ export function Header(){
         />
       <div className="flex-down">
         <div className="flex-right center but-mobile-down">
+          <h1 className="print-only">mgr</h1>
           <h1>Wojciech</h1>
           <img
             className="circle mobile-hide print-hide" 
