@@ -38,13 +38,17 @@ export function Footer(){
     ["fa-solid fa-envelope", "mailto:contact@wpww.pl", "contact@wpww.pl"],
     ["fa-solid fa-phone", "callto:+48530268000", "+48 530 268 000"],
     ["fa-solid fa-house", "https://goo.gl/maps/EjbtANTH7tt6LET47", "Łąkie 62, 62-068 Łąkie"],
-    ["fa-brands fa-facebook", "https://www.facebook.com/wpwwhimself/", "wpwwhimself"],
-    ["fa-brands fa-github", "https://www.github.com/wpwwhimself/", "wpwwhimself"],
-    ["fa-brands fa-linkedin", "https://www.linkedin.com/in/wpwwhimself/", "wpwwhimself"],
-    ["fa-brands fa-instagram", "https://www.instagram.com/wpwwhimself/", "wpwwhimself"],
   ].map(([icon, link, label]) => 
     <a href={link} key={icon}><i className={icon}></i> {label}</a>
   );
+  const social_links = [
+    ["fa-brands fa-facebook", "https://www.facebook.com/wpwwhimself/"],
+    ["fa-brands fa-github", "https://www.github.com/wpwwhimself/"],
+    ["fa-brands fa-linkedin", "https://www.linkedin.com/in/wpwwhimself/"],
+    ["fa-brands fa-instagram", "https://www.instagram.com/wpwwhimself/"],
+  ].map(([icon, link]) =>
+    <a href={link} key={icon}><i className={icon}></i></a>
+  )
 
   const {__, setLang} = useContext(LangContext);
 
@@ -81,7 +85,13 @@ export function Footer(){
           <p key={i}>{line}</p>
         )}
       </div>
-      <div id="footer-links">{footer_links}</div>
+      <div id="footer-links">
+        {footer_links}
+        <div className="flex-right">
+          {social_links}
+          <span>wpwwhimself</span>
+        </div>
+      </div>
     </footer>
   );
 }
