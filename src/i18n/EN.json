@@ -122,6 +122,10 @@
             "hh": {
                 "name": "House hunter",
                 "desc": "A website for comparing multiple offers of houses and apartments"
+            },
+            "promodruk": {
+                "name": "Catalogue and warehouse",
+                "desc": "A set of apps consisting of an online store, suppliers' API integrations and quote preparations"
             }
         }
     },

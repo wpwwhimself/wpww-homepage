@@ -13,7 +13,7 @@ const jobExperience = [
         code: "prg.jex.promodruk",
         placeLink: "https://promodruk.pl/",
         span: ["08.2023", null],
-        stack: "PHP, HTML, JS, ...",
+        stack: "PHP, Laravel, AlpineJS, ...",
         shiftColumn: 1,
         icon: "!promodruk",
     }, {
@@ -132,11 +132,10 @@ export function Programista() {
             tech: ["vuejs"],
             icon: "!t3",
         }, {
-            code: "prg.proj.cg",
-            label: "!Targ Czarnych Gruszek",
-            link: "https://github.com/wpwwhimself/cg",
-            tech: ["php", "js"],
-            icon: "!audioz",
+            code: "prg.proj.promodruk",
+            link: "",
+            tech: ["laravel", "js"],
+            icon: "!promodruk",
         }, {
             code: "prg.proj.hh",
             label: "!Househunter",
