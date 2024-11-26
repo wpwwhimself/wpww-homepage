@@ -1,5 +1,6 @@
 #tarot-gallery {
   --card-width: 200px;
+  margin-top: 1em;
 
   & img {
     max-width: var(--card-width);

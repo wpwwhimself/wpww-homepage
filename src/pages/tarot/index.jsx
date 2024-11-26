@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { LangContext } from "../Layout";
 import { Section } from "../../components/Sections";
 import "./style.css"
+import { ClickTile, SeeAlso } from "../../components/ClickTiles";
 
 export function Tarot(){
   const {__} = useContext(LangContext);
@@ -27,6 +28,10 @@ export function Tarot(){
   }
 
   return <Section clickTileFun="/others">
+      <div className="flex-right center">
+        <ClickTile icon="shopping-cart" small={true} label={__("alt.whatelse.drawing.tarot")} clickfun="https://www.makeplayingcards.com/sell/marketplace/minimalist-tarot-deck.html" />
+      </div>
+
       <div id="tarot-gallery" className="flex-right wrap center">
         {cards.map((card, i) => 
           <img key={i} src={card} alt="card" />
