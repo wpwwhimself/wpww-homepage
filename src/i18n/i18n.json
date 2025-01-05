@@ -1,0 +1,678 @@
+{
+    "available_languages": [
+        "PL",
+        "EN",
+        "DE",
+        "JP"
+    ],
+    "tba_header": [
+        "Sekcja w budowie",
+        "Section under construction",
+        "Die Seite im Aufbau"
+    ],
+    "years": [
+        "l.",
+        "y",
+        "J.",
+        "年"
+    ],
+    "return_click_tile": [
+        "Wróć",
+        "Back",
+        "Zurück",
+        "帰って"
+    ],
+    "link": [
+        "Link",
+        "Link",
+        "Link",
+        "リンク"
+    ],
+    "see_also": [
+        "Zobacz też:",
+        "See also:",
+        "Siehe auch:",
+        "もっと見て"
+    ],
+    "currently": [
+        "obecnie",
+        "currently",
+        "derzeit",
+        "現在"
+    ],
+    "i_can": [
+        "Potrafię m.in.:",
+        "I can:",
+        "Ich kann:",
+        "私はできること："
+    ],
+    "stack": [
+        "Technologie:",
+        "Technologies:",
+        "Technologie:"
+    ],
+    "clients": [
+        "Klienci:",
+        "Clients:",
+        "Kunden:"
+    ],
+    "more": [
+        "Więcej",
+        "More",
+        "Mehr",
+        "もっと"
+    ],
+    "footer_by_me": [
+        "Strona zbudowana w całości przeze mnie",
+        "Website constructed entirely by myself",
+        "Website komplett von mir erstellt",
+        "私によって完全に構築されたウェブサイト"
+    ],
+    "pages": {
+        "Intro": [
+            "Intro",
+            "Intro",
+            "Intro"
+        ],
+        "Programista": [
+            "Programista",
+            "Programmer",
+            "Programmierer",
+            "プログラマ"
+        ],
+        "Muzyk": [
+            "Muzyk",
+            "Musician",
+            "Muziker",
+            "音楽家"
+        ],
+        "Inne": [
+            "Inne",
+            "Misc",
+            "Andere",
+            "その他"
+        ],
+        "Tarot": [
+            "Tarot",
+            "Tarot",
+            "Tarot",
+            "タロット"
+        ]
+    },
+    "intro_about_me": [
+        "Mam na imię Wojtek i... powinienem napisać tu coś więcej.",
+        "My name is Wojtek and I... really should write something more here."
+    ],
+    "prg": {
+        "intro": [
+            "Jestem software developerem pracującym w doświadczonej firmie informatycznej. Mam za sobą duże doświadczenie w programowaniu w wielu różnych językach i technologiach, które poznałem w toku edukacji oraz kariery zawodowej. Programowaniem zajmuję się nie tylko w pracy, ale także przy tworzeniu własnych projektów. Stale uczę się nowych technologii i poszerzam swoje kompetencje, żeby być jak najlepszym w tym, co robię.",
+            "I am a software developer working in a large IT company. I have a robust programming experience in various languages and technologies learnt during my educational and professional career. I code not only at work but also while perfecting my own projects. I constantly learn new technologies and expand my skills to excel at what I do."
+        ],
+        "headings": {
+            "exp": [
+                "Dotychczasowe doświadczenie",
+                "Experience so far"
+            ],
+            "langs": [
+                "Technologie, które znam",
+                "Technologies I know"
+            ],
+            "projects": [
+                "Moje projekty",
+                "My projects"
+            ],
+            "timeline": {
+                "up": [
+                    "Edukacja",
+                    "Education"
+                ],
+                "down": [
+                    "Praca",
+                    "Work"
+                ]
+            }
+        },
+        "edu": {
+            "it": {
+                "name": [
+                    "Technikum informatyczne",
+                    "IT Technical School"
+                ],
+                "place": [
+                    "Zespół Szkół Zawodowych w Wolsztynie",
+                    "Vocational Schools Wolsztyn"
+                ],
+                "summary": [
+                    [
+                        "pisać strony internetowe",
+                        "montować i serwisować komputery",
+                        "zarządzać i konfigurować urządzenia sieciowe"
+                    ],
+                    [
+                        "write websites",
+                        "build and maintain PCs",
+                        "manage and configure networking equipment"
+                    ]
+                ]
+            },
+            "math": {
+                "name": [
+                    "Matematyka",
+                    "Mathematics"
+                ],
+                "spec": [
+                    "studia licencjackie: statystyka i analiza danych + dodatkowo przedmioty z matematyki finansowej",
+                    "Bachelor's Degree: statistics and data analysis + additional subjects from financial mathematics"
+                ],
+                "place": [
+                    "Uniwersytet im. Adama Mickiewicza w Poznaniu",
+                    "Adam Mickiewicz University, Poznań"
+                ],
+                "summary": [
+                    [
+                        "analizować i przetwarzać dane statystyczne",
+                        "przeprowadzać zaawansowane obliczenia finansowe",
+                        "testować hipotezy statystyczne (praca lic.)"
+                    ],
+                    [
+                        "analyse and process statistical data",
+                        "perform complex financial calculations",
+                        "test statistical hypotheses (Bachelor Degree)"
+                    ]
+                ]
+            },
+            "econ": {
+                "name": [
+                    "Informatyka i Ekonometria",
+                    "IT and Econometrics"
+                ],
+                "spec": [
+                    "studia magisterskie",
+                    "Master's Degree"
+                ],
+                "place": [
+                    "Uniwersytet Ekonomiczny w Poznaniu",
+                    "University of Economics and Business, Poznań"
+                ],
+                "summary": [
+                    [
+                        "budować i estymować szeregi czasowe"
+                    ],
+                    [
+                        "construct and estimate time serie"
+                    ]
+                ]
+            }
+        },
+        "jex": {
+            "foram": {
+                "name": [
+                    "Sprzedawca e-commerce",
+                    "E-commerce salesman"
+                ],
+                "place": [
+                    "FORAM Roman Krzyżanowski",
+                    "FORAM Roman Krzyżanowski",
+                    "FORAM Roman Krzyżanowski",
+                    "FORAM Roman Krzyżanowski"
+                ],
+                "summary": [
+                    [
+                        "zarządzać szablonami produktów na portalach sprzedażowych (Allegro, Ebay, Amazon)",
+                        "utrzymywać relacje z klientami B2B",
+                        "tworzyć grafiki ofertowe i obrabiać zdjęcia"
+                    ],
+                    [
+                        "manage product templates on online marketplaces (Allegro, Ebay, Amazon)",
+                        "maintain business relations with B2B clients",
+                        "produce and modify product pictures"
+                    ]
+                ],
+                "rsm": [
+                    [
+                        "Moją pierwszą pracą związaną z IT była niewielka, ale popularna firma, którą polecił mi mój nauczyciel w technikum. Gdy do niej dołączałem, dowiedziałem się, że Wolsztyn, miasto, z którym miałem najwięcej do czynienia, okazał się być zagłębiem produkcji luster podświetlanych LED, a ja trafiłem do jednego z dwóch liderów na tym rynku w Polsce. Podczas mojego pobytu tam firma znacznie się rozwinęła, podbijając rynki zagraniczne, różne portale sprzedażowe i poszerzając swój asortyment.",
+                        "Mój udział w tym sukcesie mogę określić jako nieznaczny, realizowałem za to pomysły przełożonych i pomagałem nawiązywać kontakty handlowe. Zajmowałem się głównie:",
+                        [
+                            "tworzeniem grafik produktowych: wraz z doświadczonymi grafikami tworzyłem wizualizacje wzorów luster i podświetleń. Pomagałem w odtworzeniu realistycznego wyglądu grafik i przez to bardzo dokładnie poznałem funkcje Photoshopa.",
+                            "tworzeniem szablonów opisów produktów: na potrzeby wystawiania ofert na Allegro, Ebay oraz Amazon tworzyłem HTML-owe opisy ofert. Dopóki Ebay na to pozwalał, szablony były wzbogacone o elementy interaktywne sterowane JS.",
+                            "zarządzaniem stroną domową: obecna strona artforma.pl wygląda zdecydowanie lepiej niż jej początki, jednak w jej wczesnej fazie istnienia zajmowałem się przedstawianą na niej ofertą. Strona była zbudowana na Wordpressie, a część rozszerzeń była modyfikowana ręcznie przez PHP.",
+                            "raportowaniem sprzedaży: przygotowałem dzienne zestawienia wyników sprzedażowych na Allegro i Ebay za pomocą dostępnych narzędzi webscrapingowych (lub robiąc webscraping ręcznie). Zbierałem je w przystępne w odbiorze Excele i rozsyłałem do wiadomości kierownictwa.",
+                            "kontaktem z klientami międzynarodowymi B2B: odbierałem ich zamówienia, nadawałem kody zniżkowe, kontaktowałem się, jeśli coś szło nie tak. Korespondencje były prowadzone w języku angielskim, okazjonalnie były to też rozmowy telefoniczne."
+                        ],
+                        "Poza tym udało mi się wprowadzić kilka usprawnień, głównie w zakresie wypełniania ofert na Ebay. Za pomocą prostych przeglądarkowych makr oraz Excelowego kokpitu, w którym je budowałem udało mi się przyspieszyć wpisywanie setek cen ponad stukrotnie."
+                    ]
+                ]
+            },
+            "questy": {
+                "name": [
+                    "Software developer",
+                    "Software developer",
+                    "Software developer"
+                ],
+                "place": [
+                    "Questy Business Software",
+                    "Questy Business Software",
+                    "Questy Business Software",
+                    "Questy Business Software"
+                ],
+                "summary": [
+                    [
+                        "tworzyć dopasowane funkcjonalności aplikacji internetowych",
+                        "pracować w środowisku agile"
+                    ],
+                    [
+                        "implement customised functionalities of web applications",
+                        "work in the agile environment"
+                    ]
+                ],
+                "clients": [
+                    "Kompania Piwowarska, GLS, Filplast, Interhandler, Kospel, Dedra i in.",
+                    "Kompania Piwowarska, GLS, Filplast, Interhandler, Kospel, Dedra et al.",
+                    "Kompania Piwowarska, GLS, Filplast, Interhandler, Kospel, Dedra et al.",
+                    "Kompania Piwowarska, GLS, Filplast, Interhandler, Kospel, Dedra など"
+                ],
+                "rsm": [
+                    [
+                        "Questy to moja pierwsza praca, w której mógłbym z pełną śmiałością powiedzieć, że pracuję jako programista. Zatrudniłem się tam tuż po studiach licencjackich – początkowo chciałem podjąć pracę związaną ze studiowaną przeze mnie matematyką (coś z analizy danych?), jednak o wiele bardziej pewnie nadal czułem się w branży IT, z którą nadal wiązała mnie moja przeszłość i edukacja. Miałem jednak wysokie aspiracje i chciałem nadrobić stracony na studiach czas.",
+                        "To też udało mi się osiągnąć na pokładzie Questy, współtworząc rozwiązania w wielu językach i technologiach, pracując na front- i backendzie oraz rozwiązując nierzadko nietypowe niedogodności klientów.",
+                        "Sama firma, choć jej nazwa nie jest zbyt głośna, wspiera wielkich graczy z różnych gałęzi przemysłu. Jej flagowy produkt, jakim jest AuraCRM, znajduje uznanie u takich klientów jak Kompania Piwowarska, Interhandler czy GLS.",
+                        "Produkty przeze mnie utrzymywane funkcjonują w wielu różnych technologiach i są pisane w wielu językach, stąd też udało mi się nabyć doświadczenie w:",
+                        [
+                            "PHP i Symfony: niestety aplikacja na chwilę pisania tych słów posiadała dość duży dług technologiczny i Symfony funkcjonowało w wersji 1.3, niemniej korzystałem z kilku funkcjonalności. Większość pracy odbywała się jednak w czystym PHP.",
+                            "JS i jQuery: lwią część customizacji aplikacji przeprowadzałem za pomocą skryptów JS. Aplikacja wspiera także widoki React, jednak nie miałem okazji własnoręcznie pisać kodu frontendu, jedynie modyfikować już wynikowy render.",
+                            "SQL: baza danych systemu pracuje na PostgreSQL, ale aplikacja posiada także rozbudowane możliwości synchronizacji z systemami zewnętrznymi, gdzie konieczna jest znajomość innych wariantów, np. MSSQL i MySQL.",
+                            "Docker: cała aplikacja składa się z komponentów stojących na różnych kontenerach i do moich zadań należało m.in. koordynowanie ich pracy i diagnozowanie błędów."
+                        ]
+                    ]
+                ]
+            },
+            "promodruk": {
+                "name": [
+                    "Freelance software developer",
+                    "Freelance software developer",
+                    "Freelance software developer"
+                ],
+                "place": [
+                    "Promodruk Drukarnia Online",
+                    "Promodruk Online Printing"
+                ],
+                "summary": [
+                    [
+                        "pracować w niestandardowych technologiach webowych",
+                        "dopasowywać istniejące rozwiązania do życzeń klienta"
+                    ],
+                    [
+                        "work with non-standard web technologies",
+                        "customise existing solutions according to client's needs"
+                    ]
+                ]
+            }
+        },
+        "proj": {
+            "homepage": {
+                "name": [
+                    "Ta strona",
+                    "This very website",
+                    "Diese Seite"
+                ],
+                "desc": [
+                    "Moja strona domowa, funkcjonująca w pewnym sensie jako wizytówka/CV",
+                    "My homepage, functioning as a business card/CV of sort"
+                ]
+            },
+            "msznm": {
+                "name": [
+                    "Usługi muzyczne",
+                    "Music services"
+                ],
+                "desc": [
+                    "CRM reklamujący i nadzorujący mój mini-biznes tworzenia podkładów muzycznych i nut",
+                    "CRM-class web app advertising and managing my mini-business of making backing tracks and sheet music"
+                ]
+            },
+            "projorg": {
+                "name": [
+                    "Śpiewnik organisty",
+                    "Organist's songbook"
+                ],
+                "desc": [
+                    "Aplikacja tworząca listę pieśni wraz z nutami dla każdego możliwego programu mszy",
+                    "An app for making a list of song with sheet music for every possible mass's format"
+                ]
+            },
+            "sc": {
+                "name": [
+                    "Asystent kucharza",
+                    "Cook's assistant"
+                ],
+                "desc": [
+                    "DSS zarządzający wyposażeniem mojej kuchni; sugeruje, kiedy czego brakuje i co można ugotować",
+                    "DSS-class system managing the contents of my kitchen; suggesting, when ingredients are low and what can be cooked"
+                ]
+            },
+            "brz": {
+                "name": [
+                    "Własne radio",
+                    "My own radio"
+                ],
+                "desc": [
+                    "Prosty odtwarzacz muzyczny poświęcony mojej własnej twórczości",
+                    "A simple music player dedicated to my own songs"
+                ]
+            },
+            "krk": {
+                "name": [
+                    "Sekretarz korepetytora",
+                    "Tutor's secretary"
+                ],
+                "desc": [
+                    "Aplikacja nadzorująca sesje, zarobki i uczniów korepetytora, z integracją z Google Calendar",
+                    "An app that manages sessions, earnings, and students for a tutor, with Google Calendar integration"
+                ]
+            },
+            "cg": {
+                "name": [
+                    "Biblioteka tekstów",
+                    "Lyrics library"
+                ],
+                "desc": [
+                    "Strona gromadząca i wyświetlająca teksty piosenek na potrzeby mojego zespołu weselnego",
+                    "A website for managing songs for my wedding band"
+                ]
+            },
+            "cc": {
+                "name": [
+                    "Krupier",
+                    "Card counter"
+                ],
+                "desc": [
+                    "Mini-apka służąca jako wirtualna kartka papieru dla analogowo granych gier",
+                    "A mini-app which serves as a virtual sheet of paper while playing analog games"
+                ]
+            },
+            "hh": {
+                "name": [
+                    "Poszukiwacz domu",
+                    "House hunter"
+                ],
+                "desc": [
+                    "Strona pozwalająca porównywać wybrane oferty domów i mieszkań",
+                    "A website for comparing multiple offers of houses and apartments"
+                ]
+            },
+            "promodruk": {
+                "name": [
+                    "Ofertownik i magazyn",
+                    "Catalogue and warehouse"
+                ],
+                "desc": [
+                    "Zestaw aplikacji tworzących sklep internetowy, integracje z API dostawców oraz przygotowywanie wycen",
+                    "A set of apps consisting of an online store, suppliers' API integrations and quote preparations"
+                ]
+            }
+        }
+    },
+    "mus": {
+        "headings": {
+            "edu": [
+                "Edukacja muzyczna",
+                "Music education"
+            ],
+            "bands": [
+                "Z kim gram",
+                "People I play with"
+            ],
+            "instr": [
+                "Na czym gram",
+                "Things I play"
+            ],
+            "mine": [
+                "Moja twórczość",
+                "My music",
+                "Meine Musik"
+            ]
+        },
+        "edu": {
+            "place": [
+                "Państwowa Szkoła Muzyczna I st. im. Ireny Pfeiffer w Wolsztynie",
+                "Irena Pfeiffer's Elementary Music School, Wolsztyn"
+            ]
+        },
+        "bands": {
+            "dixie": {
+                "name": [
+                    "Dixie Kings",
+                    "Dixie Kings",
+                    "Dixie Kings",
+                    "Dixie Kings"
+                ],
+                "genre": [
+                    "swing, jazz nowoorleański",
+                    "swing, New Orleans jazz",
+                    "swing, New Orleans jazz"
+                ],
+                "instruments": [
+                    "banjo, gitara",
+                    "banjo, guitar",
+                    "Banjo, Gitarre"
+                ]
+            },
+            "wih": {
+                "name": [
+                    "Wihajster",
+                    "Wihajster",
+                    "Wihajster",
+                    "Wihajster"
+                ],
+                "genre": [
+                    "muzyka taneczna z okresu międzywojnia",
+                    "20s-30s Polish dancing music"
+                ],
+                "instruments": [
+                    "tuba",
+                    "tuba",
+                    "tuba"
+                ]
+            },
+            "pwod": {
+                "name": [
+                    "Powiatowa Wolsztyńska Orkiestra Dęta",
+                    "Wolsztyn Brass Band"
+                ],
+                "genre": [
+                    "od muzyki klasycznej do rozrywkowej",
+                    "from classical to popular music"
+                ],
+                "instruments": [
+                    "gitara basowa, tuba, trąbka",
+                    "bass guitar, tuba, trumpet"
+                ]
+            },
+            "az": {
+                "name": [
+                    "Audio Z",
+                    "Audio Z",
+                    "Audio Z",
+                    "Audio Z"
+                ],
+                "genre": [
+                    "oprawa muzyczna ślubów, wesel i imprez okoliczności",
+                    "music for wedding ceremonies/parties and other events"
+                ],
+                "instruments": [
+                    "trąbka, saksofon, klarnet basowy",
+                    "trumpet, saxophone, bass clarinet"
+                ]
+            },
+            "rr": {
+                "name": [
+                    "Roses Roots",
+                    "Roses Roots",
+                    "Roses Roots",
+                    "Roses Roots"
+                ],
+                "genre": [
+                    "reggae",
+                    "reggae",
+                    "Reggae"
+                ],
+                "instruments": [
+                    "saksofon, gitara, gitara basowa",
+                    "saxophone, guitar, bass guitar"
+                ]
+            },
+            "swietl": {
+                "name": [
+                    "ViolArte Wolsztyn",
+                    "ViolArte Wolsztyn",
+                    "ViolArte Wolsztyn"
+                ],
+                "genre": [
+                    "oprawa muzyczna ślubów i występy kameralne",
+                    "music for wedding ceremonies and banquet gigs"
+                ],
+                "instruments": [
+                    "organy, fortepian",
+                    "organ, piano"
+                ]
+            },
+            "org": {
+                "name": [
+                    "Organista",
+                    "Organist",
+                    "Organspieler"
+                ],
+                "genre": [
+                    "oprawa mszy",
+                    "service music"
+                ],
+                "instruments": [
+                    "organy",
+                    "organ",
+                    "Orgel"
+                ]
+            }
+        },
+        "instr": [
+            [
+                "gitara klasyczna",
+                "gitara elektryczna",
+                "gitara basowa",
+                "ukulele",
+                "mandolina",
+                "fortepian",
+                "organy piszczałkowe",
+                "organy elektryczne",
+                "trąbka",
+                "saksofon tenorowy",
+                "flet poprzeczny",
+                "klarnet basowy",
+                "obój",
+                "tuba",
+                "flet piccolo",
+                "flugelhorn",
+                "instrumenty perkusyjne",
+                "harmonijka",
+                "akordeon"
+            ],
+            [
+                "classical guitar", "electric guitar", "bass guitar",
+                "ukulele", "mandolin",
+                "piano", "pipe organ", "electric organ",
+                "trumpet", "tenor saxophone", "transverse flute", "bass clarinet", "oboe", "tuba", "piccolo", "flugelhorn",
+                "percussion instruments", "harmonica", "accordion"
+            ],
+            [
+                "klassische Gitarre", "elektrische Gitarre", "Bassgitarre",
+                "Ukulele", "Mandoline",
+                "Klavier", "Pfeifenorgel", "elektrische Orgel",
+                "Trompete", "Tenorsaxophon", "Flöte", "Bassklarinette", "Oboe", "Tuba", "Piccolo", "Flügelhorn",
+                "Schlaginstrumente", "Mundharmonika", "Akkordeon"
+            ]
+        ],
+        "mine": {
+            "msznm": {
+                "about": [
+                    "Pomagam innym spełniać muzyczne marzenia, tworząc dla nich spersonalizowane podkłady muzyczne i nuty"
+                ],
+                "heading": [
+                    "Kompleksowe usługi muzyczne"
+                ],
+                "label": [
+                    "Muzyka Szyta Na Miarę",
+                    "Muzyka Szyta Na Miarę",
+                    "Muzyka Szyta Na Miarę",
+                    "Muzyka Szyta Na Miarę"
+                ]
+            },
+            "hydrophilia": {
+                "about": [
+                    "Samodzielnie tworzę własne utwory łączące ciężkie brzmienia gitarowe, elektronikę oraz instrumenty dęte"
+                ],
+                "heading": [
+                    "Własne utwory"
+                ],
+                "label": [
+                    "Hydrophilia",
+                    "Hydrophilia",
+                    "Hydrophilia",
+                    "Hydrophilia"
+                ]
+            }
+        }
+    },
+    "alt": {
+        "headings": {
+            "whatelse": [
+                "Co jeszcze lubię robić",
+                "What else I like to do",
+                "Was noch mache ich sonst noch gerne"
+            ],
+            "favmedia": [
+                "Ulubione media",
+                "Favourite media",
+                "Lieblingsmedien"
+            ]
+        },
+        "whatelse": {
+            "languages": {
+                "label": [
+                    "Języki",
+                    "Languages",
+                    "Sprachen",
+                    "言語"
+                ],
+                "desc": [
+                    "Lubię uczyć się języków, zwłaszcza odbiegających od tego, co już umiem. Tłumaczenia na tej stronie są robione w całości przeze mnie.",
+                    "I like learning languages, especially those falling outside of my understanding. Translations found here are made entirely by myself."
+                ]
+            },
+            "drawing": {
+                "label": [
+                    "Rysunek",
+                    "Drawing"
+                ],
+                "desc": [
+                    "Lubię rysować, zwłaszcza w monochromie. Udało mi się nawet zaprojektować autorską talię do tarota.",
+                    "I like drawing, especially in black and white. I even designed my own tarot deck."
+                ],
+                "tarot": [
+                    "Moja talia do tarota",
+                    "My tarot deck",
+                    "Mein Tarotdeck",
+                    "私のタロットデッキ"
+                ]
+            }
+        }
+    },
+    "rodo": [
+        [
+            "Wyrażam zgodę na przetwarzanie moich danych osobowych przez Państwa firmę w celu prowadzenia rekrutacji na aplikowane przeze mnie stanowisko.",
+            "Wyrażam również zgodę na przetwarzanie moich danych osobowych w celu prowadzenia przyszłych rekrutacji przez Państwa firmę."
+        ],
+        [
+            "I hereby consent to my personal data being processed by your company for the purpose of considering my application for the advertised vacancy.",
+            "I also consent to my personal data being processed by your company for the purpose of considering my application for future advertised vacancies."
+        ]
+    ]
+}

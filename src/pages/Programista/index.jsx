@@ -179,7 +179,7 @@ export function Programista() {
             <div className="print-only">
                 <h2><FAIcon icon="flag" /> {__("alt.whatelse.languages.label")}</h2>
                 <div className="flex-right tech-grid center zoom-icons" style={{fontSize: "2em", marginBottom: "0.5em"}}>
-                    {Object.entries(i18n_langs).map(([lang, level], ind) => <div className="container flex-down">
+                    {Object.entries(i18n_langs).map(([lang, level], ind) => <div className="container flex-down" key={ind}>
                         <div className="tech-grid-bar" style={{ height: level*70 }} title={level*100}></div>
                         <span>{lang}</span>
                     </div>)}
@@ -189,7 +189,7 @@ export function Programista() {
         
         <h2><FAIcon icon="scroll" /> {__("prg.headings.projects")}</h2>
         <div className="grid-3 but-mobile-down but-print-grid-2">
-            {projects.map((project, i) => 
+            {projects.map((project) => 
             <TextBox key={project.code} horizontal={true} ghost={project.wip}>
                 <div className="flex-right center large">
                     <FAIcon icon={project.icon} />

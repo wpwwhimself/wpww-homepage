@@ -75,7 +75,7 @@ export function Muzyk(){
 
         <h2><FAIcon icon="guitar" /> {__("mus.headings.instr")}</h2>
         <div className="flex-right wrap center">
-        {__(instruments).map((instr, ind) => 
+        {__(instruments, true)?.map((instr, ind) => 
             <span className="framed" key={ind}>{instr}</span>
         )}
         </div>

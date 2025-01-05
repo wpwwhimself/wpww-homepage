@@ -46,7 +46,7 @@ export function Inne(){
         <h2><FAIcon icon="bicycle" /> {__("alt.headings.whatelse")}</h2>
         <div className="grid-3 but-mobile-down">
         {things_i_do.map(bit => 
-            <TextBox>
+            <TextBox key={bit.code}>
                 <div className="flex-right center large">
                     <FAIcon icon={bit.icon} />
                 </div>
@@ -60,8 +60,8 @@ export function Inne(){
         
         <h2><FAIcon icon="tv" /> {__("alt.headings.favmedia")}</h2>
         <div className="flex-right wrap center">
-            {media.map(bit => 
-                <span className="framed">{bit}</span>
+            {media.map((bit, i) =>
+                <span className="framed" key={i}>{bit}</span>
             )}
         </div>
     </Section>;

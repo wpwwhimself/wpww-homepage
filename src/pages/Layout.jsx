@@ -2,36 +2,38 @@ import { createContext, useState } from 'react';
 import { Outlet } from "react-router-dom";
 import { Header, Footer } from '../components/BigBuildingBlocks';
 
-import PL from "../i18n/PL.json";
-import EN from "../i18n/EN.json";
-import DE from "../i18n/DE.json";
-import JP from "../i18n/JP.json";
+import i18n from "../i18n/i18n.json";
 
 export const LangContext = createContext({});
 
 export function Layout(){
-  const [lang, setLang] = useState("PL");
+  const [lang, setLang] = useState(0);
 
-  let i18n;
-  switch(lang){
-    case "EN": i18n = EN; break;
-    case "DE": i18n = DE; break;
-    case "JP": i18n = JP; break;
-    default: i18n = PL;
-  }
   /**
    * Translation engine. Nesting possible with ".", use "!" to override
    * @param index 
+   * @param expect_array false by default, if on and after failure returns undefined instead of error string
    * @returns string
    */
-  function __(index){
+  function __(index, expect_array = false){
     if(index.substring(0,1) === "!") return index.substring(1);
 
     let i18n_obj = i18n;
-    for(let level of index.split(".")){
-      i18n_obj = i18n_obj[level];
-      if(!i18n_obj) return <span title={index}>🔥TRANSLATION MISSING🔥</span>;
-      if(typeof i18n_obj === "string" || Array.isArray(i18n_obj)) return i18n_obj;
+    try {
+      for (let level of index.split(".")){
+        i18n_obj = i18n_obj[level];
+        if (!i18n_obj) throw new Error("TRANSLATION MISSING");
+        if (!Array.isArray(i18n_obj)) continue;
+  
+        i18n_obj = i18n_obj[lang];
+        if (!i18n_obj) throw new Error("TRANSLATION MISSING");
+
+        return i18n_obj;
+      }
+    } catch (error) {
+      return (expect_array)
+        ? undefined
+        : <span className="ghost" title={index}>🔥TRANSLATION MISSING🔥</span>;
     }
   }
 

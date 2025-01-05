@@ -3,6 +3,7 @@ import { LangContext } from "../../pages/Layout";
 import FAIcon from "../FAIcon";
 import { Logo } from "../Logo";
 import "./style.css"
+import i18n from "../../i18n/i18n.json";
 
 export const PageContext = createContext();
 
@@ -72,10 +73,10 @@ export function Footer(){
             <span className="print-hide">
               <FAIcon icon="globe" />
             </span>
-            {["PL", "EN", "DE", "JP"].map((lang_opt) => 
-              <span key={lang_opt}
+            {i18n.available_languages.map((lang_opt, i) => 
+              <span key={i}
                 className="clickable print-hide"
-                onClick={() => setLang(lang_opt)}
+                onClick={() => setLang(i)}
                 >
                 {lang_opt}
               </span>)}
@@ -83,7 +84,7 @@ export function Footer(){
         </div>
       </div>
       <div id="rodo" className="print-only ghost">
-        {__("rodo").map((line, i) =>
+        {__("rodo", true)?.map((line, i) =>
           <p key={i}>{line}</p>
         )}
       </div>

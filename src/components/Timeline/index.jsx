@@ -150,7 +150,7 @@ function TmlnBox({data}){
             </a>
             <p>{__("i_can")}</p>
             <ul>
-                {summaryIsAList && __(`${data.code}.summary`).map((text, ind) => <li key={ind}>{text}</li>)}
+                {summaryIsAList && __(`${data.code}.summary`, true)?.map((text, ind) => <li key={ind}>{text}</li>)}
             </ul>
             {data.clients && <p>{__("clients")} {__(`${data.code}.clients`)}</p>}
             {data.stack && <p>{__("stack")} <b>{data.stack}</b></p>}
