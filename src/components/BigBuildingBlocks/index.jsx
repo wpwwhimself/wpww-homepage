@@ -45,6 +45,8 @@ export function Footer(){
     ["fa-brands fa-facebook", "https://www.facebook.com/wpwwhimself/"],
     ["fa-brands fa-github", "https://www.github.com/wpwwhimself/"],
     ["fa-brands fa-linkedin", "https://www.linkedin.com/in/wpwwhimself/"],
+    ["fa-brands fa-youtube", "https://www.youtube.com/@wpwwhimself"],
+    ["fa-brands fa-tiktok", "https://www.tiktok.com/@wpwwhimself"],
     ["fa-brands fa-instagram", "https://www.instagram.com/wpwwhimself/"],
   ].map(([icon, link]) =>
     <a href={link} key={icon}><i className={icon}></i></a>
