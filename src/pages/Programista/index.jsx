@@ -62,29 +62,33 @@ export function Programista() {
     };
 
     const technologies = {
-        php: 0.85,
-        laravel: 0.8,
-        symfony: 0.3,
-        js: 0.8,
-        vuejs: 0.7,
-        react: 0.6,
-        angular: 0.1,
-        ".mysql": 0.8,
-        ".postgresql": 0.8,
-        ".mongodb": 0.4,
-        r_project: 0.8,
-        "!sas": 0.6,
-        python: 0.4,
-        git: 0.75,
-        ubuntu: 0.6,
-        docker: 0.4,
-        "!c_sharp": 0.25,
-        "!latex": 0.95,
-        "!markdown": 0.95,
-        "!ms_word": 0.95,
-        "!ms_excel": 0.9,
-        "!adobe_photoshop": 0.9,
-        "!adobe_illustrator": 0.8,
+        primary: {
+            php: 0.85,
+            laravel: 0.8,
+            js: 0.8,
+            vuejs: 0.7,
+            ".mysql": 0.8,
+            git: 0.75,
+            ubuntu: 0.6,
+        },
+        secondary: {
+            symfony: 0.3,
+            ".postgresql": 0.8,
+            react: 0.6,
+            angular: 0.1,
+            ".mongodb": 0.4,
+            r_project: 0.8,
+            "!sas": 0.6,
+            python: 0.4,
+            docker: 0.4,
+            "!c_sharp": 0.25,
+            "!latex": 0.95,
+            // "!markdown": 0.95,
+            "!ms_word": 0.95,
+            "!ms_excel": 0.9,
+            "!adobe_photoshop": 0.9,
+            "!adobe_illustrator": 0.8,
+        },
     };
 
     const i18n_langs = {
@@ -96,12 +100,6 @@ export function Programista() {
 
     const projects = [
         {
-            code: "prg.proj.homepage",
-            label: "!wpww.pl",
-            link: "https://github.com/wpwwhimself/wpww-homepage",
-            tech: ["react"],
-            icon: "!logo_blue",
-        }, {
             code: "prg.proj.msznm",
             label: "!Muzyka Szyta Na Miarę",
             link: "https://github.com/wpwwhimself/msznm",
@@ -114,17 +112,16 @@ export function Programista() {
             tech: ["laravel", "react"],
             icon: "!sz3",
         }, {
+            code: "prg.proj.promodruk",
+            link: "",
+            tech: ["laravel", "js"],
+            icon: "!promodruk",
+        }, {
             code: "prg.proj.sc",
             label: "!Sous Chef",
             link: "https://github.com/wpwwhimself/souschef-2",
             tech: ["laravel", "react"],
             icon: "!souschef",
-        }, {
-            code: "prg.proj.brz",
-            label: "!Brzoskwinia",
-            link: "https://github.com/wpwwhimself/brzoskwinia",
-            tech: ["php", "js"],
-            icon: "!brzoskwinia",
         }, {
             code: "prg.proj.krk",
             label: "!Tithree",
@@ -132,10 +129,17 @@ export function Programista() {
             tech: ["vuejs"],
             icon: "!t3",
         }, {
-            code: "prg.proj.promodruk",
-            link: "",
-            tech: ["laravel", "js"],
-            icon: "!promodruk",
+            code: "prg.proj.homepage",
+            label: "!wpww.pl",
+            link: "https://github.com/wpwwhimself/wpww-homepage",
+            tech: ["react"],
+            icon: "!logo_blue",
+        }, {
+            code: "prg.proj.brz",
+            label: "!Brzoskwinia",
+            link: "https://github.com/wpwwhimself/brzoskwinia",
+            tech: ["php", "js"],
+            icon: "!brzoskwinia",
         }, {
             code: "prg.proj.hh",
             label: "!Househunter",
@@ -152,28 +156,27 @@ export function Programista() {
             wip: true,
         }
     ];
-    
+
     return <Section clickTileFun="/">
         <p className="justify">{__("prg.intro")}</p>
 
-        <h2><FAIcon icon="timeline" /> {__("prg.headings.exp")}</h2>
-        <Timeline
-            boxesUp={tmln_contents.education} boxesDown={tmln_contents.jobExperience}
-            labelUp={__("prg.headings.timeline.up")} labelDown={__("prg.headings.timeline.down")}
-            />
-        
         <div className="flex-right" style={{ justifyContent: "space-evenly" }}>
             <div>
                 <h2><FAIcon icon="cog" /> {__("prg.headings.langs")}</h2>
                 <div className="flex-right tech-grid center zoom-icons" style={{fontSize: "2em", marginBottom: "0.5em"}}>
-                    {Object.entries(technologies).map(([icon, level], ind) => <div className="flex-down center" key={ind}>
-                        <div className="tech-grid-bar" style={{ height: level*70 }} title={level*100}></div>
-                        <FAIcon icon={
-                            icon.match(/[!.]/)
-                            ? icon
-                            : `brands ${icon.replace(/_/g, "-")}`
-                        } key={ind} title={icon} />
-                    </div>)}
+                    {Object.entries(technologies)
+                        .map(([division, techs]) => <>
+                            {Object.entries(techs).map(([icon, level]) => <div className={`flex-down center ${division == 'secondary' ? 'ghost' : ''}`} key={icon}>
+                                <div className="tech-grid-bar" style={{ height: level*70 }} title={level*100}></div>
+                                    <FAIcon icon={
+                                        icon.match(/[!.]/)
+                                        ? icon
+                                        : `brands ${icon.replace(/_/g, "-")}`
+                                    } title={icon} />
+                                </div>)
+                            }
+                        </>)
+                    }
                 </div>
             </div>
             <div className="print-only">
@@ -186,11 +189,11 @@ export function Programista() {
                 </div>
             </div>
         </div>
-        
+
         <h2><FAIcon icon="scroll" /> {__("prg.headings.projects")}</h2>
         <div className="grid-3 but-mobile-down but-print-grid-2">
             {projects.map((project) => 
-            <TextBox key={project.code} horizontal={true} ghost={project.wip}>
+            <TextBox key={project.code} horizontal={true} ghost={project.wip} printhide={project.wip}>
                 <div className="flex-right center large">
                     <FAIcon icon={project.icon} />
                 </div>
@@ -212,6 +215,12 @@ export function Programista() {
             </TextBox>
             )}
         </div>
+
+        <h2><FAIcon icon="timeline" /> {__("prg.headings.exp")}</h2>
+        <Timeline
+            boxesUp={tmln_contents.education} boxesDown={tmln_contents.jobExperience}
+            labelUp={__("prg.headings.timeline.up")} labelDown={__("prg.headings.timeline.down")}
+            />
         
         <SeeAlso>
         {[

@@ -1,6 +1,85 @@
 header{
     background: var(--bg2);
     padding: 2em 4em;
+    position: relative;
+
+    & .bauble {
+        position: absolute;
+        bottom: 0;
+        opacity: 0.25;
+        border-radius: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        --scale: 1.5;
+        --shift: 40em;
+        --width: 2.5em;
+        --height: 1em;
+
+        &.left {
+            right: calc(50% + var(--shift));
+            transform: skew(30deg);
+            & div {
+                text-align: right;
+                &.high {
+                    direction: ltr;
+                }
+                &.low > .light {
+                    translate: calc(var(--scale) * -1 * var(--width)) 0;
+                }
+            }
+        }
+        &.right {
+            left: calc(50% + var(--shift));
+            transform: skew(-30deg);
+            & div {
+                text-align: left;
+                &.high {
+                    direction: rtl;
+                }
+                &.low > .light {
+                    translate: calc(var(--scale) * var(--width)) 0;
+                }
+            }
+        }
+        
+        & div {
+            border-radius: inherit;
+
+            & .dark, & .light {
+                background-color: var(--fg);
+                &.light { opacity: 0.45; }
+            }
+            & .empty {
+                opacity: 1;
+                background-color: var(--bg2);
+            }
+
+            &.high > div {
+                display: inline-block;
+                vertical-align: bottom;
+                height: 50vh;
+                width: calc(var(--scale) * var(--width));
+                &.dark:first-child {
+                    width: 30vw;
+                }
+                &.dark + .empty {
+                    width: calc(var(--scale) * var(--width) / 2);
+                }
+                &.empty {
+                    width: 0;
+                }
+            }
+
+            &.low > div {
+                width: 100%;
+                height: calc(var(--scale) * var(--height));
+                &.light {
+                    height: calc(var(--scale) * var(--height) / 2);
+                    margin-top: calc(var(--scale) * var(--height) / 2);
+                }
+            }
+        }
+    }
 }
 header h1{
     font-size: 4em;

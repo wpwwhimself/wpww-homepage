@@ -30,6 +30,8 @@ export function Header(){
         </div>
         <h2 className="print-only"><i className="fa-solid fa-keyboard"></i> {__("pages.Programista")}</h2>
       </div>
+
+      <HeaderBaubles />
     </header>
   );
 }
@@ -95,4 +97,38 @@ export function Footer(){
     </footer>
   );
 }
-  
+
+function HeaderBaubles() {
+  return <>
+    <div className="bauble left">
+      <div className="high">
+        <div className="dark"></div>
+        <div className="light"></div>
+        <div className="dark"></div>
+        <div className="empty"></div>
+        <div className="light"></div>
+        <div></div>
+      </div>
+      <div className="low">
+        <div className="dark"></div>
+        <div className="light"></div>
+        <div className="dark"></div>
+      </div>
+    </div>
+    <div className="bauble right">
+      <div className="high">
+        <div className="dark"></div>
+        <div className="light"></div>
+        <div className="dark"></div>
+        <div className="empty"></div>
+        <div className="light"></div>
+        <div></div>
+      </div>
+      <div className="low">
+        <div className="dark"></div>
+        <div className="light"></div>
+        <div className="dark"></div>
+      </div>
+    </div>
+  </>;
+}
