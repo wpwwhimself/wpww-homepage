@@ -26,6 +26,10 @@ export function Muzyk(){
             link: "https://www.facebook.com/orkiestrawihajster",
             span: ["08.2021", null],
         }, {
+            code: "mus.bands.grobrass",
+            link: "https://www.weselezklasa.pl/ogloszenia-weselne/grobrass-mini-orkiestra-deta-do-zadan-specjalnych,54143/",
+            span: ["07.2025", null],
+        }, {
             code: "mus.bands.pwod",
             link: "https://www.facebook.com/orkiestrawolsztyn",
             span: ["06.2014", "10.2023"],
@@ -58,6 +62,8 @@ export function Muzyk(){
     ];
 
     return <Section clickTileFun="/">
+        <p className="center">{__("mus.intro")}</p>
+        
         <h2><FAIcon icon="people-group" /> {__("mus.headings.bands")}</h2>
         <div className="grid-3 but-mobile-down">
         {bands.map((band, ind) =>

@@ -159,7 +159,7 @@ export function Programista() {
     ];
 
     return <Section clickTileFun="/">
-        <p className="justify">{__("prg.intro")}</p>
+        <p className="center">{__("prg.intro")}</p>
 
         <div className="flex-right" style={{ justifyContent: "space-evenly" }}>
             <div>

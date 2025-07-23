@@ -58,7 +58,7 @@ export function Intro(){
 
     return(
         <Section>
-            <p className="flex-right center">{intro_text}</p>
+            <p className="center">{intro_text}</p>
             <div className="flex-right but-mobile-down stretch">
                 {["Programista", "Muzyk", "Inne"].map((label) => 
                     <ClickTile key={label}

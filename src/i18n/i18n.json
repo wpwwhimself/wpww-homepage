@@ -414,6 +414,10 @@
         }
     },
     "mus": {
+        "intro": [
+            "Kontakt z muzyką miałem od najmłodszych lat. W dzieciństwie większość moich zabaw kręciła się wokół taniego keyboardu. Później udzielałem się w szkolnych występach artystycznych. Za namową wielu ludzi poszedłem do szkoły muzycznej, a niedługo później zaczałem grać z różnymi zespołami w okolicznych miejscowościach. Obecnie gram co się da, na czym tylko się da, gdzie tylko się da.",
+            "Since the very early years I had contact with music. As a child, most of my time I spent with a cheap keyboard. Later, I was participating in school concerts. With encouragement from many people, I went to music school and soon after started playing with various bands in the area. Now I play anything, on anything, and anywhere."
+        ],
         "headings": {
             "edu": [
                 "Edukacja muzyczna",
@@ -552,29 +556,32 @@
                     "organ",
                     "Orgel"
                 ]
+            },
+            "grobrass": {
+                "name": [
+                    "GroBrass",
+                    "GroBrass",
+                    "GroBrass"
+                ],
+                "genre": [
+                    "pop i rock z dętym pazurem",
+                    "pop and rock with a brass touch",
+                    "Pop und Rock mit Blaselementen"
+                ],
+                "instruments": [
+                    "gitary, ...",
+                    "guitars, ...",
+                    "Gitarren, ..."
+                ]
             }
         },
         "instr": [
             [
-                "gitara klasyczna",
-                "gitara elektryczna",
-                "gitara basowa",
-                "ukulele",
-                "mandolina",
-                "fortepian",
-                "organy piszczałkowe",
-                "organy elektryczne",
-                "trąbka",
-                "saksofon tenorowy",
-                "flet poprzeczny",
-                "klarnet basowy",
-                "obój",
-                "tuba",
-                "flet piccolo",
-                "flugelhorn",
-                "instrumenty perkusyjne",
-                "harmonijka",
-                "akordeon"
+                "gitara klasyczna", "gitara elektryczna", "gitara basowa",
+                "ukulele", "mandolina",
+                "fortepian", "organy piszczałkowe", "organy elektryczne",
+                "trąbka", "saksofon tenorowy", "flet poprzeczny", "klarnet basowy", "obój", "tuba", "flet piccolo", "flugelhorn",
+                "instrumenty perkusyjne", "harmonijka", "akordeon"
             ],
             [
                 "classical guitar", "electric guitar", "bass guitar",
