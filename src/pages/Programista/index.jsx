@@ -113,7 +113,8 @@ export function Programista() {
             icon: "!sz3",
         }, {
             code: "prg.proj.promodruk",
-            link: "",
+            label: "!Promovera",
+            link: "https://www.ofertownik.promovera.pl/",
             tech: ["laravel", "js"],
             icon: "!promodruk",
         }, {
