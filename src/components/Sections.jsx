@@ -52,9 +52,13 @@ export function Intro(){
      */
     const {__} = useContext(LangContext);
 
+    let intro_text = __("intro_about_me");
+    const current_age = new Date().getFullYear() - 1997;
+    if (typeof intro_text === "string") intro_text = intro_text.replace(/\{age\}/, current_age);
+
     return(
         <Section>
-            <p>{__("intro_about_me")} {/*TODO NAPISAĆ COŚ WIĘCEJ*/}</p>
+            <p className="flex-right center">{intro_text}</p>
             <div className="flex-right but-mobile-down stretch">
                 {["Programista", "Muzyk", "Inne"].map((label) => 
                     <ClickTile key={label}

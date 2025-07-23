@@ -100,8 +100,9 @@
         ]
     },
     "intro_about_me": [
-        "Mam na imię Wojtek i... powinienem napisać tu coś więcej.",
-        "My name is Wojtek and I... really should write something more here."
+        "Mam na imię Wojtek, mam {age} lat i jestem programistą i muzykiem. Na razie tyle, szczegóły poniżej.",
+        "My name is Wojtek, I'm {age} years old and I'm a programmer and a musician. That's it for now, more details below.",
+        "Mein name ist Wojtek, ich bin {age} Jahre alt und ich bin ein Programmierer und ein Musikant. Für jetzt ist das alles, weitere Details unten."
     ],
     "prg": {
         "intro": [
