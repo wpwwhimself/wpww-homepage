@@ -20,7 +20,7 @@ export function Section({clickTileFun = null, children, title = null}){
 
     return(
         <div className="flex-down">
-            <div className="section-header flex-right center print-hide">
+            <div className="section-header flex-right center print-hide stagger" style={{ "--stagger-index": 0 }}>
                 <h1 className="flex-right center">
                 <FAIcon icon={currentRoute.icon} />
                 {title}
@@ -58,10 +58,10 @@ export function Intro(){
 
     return(
         <Section>
-            <p className="center">{intro_text}</p>
+            <p className="center stagger" style={{ "--stagger-index": 1 }}>{intro_text}</p>
             <div className="flex-right but-mobile-down stretch">
-                {["Programista", "Muzyk", "Inne"].map((label) => 
-                    <ClickTile key={label}
+                {["Programista", "Muzyk", "Inne"].map((label, i) => 
+                    <ClickTile key={label} stagger={i + 2}
                         icon={routes.find(route => route.name === label).icon}
                         label={__("pages."+label)}
                         clickfun={routes.find(route => route.name === label).link}

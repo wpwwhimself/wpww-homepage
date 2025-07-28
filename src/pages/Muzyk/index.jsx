@@ -62,12 +62,12 @@ export function Muzyk(){
     ];
 
     return <Section clickTileFun="/">
-        <p className="center">{__("mus.intro")}</p>
+        <p className="center stagger" style={{ "--stagger-index": 1 }}>{__("mus.intro")}</p>
         
         <h2><FAIcon icon="people-group" /> {__("mus.headings.bands")}</h2>
         <div className="grid-3 but-mobile-down">
         {bands.map((band, ind) =>
-            <TextBox key={ind} ghost={band.span[1]}>
+            <TextBox key={ind} ghost={band.span[1]} stagger={ind + 2}>
                 <p className="ghost">
                     <DateSpan dates={band.span} />
                 </p>
@@ -82,14 +82,14 @@ export function Muzyk(){
         <h2><FAIcon icon="guitar" /> {__("mus.headings.instr")}</h2>
         <div className="flex-right wrap center">
         {__(instruments, true)?.map((instr, ind) => 
-            <span className="framed" key={ind}>{instr}</span>
+            <span className="framed stagger" style={{ "--stagger-index": ind + 2 + bands.length }} key={ind}>{instr}</span>
         )}
         </div>
 
         <h2><FAIcon icon="scroll" /> {__("mus.headings.mine")}</h2>
         <div className="grid-2 but-mobile-down">
         {mine.map((el, ind) => 
-            <TextBox key={ind}>
+            <TextBox key={ind} stagger={ind + 2 + bands.length + __(instruments, true)?.length}>
                 <div className="flex-right center large">
                     <FAIcon icon={el.icon} />
                 </div>
@@ -102,6 +102,6 @@ export function Muzyk(){
         </div>
 
         <h2><FAIcon icon="graduation-cap" /> {__("mus.headings.edu")}</h2>
-        <h3 style={{ textAlign: "center" }}>{__("mus.edu.place")} <small className="ghost"><DateSpan dates={["09.2011", "07.2015"]} /></small></h3>
+        <h3 class="stagger" style={{ textAlign: "center", "--stagger-index": 2 + bands.length + __(instruments, true)?.length + mine.length }}>{__("mus.edu.place")} <small className="ghost"><DateSpan dates={["09.2011", "07.2015"]} /></small></h3>
     </Section>;
 }

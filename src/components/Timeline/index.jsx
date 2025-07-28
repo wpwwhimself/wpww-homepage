@@ -21,7 +21,7 @@ function highlightBox(id = null) {
     }
 }
 
-export default function Timeline({boxesUp, boxesDown, labelUp, labelDown}){
+export default function Timeline({boxesUp, boxesDown, labelUp, labelDown, stagger = 0}){
     const year_now = new Date().getFullYear();
     const boxesAll = boxesUp.concat(boxesDown);
 
@@ -103,8 +103,8 @@ export default function Timeline({boxesUp, boxesDown, labelUp, labelDown}){
         <div className="timeline but-mobile-down">
             <div className="boxes flex-down">
                 <h3 className="grayed-out">{labelUp}</h3>
-            {boxesUp.map((val) => 
-                <TmlnBox key={val.code} data={val} />)}
+            {boxesUp.map((val, i) => 
+                <TmlnBox key={val.code} data={val} stagger={i + stagger} />)}
             </div>
             <div className="line">
                 <div id="tmln-line-itself" />
@@ -120,14 +120,14 @@ export default function Timeline({boxesUp, boxesDown, labelUp, labelDown}){
             </div>
             <div className="boxes flex-down">
                 <h3 className="grayed-out">{labelDown}</h3>
-            {boxesDown.map((val) => 
-                <TmlnBox key={val.code} data={val} />)}
+            {boxesDown.map((val, i) => 
+                <TmlnBox key={val.code} data={val} stagger={i + stagger + boxesUp.length} />)}
             </div>
         </div>
     )
 }
 
-function TmlnBox({data}){
+function TmlnBox({data, stagger = 0}){
     const {__} = useContext(LangContext);
 
     const summaryIsAList = Array.isArray(__(`${data.code}.summary`));
@@ -136,6 +136,7 @@ function TmlnBox({data}){
         <TextBox pinLeft={true} dataId={data.code} noHighlight={true}
             onMouseEnter={() => highlightBox(data.code)}
             onMouseLeave={() => highlightBox(null)}
+            stagger={stagger}
         >
             <p className="ghost">
                 <DateSpan dates={data.span} />

@@ -45,8 +45,8 @@ export function Inne(){
     return <Section clickTileFun="/">
         <h2><FAIcon icon="bicycle" /> {__("alt.headings.whatelse")}</h2>
         <div className="grid-3 but-mobile-down">
-        {things_i_do.map(bit => 
-            <TextBox key={bit.code}>
+        {things_i_do.map((bit, i) => 
+            <TextBox key={bit.code} stagger={i + 1}>
                 <div className="flex-right center large">
                     <FAIcon icon={bit.icon} />
                 </div>
@@ -61,7 +61,7 @@ export function Inne(){
         <h2><FAIcon icon="tv" /> {__("alt.headings.favmedia")}</h2>
         <div className="flex-right wrap center">
             {media.map((bit, i) =>
-                <span className="framed" key={i}>{bit}</span>
+                <span className="framed stagger" style={{ "--stagger-index": i + 1 + things_i_do.length }} key={i}>{bit}</span>
             )}
         </div>
     </Section>;

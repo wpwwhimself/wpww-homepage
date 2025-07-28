@@ -159,12 +159,12 @@ export function Programista() {
     ];
 
     return <Section clickTileFun="/">
-        <p className="center">{__("prg.intro")}</p>
+        <p className="center stagger" style={{ "--stagger-index": 1 }}>{__("prg.intro")}</p>
 
         <div className="flex-right" style={{ justifyContent: "space-evenly" }}>
             <div>
                 <h2><FAIcon icon="cog" /> {__("prg.headings.langs")}</h2>
-                <div className="flex-right tech-grid center zoom-icons" style={{fontSize: "2em", marginBottom: "0.5em"}}>
+                <div className="flex-right tech-grid center zoom-icons stagger" style={{fontSize: "2em", marginBottom: "0.5em", "--stagger-index": 2, }}>
                     {Object.entries(technologies)
                         .map(([division, techs]) => <>
                             {Object.entries(techs).map(([icon, level]) => <div className={`flex-down center ${division == 'secondary' ? 'ghost' : ''}`} key={icon}>
@@ -193,8 +193,8 @@ export function Programista() {
 
         <h2><FAIcon icon="scroll" /> {__("prg.headings.projects")}</h2>
         <div className="grid-3 but-mobile-down but-print-grid-2">
-            {projects.map((project) => 
-            <TextBox key={project.code} horizontal={true} ghost={project.wip} printhide={project.wip}>
+            {projects.map((project, i) => 
+            <TextBox key={project.code} horizontal={true} ghost={project.wip} printhide={project.wip} stagger={i + 3}>
                 <div className="flex-right center large">
                     <FAIcon icon={project.icon} />
                 </div>
@@ -221,6 +221,7 @@ export function Programista() {
         <Timeline
             boxesUp={tmln_contents.education} boxesDown={tmln_contents.jobExperience}
             labelUp={__("prg.headings.timeline.up")} labelDown={__("prg.headings.timeline.down")}
+            stagger={3 + projects.length}
             />
         
         <SeeAlso>

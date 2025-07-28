@@ -4,7 +4,7 @@ import FAIcon from "../FAIcon";
 import "./style.css"
 import { Link } from "react-router-dom";
 
-export function ClickTile({icon, label = null, clickfun, animateIcon = null, small = false}){
+export function ClickTile({icon, label = null, clickfun, animateIcon = null, small = false, stagger = 0}){
     function Entrails({icon, label = null, clickfun, animateIcon = null, small = false}){
         let IconTag;
         if(icon.substring(0,1) === "!"){
@@ -32,13 +32,13 @@ export function ClickTile({icon, label = null, clickfun, animateIcon = null, sma
 
     if(typeof clickfun == "string") return(
         <Link to={clickfun}>
-            <div className={`click-tile flex-down center clickable ${small && "small"}`}>    
+            <div className={`click-tile flex-down center clickable ${small && "small"} stagger`} style={{ "--stagger-index": stagger }}>    
                 <Entrails icon={icon} label={label} clickfun={clickfun} animateIcon={animateIcon} small={small} />
             </div>
         </Link>
     );
     return(
-       <div className={`click-tile flex-down center clickable ${small && "small"}`} onClick={clickfun}>    
+        <div className={`click-tile flex-down center clickable ${small && "small"} stagger`} style={{ "--stagger-index": stagger }} onClick={clickfun}>
             <Entrails icon={icon} label={label} clickfun={clickfun} animateIcon={animateIcon} small={small} />
         </div>
     );
