@@ -167,7 +167,7 @@ export function Programista() {
                 <div className="flex-right tech-grid center zoom-icons stagger" style={{fontSize: "2em", marginBottom: "0.5em", "--stagger-index": 2, }}>
                     {Object.entries(technologies)
                         .map(([division, techs]) => <>
-                            {Object.entries(techs).map(([icon, level]) => <div className={`flex-down center ${division == 'secondary' ? 'ghost' : ''}`} key={icon}>
+                            {Object.entries(techs).map(([icon, level]) => <div className={`flex-down center ${division === 'secondary' ? 'ghost' : ''}`} key={icon}>
                                 <div className="tech-grid-bar" style={{ height: level*70 }} title={level*100}></div>
                                     <FAIcon icon={
                                         icon.match(/[!.]/)
