@@ -28,7 +28,7 @@ header{
                 }
             }
             @starting-style {
-                right: calc(100% + var(--shift));
+                right: calc(65% + var(--shift));
             }
         }
         &.right {
@@ -44,7 +44,7 @@ header{
                 }
             }
             @starting-style {
-                left: calc(100% + var(--shift));
+                left: calc(65% + var(--shift));
             }
         }
         

@@ -40,6 +40,7 @@
 /*****************UNIVERSALS****************/
 *{
   transition-duration: 0.3s;
+  transition-timing-function: ease-out;
 }
 .App{
   min-height: 100vh;
