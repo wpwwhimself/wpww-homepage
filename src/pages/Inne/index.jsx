@@ -22,6 +22,7 @@ const things_i_do = [
 
 const media = [
     "Adam Neely",
+    "Aging Wheels",
     "Bricky",
     "Captain Disillusion",
     "CGP Grey",
@@ -34,6 +35,7 @@ const media = [
     "Rammstein",
     "Starcraft",
     "Tantacrul",
+    "Technology Connections",
     "The Office",
     "Warhammer 40K",
     "..."
