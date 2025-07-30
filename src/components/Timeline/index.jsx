@@ -132,11 +132,10 @@ function TmlnBox({data, stagger = 0}){
 
     const summaryIsAList = Array.isArray(__(`${data.code}.summary`));
 
-    return(
+    return(<div className="stagger" style={{ "--stagger-index": stagger }}>
         <TextBox pinLeft={true} dataId={data.code} noHighlight={true}
             onMouseEnter={() => highlightBox(data.code)}
             onMouseLeave={() => highlightBox(null)}
-            stagger={stagger}
         >
             <p className="ghost">
                 <DateSpan dates={data.span} />
@@ -157,5 +156,5 @@ function TmlnBox({data, stagger = 0}){
             {data.stack && <p>{__("stack")} <b>{data.stack}</b></p>}
             {data.readSomeMore && <ArrowClickTile label="more" fwd={true} clickfun={`/programmer/${data.readSomeMore}`} />}
         </TextBox>
-    )
+    </div>)
 }
