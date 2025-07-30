@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { LangContext } from "../Layout";
 import { Section } from "../../components/Sections";
 import "./style.css"
-import { ClickTile, SeeAlso } from "../../components/ClickTiles";
+import { ClickTile } from "../../components/ClickTiles";
 
 export function Tarot(){
   const {__} = useContext(LangContext);
