@@ -159,12 +159,12 @@ export function Programista() {
     ];
 
     return <Section clickTileFun="/">
-        <p className="center stagger" style={{ "--stagger-index": 1 }}>{__("prg.intro")}</p>
+        <p className="center stagger" style={{ "--stagger-index": 2 }}>{__("prg.intro")}</p>
 
         <div className="flex-right" style={{ justifyContent: "space-evenly" }}>
             <div>
-                <h2><FAIcon icon="cog" /> {__("prg.headings.langs")}</h2>
-                <div className="flex-right tech-grid center zoom-icons stagger" style={{fontSize: "2em", marginBottom: "0.5em", "--stagger-index": 2, }}>
+                <h2 className="stagger" style={{ "--stagger-index": 3 }}><FAIcon icon="cog" /> {__("prg.headings.langs")}</h2>
+                <div className="flex-right tech-grid center zoom-icons stagger" style={{fontSize: "2em", marginBottom: "0.5em", "--stagger-index": 4, }}>
                     {Object.entries(technologies)
                         .map(([division, techs]) => <>
                             {Object.entries(techs).map(([icon, level]) => <div className={`flex-down center ${division === 'secondary' ? 'ghost' : ''}`} key={icon}>
@@ -191,10 +191,10 @@ export function Programista() {
             </div>
         </div>
 
-        <h2><FAIcon icon="scroll" /> {__("prg.headings.projects")}</h2>
+        <h2 className="stagger" style={{ "--stagger-index": 5 }}><FAIcon icon="scroll" /> {__("prg.headings.projects")}</h2>
         <div className="grid-3 but-mobile-down but-print-grid-2">
             {projects.map((project, i) => 
-            <TextBox key={project.code} horizontal={true} ghost={project.wip} printhide={project.wip} stagger={i + 3}>
+            <TextBox key={project.code} horizontal={true} ghost={project.wip} printhide={project.wip} stagger={i + 6}>
                 <div className="flex-right center large">
                     <FAIcon icon={project.icon} />
                 </div>
@@ -217,11 +217,11 @@ export function Programista() {
             )}
         </div>
 
-        <h2><FAIcon icon="timeline" /> {__("prg.headings.exp")}</h2>
+        <h2 className="stagger" style={{ "--stagger-index": 7 + projects.length }}><FAIcon icon="timeline" /> {__("prg.headings.exp")}</h2>
         <Timeline
             boxesUp={tmln_contents.education} boxesDown={tmln_contents.jobExperience}
             labelUp={__("prg.headings.timeline.up")} labelDown={__("prg.headings.timeline.down")}
-            stagger={3 + projects.length}
+            stagger={8 + projects.length}
             />
         
         <SeeAlso>

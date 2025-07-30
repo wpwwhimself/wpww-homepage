@@ -26,11 +26,11 @@ export function Section({clickTileFun = null, children, title = null}){
                 {title}
                 </h1>
             </div>
-            {clickTileFun && <ArrowClickTile clickfun={clickTileFun} />}
+            {clickTileFun && <div className="stagger" style={{ "--stagger-index": 1 }}><ArrowClickTile clickfun={clickTileFun} /></div>}
             <div>
                 {children}
             </div>
-            {clickTileFun && <ArrowClickTile clickfun={clickTileFun} />}
+            {clickTileFun && <div className="stagger" style={{ "--stagger-index": 2 }}><ArrowClickTile clickfun={clickTileFun} /></div>}
         </div>
     )
 }

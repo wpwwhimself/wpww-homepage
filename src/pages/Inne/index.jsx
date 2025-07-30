@@ -43,10 +43,10 @@ export function Inne(){
     const {__} = useContext(LangContext);
 
     return <Section clickTileFun="/">
-        <h2><FAIcon icon="bicycle" /> {__("alt.headings.whatelse")}</h2>
+        <h2 className="stagger" style={{ "--stagger-index": 2 }}><FAIcon icon="bicycle" /> {__("alt.headings.whatelse")}</h2>
         <div className="grid-3 but-mobile-down">
         {things_i_do.map((bit, i) => 
-            <TextBox key={bit.code} stagger={i + 1}>
+            <TextBox key={bit.code} stagger={i + 3}>
                 <div className="flex-right center large">
                     <FAIcon icon={bit.icon} />
                 </div>
@@ -58,10 +58,10 @@ export function Inne(){
         )}
         </div>
         
-        <h2><FAIcon icon="tv" /> {__("alt.headings.favmedia")}</h2>
+        <h2 className="stagger" style={{ "--stagger-index": things_i_do.length + 4 }}><FAIcon icon="tv" /> {__("alt.headings.favmedia")}</h2>
         <div className="flex-right wrap center">
             {media.map((bit, i) =>
-                <span className="framed stagger" style={{ "--stagger-index": i + 1 + things_i_do.length }} key={i}>{bit}</span>
+                <span className="framed stagger" style={{ "--stagger-index": i + 5 + things_i_do.length }} key={i}>{bit}</span>
             )}
         </div>
     </Section>;
