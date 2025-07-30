@@ -102,6 +102,12 @@ div:not(.App), form{
 .accent{
   color: var(--acc);
 }
+.accent2 {
+  color: var(--acc2);
+}
+.accent3 {
+  color: var(--acc3);
+}
 .justify{
   text-align: justify;
 }

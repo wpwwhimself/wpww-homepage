@@ -144,7 +144,7 @@ function TmlnBox({data, stagger = 0}){
                 <FAIcon icon={data.icon} />
             </div>}
             <h2>{__(`${data.code}.name`)}</h2>
-            {data.hasSpec && <p className="accent">{__(`${data.code}.spec`)}</p>}
+            {data.hasSpec && <p className="accent2">{__(`${data.code}.spec`)}</p>}
             <a href={data.placeLink}>
                 <h3>{__(`${data.code}.place`)}</h3>
             </a>

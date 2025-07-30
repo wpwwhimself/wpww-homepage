@@ -28,7 +28,7 @@ export function Header(){
           />
           <h1>Przybyła</h1>
         </div>
-        <h2 className="print-only"><i className="fa-solid fa-keyboard"></i> {__("pages.Programista")}</h2>
+        <h2 className="print-only section-header"><i className="fa-solid fa-keyboard"></i> {__("pages.Programista")}</h2>
       </div>
 
       <HeaderBaubles />

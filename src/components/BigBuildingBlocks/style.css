@@ -146,8 +146,12 @@ footer h2, footer p{
 
 .section-header{
     align-items: flex-start;
-    background: radial-gradient(circle at center, var(--bg1), var(--bg));
+    background: radial-gradient(circle at center, var(--bg1), transparent);
     padding: 0.5em 1em;
+
+    header & {
+        background: radial-gradient(circle at center, var(--bg2), transparent);
+    }
 }
 .section-header h1, .section-header h2, .section-header h3{
     margin: 0;
