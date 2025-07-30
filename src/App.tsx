@@ -7,6 +7,7 @@ import { Programista, ReadSomeMore } from './pages/Programista';
 import { Inne } from './pages/Inne';
 import { Intro, TBAPage } from './components/Sections';
 import { Tarot } from './pages/tarot';
+import ScrollToTop from './components/ScrollToTop';
 
 export const routes = [
   {
@@ -50,6 +51,7 @@ export const routes = [
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path='/' element={<Layout />}>
           {routes.map((route, i) =>
