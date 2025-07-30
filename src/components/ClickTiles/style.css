@@ -15,9 +15,9 @@
 }
 
 .click-tile{
-    --grad-1: white;
-    --grad-2: white;
-    --grad-3: white;
+    --grad-1: var(--bg);
+    --grad-2: var(--bg);
+    --grad-3: var(--bg);
     transition:
         --grad-1 0.3s ease-out,
         --grad-2 0.3s ease-out,
