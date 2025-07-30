@@ -114,7 +114,7 @@ export function Programista() {
         }, {
             code: "prg.proj.promodruk",
             label: "!Promovera",
-            link: "https://www.ofertownik.promovera.pl/",
+            // link: "https://www.ofertownik.promovera.pl/", //todo add link to repo when i merge all 3
             tech: ["laravel", "js"],
             icon: "!promodruk",
         }, {
@@ -243,7 +243,7 @@ export function ReadSomeMore({code}){
 
     return <Section clickTileFun="/programmer" title={__(`${job.code}.place`)}>
         <div className="flex-right center">
-            <TextBox>
+            <TextBox stagger={2}>
                 <h2>{__(`${job.code}.name`)}</h2>
                 <i className="ghost"><DateSpan dates={job.span} /></i>
             </TextBox>
@@ -252,13 +252,15 @@ export function ReadSomeMore({code}){
             Array.isArray(rsm)
             ? rsm.map((item, ind) => 
                 (!Array.isArray(item))
-                ? <p key={ind} className="justify">{item}</p>
-                : <ul key={ind}>{item.map((text, indd) => <li key={indd} className="justify">{text}</li>)}</ul>
+                ? <p key={ind} className="justify stagger" style={{ "--stagger-index": ind + 3 }}>{item}</p>
+                : <ul key={ind} className="stagger" style={{ "--stagger-index": ind + 3 }}>{item.map((text, indd) => <li key={indd} className="justify">{text}</li>)}</ul>
             )
             : rsm
         }
-        <SeeAlso>
-            <ClickTile icon={`!${job.readSomeMore}`} small={true} clickfun={job.placeLink} />
-        </SeeAlso>
+        <div className="stagger" style={{ "--stagger-index": rsm.length + 3 }}>
+            <SeeAlso>
+                <ClickTile icon={`!${job.readSomeMore}`} small={true} clickfun={job.placeLink} />
+            </SeeAlso>
+        </div>
     </Section>;
 }
