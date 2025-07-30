@@ -1,11 +1,44 @@
+@property --grad-1 {
+    syntax: '<color>';
+    initial-value: white;
+    inherits: false;
+}
+@property --grad-2 {
+    syntax: '<color>';
+    initial-value: white;
+    inherits: false;
+}
+@property --grad-3 {
+    syntax: '<color>';
+    initial-value: white;
+    inherits: false;
+}
+
 .click-tile{
+    --grad-1: white;
+    --grad-2: white;
+    --grad-3: white;
+    transition:
+        --grad-1 0.3s ease-out,
+        --grad-2 0.3s ease-out,
+        --grad-3 0.3s ease-out;
+
     background-color: var(--bg1);
+    color: var(--fg) !important;
     padding: 0.5em 1em;
-    border: 3px solid var(--acc);
+    border: 3px solid transparent;
+    background: 
+        linear-gradient(135deg, var(--grad-1), var(--grad-2), var(--grad-3)),
+        linear-gradient(135deg, var(--acc), var(--acc2), var(--acc3));
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
 }
 .click-tile:hover{
-    background-color: var(--acc);
-    color: var(--fg) !important;
+    --grad-1: var(--acc);
+    --grad-2: var(--acc2);
+    --grad-3: var(--acc3);
+
+    background-origin: border-box;
 }
 .click-tile i{ font-size: 5em; }
 .click-tile.small i{ font-size: 1.5em; }

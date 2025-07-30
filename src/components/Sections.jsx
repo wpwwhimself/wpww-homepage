@@ -60,13 +60,13 @@ export function Intro(){
         <Section>
             <p className="center stagger" style={{ "--stagger-index": 1 }}>{intro_text}</p>
             <div className="flex-right but-mobile-down stretch">
-                {["Programista", "Muzyk", "Inne"].map((label, i) => 
-                    <ClickTile key={label} stagger={i + 2}
+                {["Programista", "Muzyk", "Inne"].map((label, i) => <div className="stagger" style={{ "--stagger-index": i + 2 }} key={label}>
+                    <ClickTile
                         icon={routes.find(route => route.name === label).icon}
                         label={__("pages."+label)}
                         clickfun={routes.find(route => route.name === label).link}
                         />
-                )}
+                </div>)}
             </div>
         </Section>
     );

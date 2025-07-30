@@ -2,7 +2,9 @@
 @import url('https://fonts.cdnfonts.com/css/tex-gyre-adventor');
 
 :root{
-  --acc: #0099ff;
+  --acc: #09f;
+  --acc2: #84f;
+  --acc3: #f90;
 
   --ok: 46, 184, 46;
   --warning: 247, 167, 20;
@@ -39,6 +41,7 @@
 
 /*****************UNIVERSALS****************/
 *{
+  transition-property: opacity, translate, left, right, scale, border;
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
 }
@@ -88,7 +91,12 @@ div:not(.App), form{
   border-radius: 1em;
 }
 .logo{
+  width: 5em;
   height: 5em;
+  background: linear-gradient(135deg, var(--acc), var(--acc2), var(--acc3));
+  mask-image: url("../public/pics/custom_icons/logo_blue.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
   margin: 0.5em;
 }
 .accent{
@@ -205,7 +213,7 @@ a:hover, .clickable:hover{
 .stagger {
   --stagger-index: 0;
   transition:
-    all 0.3s ease-out,
+    all 0.3s ease-out 0s,
     opacity 0.3s ease-out calc(0.15s * var(--stagger-index)),
     translate 0.3s ease-out calc(0.15s * var(--stagger-index));
 

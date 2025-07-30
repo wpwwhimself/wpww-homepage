@@ -52,7 +52,7 @@
     border-radius: 0.5em;
 }
 #tmln-line-bars span.ev{
-    background: var(--acc);
+    background: linear-gradient(135deg, var(--acc), var(--acc2), var(--acc3));
 }
 
 @media screen and (max-width: 600px){
