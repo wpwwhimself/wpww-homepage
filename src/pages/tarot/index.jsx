@@ -28,14 +28,14 @@ export function Tarot(){
   }
 
   return <Section clickTileFun="/others">
-      <div className="flex-right center">
+      <div className="flex-right center stagger" style={{ "--stagger-index": 2 }}>
         <ClickTile icon="shopping-cart" small={true} label={__("alt.whatelse.drawing.tarot")} clickfun="https://www.makeplayingcards.com/sell/marketplace/minimalist-tarot-deck.html" />
       </div>
 
       <div id="tarot-gallery" className="flex-right wrap center">
-        {cards.map((card, i) => 
-          <img key={i} src={card} alt="card" />
-        )}
+        {cards.map((card, i) => <div className="stagger" style={{ "--stagger-index": i + 3 }} key={i}>
+          <img src={card} alt="card" />
+        </div>)}
       </div>
       
   </Section>;
