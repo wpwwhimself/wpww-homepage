@@ -7,6 +7,7 @@ import { Programista, ReadSomeMore } from './pages/Programista';
 import { Inne } from './pages/Inne';
 import { Intro, TBAPage } from './components/Sections';
 import { Tarot } from './pages/tarot';
+import { Hydrophilia } from './pages/hydrophilia';
 import ScrollToTop from './components/ScrollToTop';
 
 export const routes = [
@@ -45,7 +46,13 @@ export const routes = [
     icon: "diamond",
     link: "/others/tarot",
     component: <Tarot />,
-  }
+  },
+  {
+    name: "Hydrophilia",
+    icon: "!hydrophilia",
+    link: "/musician/hydrophilia",
+    component: <Hydrophilia />,
+  },
 ];
 
 function App() {

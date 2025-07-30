@@ -97,6 +97,12 @@
             "Tarot",
             "Tarot",
             "タロット"
+        ],
+        "Hydrophilia": [
+            "Hydrophilia",
+            "Hydrophilia",
+            "Hydrophilia",
+            "Hydrophilia"
         ]
     },
     "intro_about_me": [
@@ -625,7 +631,91 @@
                     "Hydrophilia",
                     "Hydrophilia",
                     "Hydrophilia"
-                ]
+                ],
+                "details": {
+                    "headings": {
+                        "about": [
+                            "O projekcie",
+                            "About the project"
+                        ],
+                        "albums": [
+                            "Albumy",
+                            "Albums"
+                        ]
+                    },
+                    "about": [
+                        [
+                            "Hydrophilia jest moim dużym projektem muzycznym, obejmujący całkiem długi okres mojego życia. Głównie tworzę w nim własne utwory i gram na wielu instrumentach, łącząc materiał inspirowany hard-rockiem, jazzem i elektroniką.",
+                            "Pierwsze próby pisania własnych piosenek pojawiły się u mnie w wieku około 10 lat. Moje pierwsze utwory nie były specjalnie polotne, ale i tak tworzą część mojej kariery. Niestety prawie wszystkie utwory z tamtych czasów zaginęły. To, co się zachowało, prezentuję tutaj.",
+                            "Dorastając, zacząłem korzystać z nowych technologii i nowego oprogramowania. Jakość rosła razem ze mną i nawet pomimo tego, że nie mogłem się zdecydować nad jedną nazwą projektu, nie powstrzymywało mnie to przed komponowaniem. Próbowałem też inkorporować więcej elementów muzyki na żywo, na przykład instrumenty dęte.",
+                            "Poniżej znajdziesz dorobek, stan obecny i plany związane z moją pracą. Niestety czas wolny znika w równie zatrważającym tempie, co przypływ lat, wobec czego liczba nowych utworów ciągle maleje. Mimo to nadal mam nadzieję, że projekt potrwa dalej..."
+                        ],
+                        [
+                            "Hydrophilia is my big music project which spans quite a few years of my life. In it, I mostly compose my own songs and play a lot of different instruments, knitting material inspired by hard-rock, jazz, and electronic music.",
+                            "The earliest attempts of writing my own songs come from when I was about 10. My first songs were nothing to write home about but still, they form part of my history with music. Sadly, almost all pieces from that time are gone. What's left is kept here.",
+                            "As I grew, I attempted more techniques and acquired new software. The quality grew with me and though I couldn't decide on the name for myself, that didn't stop me from releasing songs. I also tried to incorporate more live elements to my pieces, such as wind instruments.",
+                            "On the following pages you can find the legacy, current state, and plans regarding my work. Unfortunately, as I come to a shocking realization that free time dwindles with age, the amount of new songs drop to the floor. However I still hope there is going to be more... "
+                        ]
+                    ],
+                    "album-details": {
+                        "www": [
+                            "Z jednej strony pytanie metaforyczne, a także temat przewodni utworów tego albumu. Z drugiej powrót do muzycznej przeszłości, próba naprawy tego, co trzeba naprawić.",
+                            "On one hand, a metaphorical question – and the leading theme of the songs found in this album. On the other, a return to the musical past, to amend what needs to be amended."
+                        ],
+                        "litm": [
+                            "Po pójściu na studia i zamieszkaniu w wielkim świecie musiałem ograniczyć liczbę instrumentów, jakie mogłem zabrać ze sobą. To posłużyło za inspirację dla tego albumu. Temat w zasadzie dowolny, ale generalnie smutny.",
+                            "After joining the university and moving into the big world, I was forced to limit the number of instruments I can take with me. This served as an inspiration towards this album. The theme – somewhat freeform but generally speaking, sad."
+                        ],
+                        "yume": [
+                            "Pionierski album (znowu), zawierający piosenki pisane po japońsku. Podobnie do “Torn Apart”, nie ma własnego przekazu, ale służy za zebranie myśli, jakie miałem w tamtych czasach.",
+                            "A pioneering album (again) containing songs written in Japanese. Similarily to “Torn Apart”, it has no intrinsic message but it serves as a collection of thoughts I had during that time."
+                        ],
+                        "pct": [
+                            "Album instrumentalny, utworzony dla tych, którzy nie mogą zdzierżyć mojego głosu. Inspiracja to oczywiście Grzechy Główne, a każdy utwór jest wolną interpretacją jednego z nich.",
+                            "An instrumental album desiged for those who can't bear my voice in any form. The inspiration for this one lies in Christian Cardinal Sins and each track is a freeform interpretation of these."
+                        ],
+                        "moabn": [
+                            "Jazzowa interpretacja kilku pieśni kościelnych. Od najmłodszych lat czułem, że ze wszystkiego da się zrobić jazz, nawet ze śpiewów religijnych. Z wiarą u mnie na bakier, ale trzeba przyznać, że melodie tych pieśni są całkiem intrygujące i łatwe w obróbce.",
+                            "A jazz interpretation of a few Catholic church songs. Since my younger days I believed that everything can be turned to jazz, even the religious incantations. I am not a man of faith but one must admit that the melodies are quite intriguing and prone to being interpreted."
+                        ],
+                        "eia": [
+                            "Piosenki prosto od serca, opowieść o codziennych zmaganiach faceta takiego, jak ja – tych prawdziwych, a także tych wyimaginowanych.",
+                            "Coming straight from my heart, a tale about daily struggles of a man like me – those real, as well as those imagined."
+                        ],
+                        "lmns": [
+                            "Mój pierwszy album pod szyldem Lightstream. Tak, jak większość piosenek – o miłości. Pionier w nowych technologicznych i muzycznych rozwiązaniach spośród mojej twórczości.",
+                            "The very first album from under the name of Lightstream. As most songs do – this one is about love. The pioneer of new technological and musical solutions among my creations."
+                        ],
+                        "ta": [
+                            "Drugi i ostatni album złożony jako MiRage Entertainment. Tutaj zaczyna się moja przygoda z nagrywaniem własnych wokali, podobnie jak i innych instrumentów.",
+                            "The second and the last album clamped together by MiRage Entertainment. Here is the beginning of my adventures with recording my own vocals, as well as the instrumental bits."
+                        ],
+                        "ricnt": [
+                            "Jak nazwa wskazuje, sztandarowy dowód na przemianę w MiRage Entertainment. Nowe technologie doprowadziły do osiągnięcia nowego poziomu jakości. Każda z tych piosenek teoretycznie ma też słowa, ale... wolałbym ich nie pokazywać publicznie; można to było zrobić lepiej.",
+                            "As the name implies, the hallmark of the transformation into MiRage Entertainment. The new technology lead to new qualities of created songs. Each of those in theory has its own lyrics but... Better not show these to the public; I could have done a better job."
+                        ],
+                        "lmum": [
+                            "Czarna perła wśród tych albumów. Nigdy nie znalazłem czasu ani chęci, żeby rozciągnąć ten album i już nigdy ich nie znajdę. Mimo to nadal go tu zamieszczam, pokazując, że tak mógł brzmieć nowy Elky Interactive",
+                            "A black pearl among these albums. I never could find time or will to extend it and I never will. Still, the album is still being listed here, highlighting that this could be the new Elky Interactive."
+                        ],
+                        "lmra": [
+                            "Przed tym albumem były jeszcze 2 inne utwory, ale zaginęły one bezpowrotnie. Tak czy inaczej ten album (pomijając nazwę, cóż) jest fundamentem mojego artystycznego ja.",
+                            "De facto there were two other original tunes before this album but they disappeared into the void. Nevertheless, the album alone, aside from a comical name, is the foundation of my artistic ego."
+                        ],
+                        "ocbt": [
+                            "Czasami nie chce się pisać poważnych piosenek, ale przychodzi moment, że jest ich na tyle dużo, że nie da się ich spiąć jednym albumem. I tak oto powstał ten, poświęcony wyłącznie moim wszędobylskim pomysłom na swing.",
+                            "Sometimes one does not wish to write serious songs but they accumulate to the level no album cannot hold. Therefore a new album has been created, dedicated solely to the free general-purpose artform of swing."
+                        ],
+                        "sp": [
+                            "Kiedy twoje ziomki piszą na kolanie własne piosenki, kwestią czasu (i motywacji) jest, żeby je uwiecznić w postaci nagrania.",
+                            "When your homies spend their time hastily preparing songs, it's just the matter of time (and motivation) to immortalise them in the form of a recording."
+                        ],
+                        "gf": [
+                            "Projekt muzycznej kooperacji pomiędzy mną a pewnym gościem zwanym Kacprem W. Dźwięki tutaj zawarte to prawdziwe oświecenie muzyki tanecznej.",
+                            "A project of combined musical cooperation between my humble self and a man known as Kacper W. What you will find here are true revelations of dance music."
+                        ]
+                    }
+                }
             }
         }
     },

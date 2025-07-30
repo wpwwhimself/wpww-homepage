@@ -51,7 +51,7 @@ export function Muzyk(){
             code: "hydrophilia",
             label: "Hydrophilia",
             icon: "!hydrophilia",
-            link: "https://hydrophilia.wpww.pl/",
+            link: "/musician/hydrophilia",
         },
         {
             code: "msznm",
@@ -102,6 +102,6 @@ export function Muzyk(){
         </div>
 
         <h2 className="stagger" style={{ "--stagger-index": 9 + bands.length + __(instruments, true)?.length + mine.length }}><FAIcon icon="graduation-cap" /> {__("mus.headings.edu")}</h2>
-        <h3 class="stagger" style={{ textAlign: "center", "--stagger-index": 10 + bands.length + __(instruments, true)?.length + mine.length }}>{__("mus.edu.place")} <small className="ghost"><DateSpan dates={["09.2011", "07.2015"]} /></small></h3>
+        <h3 className="stagger" style={{ textAlign: "center", "--stagger-index": 10 + bands.length + __(instruments, true)?.length + mine.length }}>{__("mus.edu.place")} <small className="ghost"><DateSpan dates={["09.2011", "07.2015"]} /></small></h3>
     </Section>;
 }
