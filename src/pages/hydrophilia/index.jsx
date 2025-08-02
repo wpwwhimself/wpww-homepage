@@ -240,8 +240,8 @@ export function Hydrophilia() {
     </div>
 
     <SeeAlso>
-      {/* todo add socials */}
       <ClickTile icon="brands youtube" small={true} clickfun="https://www.youtube.com/@hydrophilia" />
+      <ClickTile icon="music" small={true} clickfun="https://songs.wpww.pl/" />
     </SeeAlso>
   </Section>;
 }
