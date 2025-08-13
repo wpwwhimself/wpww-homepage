@@ -409,8 +409,8 @@
             },
             "promodruk": {
                 "name": [
-                    "Ofertownik",
-                    "Catalogue"
+                    "Katalog produktów",
+                    "Product catalogue"
                 ],
                 "desc": [
                     "Zestaw aplikacji tworzących sklep internetowy, integracje z API dostawców oraz przygotowywanie wycen",

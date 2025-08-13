@@ -113,8 +113,8 @@ export function Programista() {
             icon: "!sz3",
         }, {
             code: "prg.proj.promodruk",
-            label: "!Promovera",
-            // link: "https://www.ofertownik.promovera.pl/", //todo add link to repo when i merge all 3
+            label: "!Promodruk Suite",
+            link: "https://github.com/wpwwhimself/promodruk-suite",
             tech: ["laravel", "js"],
             icon: "!promodruk",
         }, {
