@@ -219,7 +219,7 @@ export function Hydrophilia() {
       <FAIcon icon="compact-disc" /> {__(i18n+"headings.albums")}
     </h2>
 
-    <div className="grid-3">
+    <div className="grid-3 but-mobile-down">
     {albums.sort((a, b) => a.dates < b.dates).map((album, i) =>
       <TextBox key={i} stagger={i + about.length + 5}
         ghost={album.serious === false}
