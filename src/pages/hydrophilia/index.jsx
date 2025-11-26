@@ -225,7 +225,7 @@ export function Hydrophilia() {
         ghost={album.serious === false}
       >
         <div className="flex-down center">
-          <img src={`https://hydrophilia.wpww.pl/album_pics/${album.code}.png`} alt={album.name} className="album-cover" />
+          <img src={`https://songs.wpww.pl/library/${album.name}.png`} alt={album.name} className="album-cover" />
           <h2>{album.name}</h2>
           <p className="ghost">{album.dates}</p>
         </div>
