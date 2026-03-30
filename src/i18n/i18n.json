@@ -112,8 +112,8 @@
     ],
     "prg": {
         "intro": [
-            "Jestem web developerem pracującym w doświadczonej firmie informatycznej. Mam za sobą duże doświadczenie w programowaniu w wielu różnych językach i technologiach, które poznałem w toku edukacji oraz kariery zawodowej. Programowaniem zajmuję się nie tylko w pracy, ale także przy tworzeniu własnych projektów. Stale uczę się nowych technologii i poszerzam swoje kompetencje, żeby być jak najlepszym w tym, co robię.",
-            "I am a web developer working in a large IT company. I have a robust programming experience in various languages and technologies learnt during my educational and professional career. I code not only at work but also while perfecting my own projects. I constantly learn new technologies and expand my skills to excel at what I do."
+            "Jestem web developerem pracującym w firmie informatycznej docenionej przez znanych klientów. Mam za sobą duże doświadczenie w programowaniu w wielu różnych językach i technologiach, które poznałem w toku edukacji oraz kariery zawodowej. Programowaniem zajmuję się nie tylko w biurze, ale także przy tworzeniu własnych projektów. Stale uczę się nowych technologii i poszerzam swoje kompetencje, żeby być jak najlepszym w tym, co robię.",
+            "I am a web developer working in a respected IT company. I have a robust programming experience in various languages and technologies learnt during my educational and professional career. I code not only at work but also while perfecting my own projects. I constantly learn new technologies and expand my skills to excel at what I do."
         ],
         "headings": {
             "exp": [
@@ -295,9 +295,9 @@
             },
             "promodruk": {
                 "name": [
-                    "Freelance software developer",
-                    "Freelance software developer",
-                    "Freelance software developer"
+                    "Software engineer",
+                    "Software engineer",
+                    "Software engineer"
                 ],
                 "place": [
                     "Promodruk Drukarnia Online",

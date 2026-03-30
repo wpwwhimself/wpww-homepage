@@ -63,12 +63,13 @@ export function Footer(){
         <div id="end-bar" className="flex-down">
           <h2>Wojciech Przybyła</h2>
           <p className="print-hide">{__("footer_by_me")}</p>
-          <div className="flex-right">
+          <div className="flex-right print-hide">
             <a href="https://creativecommons.org/licenses/by-sa/3.0/pl/">
               <i className="fa-brands fa-creative-commons"></i>
               <i className="fa-brands fa-creative-commons-by"></i>
               <i className="fa-brands fa-creative-commons-sa"></i>
-            </a> 2018 – {today.getFullYear()}
+              2018 – {today.getFullYear()}
+            </a>
             <span className="print-hide">
               <FAIcon icon="globe" />
             </span>
