@@ -13,14 +13,14 @@ const jobExperience = [
         code: "prg.jex.promodruk",
         placeLink: "https://promodruk.pl/",
         span: ["08.2023", null],
-        stack: "PHP, Laravel, AlpineJS, ...",
+        stack: "Laravel, JS",
         shiftColumn: 1,
         icon: "!promodruk",
     }, {
         code: "prg.jex.questy",
         placeLink: "https://questy.pl/",
         span: ["08.2022", null],
-        stack: "PHP, Symfony, JS, Bootstrap, PostgreSQL, Git, Ubuntu, Docker",
+        stack: "Symfony, JS, Bootstrap, PostgreSQL, Docker",
         clients: true,
         readSomeMore: "questy",
         icon: "!questy",
@@ -135,20 +135,20 @@ export function Programista() {
             link: "https://github.com/wpwwhimself/wpww-homepage",
             tech: ["react"],
             icon: "!logo_blue",
-        }, {
-            code: "prg.proj.hh",
-            label: "!Househunter",
-            link: "https://github.com/wpwwhimself/househunter",
-            tech: ["laravel", "angular"],
-            icon: "!h2",
-            wip: true,
-        }, {
-            code: "prg.proj.cc",
-            // label: "!",
-            link: "",
-            tech: ["vuejs"],
-            icon: "!c2",
-            wip: true,
+        // }, {
+        //     code: "prg.proj.hh",
+        //     label: "!Househunter",
+        //     link: "https://github.com/wpwwhimself/househunter",
+        //     tech: ["laravel", "angular"],
+        //     icon: "!h2",
+        //     wip: true,
+        // }, {
+        //     code: "prg.proj.cc",
+        //     // label: "!",
+        //     link: "",
+        //     tech: ["vuejs"],
+        //     icon: "!c2",
+        //     wip: true,
         }
     ];
 
