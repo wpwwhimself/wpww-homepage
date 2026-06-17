@@ -51,7 +51,7 @@ export function Muzyk(){
             code: "hydrophilia",
             label: "Hydrophilia",
             icon: "!hydrophilia",
-            link: "/musician/hydrophilia",
+            link: "https://jukebox.wpww.pl/about",
         },
         {
             code: "msznm",
