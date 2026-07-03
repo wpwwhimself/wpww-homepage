@@ -585,23 +585,29 @@
             [
                 "gitara klasyczna", "gitara elektryczna", "gitara basowa",
                 "ukulele", "mandolina",
-                "fortepian", "organy piszczałkowe", "organy elektryczne",
-                "trąbka", "saksofon tenorowy", "flet poprzeczny", "klarnet basowy", "obój", "tuba", "flet piccolo", "flugelhorn",
-                "instrumenty perkusyjne", "harmonijka", "akordeon"
+                "fortepian", "organy piszczałkowe", "organy elektryczne", "akordeon",
+                "trąbka", "flugelhorn", "puzon", "tuba",
+                "flet poprzeczny", "obój", "flet piccolo",
+                "saksofon tenorowy", "klarnet", "klarnet basowy",
+                "instrumenty perkusyjne"
             ],
             [
                 "classical guitar", "electric guitar", "bass guitar",
                 "ukulele", "mandolin",
-                "piano", "pipe organ", "electric organ",
-                "trumpet", "tenor saxophone", "transverse flute", "bass clarinet", "oboe", "tuba", "piccolo", "flugelhorn",
-                "percussion instruments", "harmonica", "accordion"
+                "piano", "pipe organ", "electric organ", "accordion",
+                "trumpet", "flugelhorn", "trombone", "tuba",
+                "transverse flute", "oboe", "piccolo",
+                "tenor saxophone", "clarinet", "bass clarinet",
+                "percussion instruments"
             ],
             [
                 "klassische Gitarre", "elektrische Gitarre", "Bassgitarre",
                 "Ukulele", "Mandoline",
                 "Klavier", "Pfeifenorgel", "elektrische Orgel",
-                "Trompete", "Tenorsaxophon", "Flöte", "Bassklarinette", "Oboe", "Tuba", "Piccolo", "Flügelhorn",
-                "Schlaginstrumente", "Mundharmonika", "Akkordeon"
+                "Trompete", "Flügelhorn", "Posaune", "Tuba",
+                "Flöte", "Oboe", "Piccolo",
+                "Tenorsaxophon", "Klarinette", "Bassklarinette",
+                "Schlaginstrumente"
             ]
         ],
         "mine": {
