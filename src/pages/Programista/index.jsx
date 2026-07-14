@@ -129,12 +129,6 @@ export function Programista() {
             link: "https://github.com/wpwwhimself/tefor",
             tech: ["laravel", "js"],
             icon: "!t3",
-        }, {
-            code: "prg.proj.homepage",
-            label: "!wpww.pl",
-            link: "https://github.com/wpwwhimself/wpww-homepage",
-            tech: ["react"],
-            icon: "!logo_blue",
         // }, {
         //     code: "prg.proj.hh",
         //     label: "!Househunter",
@@ -142,13 +136,18 @@ export function Programista() {
         //     tech: ["laravel", "angular"],
         //     icon: "!h2",
         //     wip: true,
-        // }, {
-        //     code: "prg.proj.cc",
-        //     // label: "!",
-        //     link: "",
-        //     tech: ["vuejs"],
-        //     icon: "!c2",
-        //     wip: true,
+        }, {
+            code: "prg.proj.cc",
+            label: "!Cardcounter",
+            link: "https://github.com/wpwwhimself/cardcounter",
+            tech: ["laravel", "js"],
+            icon: "!c2",
+        }, {
+            code: "prg.proj.homepage",
+            label: "!wpww.pl",
+            link: "https://github.com/wpwwhimself/wpww-homepage",
+            tech: ["react"],
+            icon: "!logo_blue",
         }
     ];
 

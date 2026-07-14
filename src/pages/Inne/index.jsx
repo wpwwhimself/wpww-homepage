@@ -15,7 +15,7 @@ const things_i_do = [
         code: "drawing",
         icon: "pen-ruler",
         label: "alt.whatelse.drawing.tarot",
-        link: "/others/tarot",
+        link: "https://karty.wpww.pl/",
     },
     //TODO więcej pomysłów, co robię
 ];
