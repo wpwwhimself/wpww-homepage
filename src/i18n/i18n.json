@@ -389,12 +389,13 @@
             },
             "cc": {
                 "name": [
-                    "Krupier",
-                    "Card counter"
+                    "Gry karciane i nie tylko",
+                    "Card games and more",
+                    "Kartenspiele und mehr"
                 ],
                 "desc": [
-                    "Mini-apka służąca jako wirtualna kartka papieru dla analogowo granych gier",
-                    "A mini-app which serves as a virtual sheet of paper while playing analog games"
+                    "Biblioteka gier karcianych, wirtualna kartka papieru dla analogowo granych gier oraz prezentacja mojej talii do tarota",
+                    "A card game library, a virtual sheet of paper while playing analog games, as well as a showcase for my tarot deck"
                 ]
             },
             "hh": {
@@ -761,9 +762,9 @@
                     "I like drawing, especially in black and white. I even designed my own tarot deck."
                 ],
                 "tarot": [
-                    "Moja talia do tarota",
-                    "My tarot deck",
-                    "Mein Tarotdeck",
+                    "Moja talia w akcji",
+                    "My deck in action",
+                    "Mein Tarotdeck in Aktion",
                     "私のタロットデッキ"
                 ]
             }
